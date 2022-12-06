@@ -11564,12 +11564,16 @@ fieldset:disabled .btn {
 }
 
 h1, .h1 {
-  background: url(../../images/aoba_logo_48x3.png) no-repeat left center;
-  width: 128px;
-  height: 48px;
+  background-image: url(../../images/aoba_logo_48x3.svg);
+  width: 150px;
+  height: 42.677px;
   text-indent: 101%;
   white-space: nowrap;
   overflow: hidden;
+}
+
+.logo {
+  height: 48px;
 }
 
 /*# sourceMappingURL=all.css.map */
