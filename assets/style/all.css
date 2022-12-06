@@ -11563,10 +11563,13 @@ fieldset:disabled .btn {
   }
 }
 
-.index__h1 {
-  color: #00cc99;
-  font-size: 20px;
-  font-weight: 400;
+h1, .h1 {
+  background: url(../../images/aoba_logo_48x3.png) no-repeat left center;
+  width: 128px;
+  height: 48px;
+  text-indent: 101%;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 /*# sourceMappingURL=all.css.map */
