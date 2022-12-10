@@ -37,6 +37,32 @@
   color: white !important;
 }
 
+.primaryBtn-S {
+  padding: 8px 24px;
+  background: -webkit-gradient(linear, left top, right top, from(#56BBB5), to(#56CFB5));
+  background: -o-linear-gradient(left, #56BBB5, #56CFB5);
+  background: linear-gradient(90deg, #56BBB5, #56CFB5);
+  border-radius: 20px;
+}
+
+.primaryBtn-S:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#56CFB5), to(#56BBB5));
+  background: -o-linear-gradient(left, #56CFB5, #56BBB5);
+  background: linear-gradient(90deg, #56CFB5, #56BBB5);
+}
+
+.secondaryBtn-S {
+  padding: 8px 24px;
+  background: white;
+  border: 1px solid #56BBB5;
+  border-radius: 20px;
+}
+
+.secondaryBtn-S:hover {
+  background: #56BBB5;
+  color: white !important;
+}
+
 /*!
  * Bootstrap v5.0.2 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -20354,6 +20380,22 @@ fieldset:disabled .btn {
   height: 40px;
 }
 
+h1, .h1 {
+  background: url(https://raw.githubusercontent.com/hd1313169/aobaBadminton/main/app/assets/images/aoba_logo_48x3.svg) no-repeat left center;
+  width: 128px;
+  height: 40px;
+  text-indent: 101%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  h1, .h1 {
+    width: 148px;
+    height: 48px;
+  }
+}
+
 .navbar-decoration {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -20372,6 +20414,24 @@ fieldset:disabled .btn {
   width: 50%;
   height: 4px;
   background: #FBD64A;
+}
+
+.navbar-desktop {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .navbar-desktop {
+    display: block;
+  }
+}
+
+.nav-item-btn:hover {
+  color: #56BBB5 !important;
+}
+
+.nav-item-btn-logOut:hover {
+  color: #FBB84A !important;
 }
 
 /*# sourceMappingURL=all.css.map */
