@@ -1,14 +1,23 @@
+// <!-- 文字 -->
+
+// 字體
 .ff-ns{
     font-family: 'Noto Sans TC';
 }
 .ff-rb{
     font-family: roboto;
 }
+
+// 標題&內容
 .title-xl{
     font-size: 36px;
     font-weight: 500;
 }
 
+// <!-- 文字END -->
+
+
+// <!-- 按鈕 -->
 .primaryBtn-L{
     padding: 12px 102px;
     background: linear-gradient( 90deg,  #56BBB5, #56CFB5);
@@ -30,3 +39,27 @@
         color: white !important; 
     }
 }
+
+.primaryBtn-S{
+    padding: 8px 24px;
+    background: linear-gradient( 90deg,  #56BBB5, #56CFB5);
+    border-radius: 20px;
+
+    &:hover{
+        background: linear-gradient( 90deg,  #56CFB5, #56BBB5);
+    }
+}
+
+.secondaryBtn-S{
+    padding: 8px 24px;
+    background: white;
+    border: 1px solid #56BBB5;
+    border-radius: 20px;
+
+    &:hover{
+        background: #56BBB5;
+        color: white !important; 
+    }
+}
+
+// <!-- 按鈕END -->

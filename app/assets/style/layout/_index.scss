@@ -1,7 +1,23 @@
+// <!-- 導覽列 -->
 .logo{
 	width: 124px;
 	height: 40px;
 }
+
+h1{
+	background: url(https://raw.githubusercontent.com/hd1313169/aobaBadminton/main/app/assets/images/aoba_logo_48x3.svg) no-repeat left center;
+	width: 128px;
+	height: 40px;
+	text-indent: 101%;
+	white-space: nowrap;
+	overflow: hidden;
+	
+	@media (min-width: 768px){
+		width: 148px;
+		height: 48px;
+	}
+}
+
 
 .navbar-decoration{
 	display: flex;
@@ -18,3 +34,22 @@
 		background: #FBD64A;
 	}
 }
+
+.navbar-desktop{
+	display: none;
+	@media (min-width: 768px){
+		display: block;
+	}
+}
+
+.nav-item-btn{
+	&:hover{
+		color: #56BBB5 !important; 
+	}
+	&-logOut{
+		&:hover{
+			color: #FBB84A !important;
+		}
+	}
+}
+// <!-- 導覽列END -->
