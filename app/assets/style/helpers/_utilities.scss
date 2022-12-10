@@ -1,0 +1,32 @@
+.ff-ns{
+    font-family: 'Noto Sans TC';
+}
+.ff-rb{
+    font-family: roboto;
+}
+.title-xl{
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.primaryBtn-L{
+    padding: 12px 102px;
+    background: linear-gradient( 90deg,  #56BBB5, #56CFB5);
+    border-radius: 24px;
+
+    &:hover{
+        background: linear-gradient( 90deg,  #56CFB5, #56BBB5);
+    }
+}
+
+.secondaryBtn-L{
+    padding: 12px 102px;
+    background: white;
+    border: 1px solid #56BBB5;
+    border-radius: 24px;
+
+    &:hover{
+        background: #56BBB5;
+        color: white !important; 
+    }
+}

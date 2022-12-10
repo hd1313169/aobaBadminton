@@ -7,18 +7,64 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="./assets/images/aoba_title_icon.ico" rel="shortcut icon">
     <title><%- title %></title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
     <link rel="stylesheet" href="./assets/style/all.css">
-    
+    <script src="https://kit.fontawesome.com/6b74f216f9.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap'); </style>
   </head>
 
   <body>
-    
-    <h1>logo</h1>
-    <img src="./assets/images/aoba_logo_48x3.png" alt="logo" class="logo">
+    <!-- 行動版導覽列 -->
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container d-flex justify-content-between py-20">
 
-    <%- contents %>
+        <!-- logo -->
+        <a class="navbar-brand d-block" href="./index.html">
+          <img class="logo" src="./assets/images/aoba_logo_48x3.svg" alt="aoba badminton">
+        </a>
 
+        <!-- 選單按鈕 -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <!-- 展開選單 -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <!-- 關閉選單按鈕 -->
+          <div class="offcanvas-header justify-content-end pt-24 pr-24">
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <!-- 選單列表 -->
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 px-56 text-center fw-medium ">
+              <li class="nav-item mb-24">
+                <a class="nav-link active text-dark" aria-current="page" href="#">球場租借</a>
+              </li>
+              <li class="nav-item mb-24">
+                <a class="nav-link text-dark" href="#">租借紀錄</a>
+              </li>
+              <li class="nav-item mb-24">
+                <a class="nav-link text-dark" href="#">會員資料</a>
+              </li>
+              <li class="nav-item mb-16">
+                <a class="nav-link primaryBtn-L text-light" href="#">註 冊 會 員</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link secondaryBtn-L text-primary" href="#">會 員 登 入</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- 展開選單END -->
+      </div>
+    </nav>
+    <!-- 導覽列裝飾線 -->
+    <div class="navbar-decoration">
+      <div class="navbar-decoration-left"></div>
+      <div class="navbar-decoration-right"></div>
+    </div>
+    <!-- 導覽列裝飾線END -->
+    <!-- 行動版導覽列END --> 
 
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
