@@ -178,17 +178,12 @@ li {
   width: 100%;
   height: 240px;
   border-radius: 8px !important;
-  background-image: url(https://i.imgur.com/frAzsH4.jpg);
   background-position: 50%;
-  background-size: 420px auto;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   -webkit-transition: all .5s ease-in-out;
   -o-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
-}
-
-.areaCard-img:hover {
-  background-size: 525px auto;
 }
 
 .areaCard-address p:hover {
@@ -198,9 +193,9 @@ li {
 .areaCard-decoration {
   width: 0px;
   height: 4px;
-  -webkit-transition: width .2s;
-  -o-transition: width .2s;
-  transition: width .2s;
+  -webkit-transition: width .5s;
+  -o-transition: width .5s;
+  transition: width .5s;
 }
 
 .areaCard:hover .areaCard-decoration {
@@ -208,6 +203,10 @@ li {
   background: -webkit-gradient(linear, left top, right top, from(#56BBB5), to(#56CFB5));
   background: -o-linear-gradient(left, #56BBB5, #56CFB5);
   background: linear-gradient(90deg, #56BBB5, #56CFB5);
+}
+
+.areaCard:hover .areaCard-img {
+  background-size: 125% 125%;
 }
 
 .areaCard-tag-lg {
