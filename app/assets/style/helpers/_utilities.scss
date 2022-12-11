@@ -147,6 +147,17 @@ img {
     }
 }
 
+.secondaryBtn-XS{
+    padding: 2px 8px;
+    background: white;
+    border: 1px solid #56BBB5;
+    border-radius: 12px;
+
+    &:hover{
+        background: #56BBB5;
+        color: white !important; 
+    }
+}
 // <!-- 按鈕END -->
 
 li{
@@ -202,5 +213,24 @@ li{
     &-tag-sm{
         top: 64px;
         left: 0;
+    }
+}
+
+.coachCard{
+    position: relative;
+    border-radius: 8px !important;
+    &-img{
+        height: 100%;
+        border-radius: 8px 0 0 8px  !important;
+
+        background-position: 50%;
+        background-size: auto;
+        background-repeat: no-repeat;
+        transition: all .5s ease-in-out;
+
+        @media (min-width: 768px){
+            border-radius: 8px 8px 0 0  !important;
+            height: 220px;
+        }
     }
 }
