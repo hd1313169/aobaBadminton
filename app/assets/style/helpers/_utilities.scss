@@ -1,3 +1,26 @@
+img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .font-azeret{
+    font-family: "Azeret Mono";
+  }
+
+    
+// 圓角矩形
+.rounded-8{
+    border-radius: 8px !important;
+}
+.rounded-12{
+    border-radius: 12px !important;
+}
+.rounded-16{
+    border-radius: 16px !important;
+}
+.rounded-24{
+    border-radius: 24px !important;
+}
 // <!-- 文字 -->
 
 // 字體
@@ -57,7 +80,7 @@
     background: linear-gradient( 90deg,  #56BBB5, #56CFB5);
     border-radius: 24px;
 
-    @media (min-width: 768px){
+    @media (min-width: 992px){
 		width: 16%;
 	}
     
@@ -74,13 +97,31 @@
     border: 1px solid #56BBB5;
     border-radius: 24px;
 
-    @media (min-width: 768px){
+    @media (min-width: 992px){
 		width: 16%;
 	}
 
     &:hover{
         background: #56BBB5;
         color: white !important; 
+    }
+}
+
+.specialBtn-M{
+    display: block;
+    width: 50%;
+    padding: 12px 0px;
+    background: #FBB84A;
+    border: 1px solid white;
+    border-radius: 24px;
+
+    @media (min-width: 992px){
+		width: 16%;
+	}
+
+    &:hover{
+        background: white;
+        color: #FBB84A !important; 
     }
 }
 
@@ -110,4 +151,58 @@
 
 li{
     list-style:none;
+}
+
+.areaCard{
+    position: relative;
+    border-radius: 8px !important;
+
+    &-img{
+        width: 100%;
+        height: 240px;
+        border-radius: 8px !important;
+
+        background-image: url(https://i.imgur.com/frAzsH4.jpg);
+        background-position: 50%;
+        background-size: 420px auto;
+        background-repeat: no-repeat;
+        transition: all .5s ease-in-out;
+
+
+        &:hover{
+            background-size: 525px auto;
+        }
+    }
+
+    &-address{
+        p{
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &-decoration{
+        width: 0px;
+        height: 4px;
+        transition:width .2s;
+
+    }
+
+    &:hover{
+        .areaCard-decoration{
+            width: 100%;
+            background: linear-gradient( 90deg,  #56BBB5, #56CFB5);
+        }
+    }
+
+    &-tag-lg{
+        top: 16px;
+        left: 0;
+    }
+
+    &-tag-sm{
+        top: 64px;
+        left: 0;
+    }
 }

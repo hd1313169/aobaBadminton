@@ -476,7 +476,7 @@ $font-weight-normal:          400 !default;
 $font-weight-medium:          500;
 $font-weight-bold:            700 !default;
 $font-weight-bolder:          bolder !default;
-$font-weight-base:            $font-weight-medium; //$font-weight-normal !default;
+$font-weight-base:            $font-weight-normal; //$font-weight-normal !default;
 
 $line-height-base:            1.5 !default;
 $line-height-sm:              1.25 !default;
