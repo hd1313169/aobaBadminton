@@ -237,10 +237,10 @@ li {
 }
 
 .coachCard-img {
-  height: 100%;
-  border-radius: 8px 0 0 8px  !important;
-  background-position: 50%;
-  background-size: auto;
+  height: 240px;
+  border-radius: 8px 8px 0 0  !important;
+  background-position: top;
+  background-size: cover;
   background-repeat: no-repeat;
   -webkit-transition: all .5s ease-in-out;
   -o-transition: all .5s ease-in-out;
@@ -249,9 +249,18 @@ li {
 
 @media (min-width: 768px) {
   .coachCard-img {
-    border-radius: 8px 8px 0 0  !important;
-    height: 220px;
+    height: 200px;
   }
+}
+
+@media (min-width: 992px) {
+  .coachCard-img {
+    height: 240px;
+  }
+}
+
+.coachCard:hover .coachCard-img {
+  background-size: 125% auto;
 }
 
 /*!
@@ -20624,6 +20633,33 @@ h1, .h1 {
 
 .hero {
   width: 100%;
+}
+
+@media (min-width: 768px) {
+  .coachCard-swiper {
+    display: block;
+  }
+}
+
+.swiper-slide {
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /*# sourceMappingURL=all.css.map */
