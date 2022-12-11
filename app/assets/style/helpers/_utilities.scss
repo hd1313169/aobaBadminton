@@ -8,12 +8,22 @@
     font-family: roboto;
 }
 
-// 標題&內容
-.title-xl{
-    font-size: 36px;
-    font-weight: 500;
-}
+// 文字漸層
+.text-gradient{
+    background: linear-gradient( 90deg,  #56BBB5, #56CFB5);
+    background: -webkit-linear-gradient( 90deg,  #56BBB5, #56CFB5);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
 
+    &:hover{
+        background: linear-gradient( 90deg,  #56CFB5, #56BBB5);
+        background: -webkit-linear-gradient( 90deg,  #56CFB5, #56BBB5);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+};
 // <!-- 文字END -->
 
 
@@ -33,6 +43,40 @@
     background: white;
     border: 1px solid #56BBB5;
     border-radius: 24px;
+
+    &:hover{
+        background: #56BBB5;
+        color: white !important; 
+    }
+}
+
+.primaryBtn-M{
+    display: block;
+    width: 50%;
+    padding: 12px 0px;
+    background: linear-gradient( 90deg,  #56BBB5, #56CFB5);
+    border-radius: 24px;
+
+    @media (min-width: 768px){
+		width: 16%;
+	}
+    
+    &:hover{
+        background: linear-gradient( 90deg,  #56CFB5, #56BBB5);
+    }
+}
+
+.secondaryBtn-M{
+    display: block;
+    width: 50%;
+    padding: 12px 0px;
+    background: white;
+    border: 1px solid #56BBB5;
+    border-radius: 24px;
+
+    @media (min-width: 768px){
+		width: 16%;
+	}
 
     &:hover{
         background: #56BBB5;
@@ -63,3 +107,7 @@
 }
 
 // <!-- 按鈕END -->
+
+li{
+    list-style:none;
+}

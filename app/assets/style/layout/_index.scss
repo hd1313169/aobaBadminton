@@ -11,11 +11,6 @@ h1{
 	text-indent: 101%;
 	white-space: nowrap;
 	overflow: hidden;
-	
-	@media (min-width: 768px){
-		width: 148px;
-		height: 48px;
-	}
 }
 
 
@@ -53,3 +48,13 @@ h1{
 	}
 }
 // <!-- 導覽列END -->
+
+// <!-- 頁尾 -->
+.footer{
+	border-top: 1px solid #D9D9D9;
+}
+// <!-- 頁尾END -->
+
+.hero{
+	width: 100%;
+}
