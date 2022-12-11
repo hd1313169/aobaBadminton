@@ -162,16 +162,10 @@ li{
         height: 240px;
         border-radius: 8px !important;
 
-        background-image: url(https://i.imgur.com/frAzsH4.jpg);
         background-position: 50%;
-        background-size: 420px auto;
+        background-size: 100% 100%;
         background-repeat: no-repeat;
         transition: all .5s ease-in-out;
-
-
-        &:hover{
-            background-size: 525px auto;
-        }
     }
 
     &-address{
@@ -185,7 +179,7 @@ li{
     &-decoration{
         width: 0px;
         height: 4px;
-        transition:width .2s;
+        transition:width .5s;
 
     }
 
@@ -193,6 +187,10 @@ li{
         .areaCard-decoration{
             width: 100%;
             background: linear-gradient( 90deg,  #56BBB5, #56CFB5);
+        }
+
+        .areaCard-img{
+            background-size: 125% 125%;
         }
     }
 
