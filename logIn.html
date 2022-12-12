@@ -16,6 +16,8 @@
 
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
   <script src="https://apis.google.com/js/api:client.js"></script>
+
+  <!-- google 登入(假) -->
   <script>
   var googleUser = {};
   var startApp = function() {
@@ -55,7 +57,9 @@
     <h2 class="fs-20 text-center mb-16">會員登入</h2>
     <div class="form form-logIn mx-auto d-flex flex-column">
         <input class="form-box d-block mb-16 ps-12" type="tel" placeholder="請填手機號碼，例：0912345678" name="phone">
+        <p class="fs-12 text-danger"  data-message="手機"></p>
         <input class="form-box d-block mb-20 ps-12" type="password" placeholder="請填密碼" name="password">
+        <p class="fs-12 text-danger"  data-message="密碼"></p>
         <div class="d-flex justify-content-between mb-24">
             <div class="checkBox">
                 <input type="checkbox" value="rememberMe" name="rememberMe">
@@ -64,7 +68,6 @@
             <a href="#">忘記密碼？</a>
         </div>
         <a href="./index.html" class="primaryBtn-L text-light text-center mb-24">登 入</a>
-
         <div class="d-flex mx-auto mb-24">
             <p class="pe-8">還沒有會員帳號？</p>
             <a href="./signUp.html">立即註冊</a>
@@ -98,16 +101,13 @@
 </div>
 
 
-    <script src="./assets/js/vendors.js"></script>
-    <script src="./assets/js/all.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
+<script src="./assets/js/vendors.js"></script>
+<script src="./assets/js/all.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init();</script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script>startApp();</script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
 
-  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-  <script>startApp();</script>
-
-  </body>
-
+</body>
 </html>
