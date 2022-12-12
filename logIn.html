@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="./assets/images/aoba_title_icon.ico" rel="shortcut icon">
+    <title>aobaBadminton</title>
+    <link rel="stylesheet" href="./assets/style/all.css">
+    <script src="https://kit.fontawesome.com/6b74f216f9.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap'); </style>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+  <script src="https://apis.google.com/js/api:client.js"></script>
+  <script>
+  var googleUser = {};
+  var startApp = function() {
+    gapi.load('auth2', function(){
+      // Retrieve the singleton for the GoogleAuth library and set up the client.
+      auth2 = gapi.auth2.init({
+        client_id: 'YOUR_CLIENT_ID.apps.googleusercontent.com',
+        cookiepolicy: 'single_host_origin',
+        // Request scopes in addition to 'profile' and 'email'
+        //scope: 'additional_scope'
+      });
+      attachSignin(document.getElementById('customBtn'));
+    });
+  };
+
+  function attachSignin(element) {
+    console.log(element.id);
+    auth2.attachClickHandler(element, {},
+        function(googleUser) {
+          document.getElementById('name').innerText = "Signed in: " +
+              googleUser.getBasicProfile().getName();
+        }, function(error) {
+          // alert(JSON.stringify(error, undefined, 2));
+          return;
+        });
+  }
+  </script>
+  </head>
+
+  <body>
+    <div class="container d-flex mt-80">
+      <a class="d-block mx-auto" href="./index.html"><h1 class="text-center">logo</h1></a>
+
+    </div>
+
+<div class="container mt-40">
+    <h2 class="fs-20 text-center mb-16">會員登入</h2>
+    <div class="form form-logIn mx-auto d-flex flex-column">
+        <input class="form-box d-block mb-16 ps-12" type="tel" placeholder="請填手機號碼，例：0912345678" name="phone">
+        <input class="form-box d-block mb-20 ps-12" type="password" placeholder="請填密碼" name="password">
+        <div class="d-flex justify-content-between mb-24">
+            <div class="checkBox">
+                <input type="checkbox" value="rememberMe" name="rememberMe">
+                <label class="text-center" for="rememberMe">記住我</label> 
+            </div>
+            <a href="#">忘記密碼？</a>
+        </div>
+        <a href="./index.html" class="primaryBtn-L text-light text-center mb-24">登 入</a>
+
+        <div class="d-flex mx-auto mb-24">
+            <p class="pe-8">還沒有會員帳號？</p>
+            <a href="./signUp.html">立即註冊</a>
+        </div>
+
+        <div class="form-sso">
+            <h3 class="fs-16 fw-normal text-grey text-center mb-24 form-sso-title position-relative">其他登入方式</h3>
+            <div class="form-sso-btn mb-16">
+                <div id="gSignInWrapper">
+                    <div id="customBtn" class="customGPlusSignIn d-flex align-items-center py-16">
+                        <img class="icon ps-20" src="./assets/images/google_icon.png" alt="google登入">
+                        <span class="buttonText text-center ps-60">Google 登入</span>
+                    </div>
+                  </div>
+                <div id="name"></div>
+            </div>
+            <div class="form-sso-btn mb-16">
+
+            <div id="gSignInWrapper">
+                <div id="customBtn" class="customGPlusSignIn d-flex align-items-center py-16">
+                    <img class="icon ps-20" src="./assets/images/facebook_icon.webp" alt="Facebook登入">
+                    <span class="buttonText text-center ps-60">Facebook 登入</span>
+                </div>
+              </div>
+            <div id="name"></div>
+            </div>
+        </div>
+    </div>
+    
+    
+</div>
+
+
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script>startApp();</script>
+
+  </body>
+
+</html>

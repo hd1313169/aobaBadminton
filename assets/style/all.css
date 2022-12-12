@@ -53,23 +53,21 @@ img {
 
 .primaryBtn-L {
   padding: 12px 102px;
-  background: -webkit-gradient(linear, left top, right top, from(#56BBB5), to(#56CFB5));
-  background: -o-linear-gradient(left, #56BBB5, #56CFB5);
-  background: linear-gradient(90deg, #56BBB5, #56CFB5);
-  border-radius: 24px;
+  background: -o-linear-gradient(315deg, #56BBB5, #56CFB5);
+  background: linear-gradient(135deg, #56BBB5, #56CFB5);
+  border-radius: 8px;
 }
 
 .primaryBtn-L:hover {
-  background: -webkit-gradient(linear, left top, right top, from(#56CFB5), to(#56BBB5));
-  background: -o-linear-gradient(left, #56CFB5, #56BBB5);
-  background: linear-gradient(90deg, #56CFB5, #56BBB5);
+  background: -o-linear-gradient(315deg, #56CFB5, #56BBB5);
+  background: linear-gradient(135deg, #56CFB5, #56BBB5);
 }
 
 .secondaryBtn-L {
   padding: 12px 102px;
   background: white;
   border: 1px solid #56BBB5;
-  border-radius: 24px;
+  border-radius: 8px;
 }
 
 .secondaryBtn-L:hover {
@@ -81,10 +79,9 @@ img {
   display: block;
   width: 50%;
   padding: 12px 0px;
-  background: -webkit-gradient(linear, left top, right top, from(#56BBB5), to(#56CFB5));
-  background: -o-linear-gradient(left, #56BBB5, #56CFB5);
-  background: linear-gradient(90deg, #56BBB5, #56CFB5);
-  border-radius: 24px;
+  background: -o-linear-gradient(315deg, #56BBB5, #56CFB5);
+  background: linear-gradient(135deg, #56BBB5, #56CFB5);
+  border-radius: 8px;
 }
 
 @media (min-width: 992px) {
@@ -94,9 +91,8 @@ img {
 }
 
 .primaryBtn-M:hover {
-  background: -webkit-gradient(linear, left top, right top, from(#56CFB5), to(#56BBB5));
-  background: -o-linear-gradient(left, #56CFB5, #56BBB5);
-  background: linear-gradient(90deg, #56CFB5, #56BBB5);
+  background: -o-linear-gradient(315deg, #56CFB5, #56BBB5);
+  background: linear-gradient(135deg, #56CFB5, #56BBB5);
 }
 
 .secondaryBtn-M {
@@ -105,7 +101,7 @@ img {
   padding: 12px 0px;
   background: white;
   border: 1px solid #56BBB5;
-  border-radius: 24px;
+  border-radius: 8px;
 }
 
 @media (min-width: 992px) {
@@ -125,7 +121,7 @@ img {
   padding: 12px 0px;
   background: #FBB84A;
   border: 1px solid white;
-  border-radius: 24px;
+  border-radius: 8px;
 }
 
 @media (min-width: 992px) {
@@ -140,28 +136,31 @@ img {
 }
 
 .primaryBtn-S {
+  display: block;
   padding: 8px 24px;
-  background: -webkit-gradient(linear, left top, right top, from(#56BBB5), to(#56CFB5));
-  background: -o-linear-gradient(left, #56BBB5, #56CFB5);
-  background: linear-gradient(90deg, #56BBB5, #56CFB5);
-  border-radius: 20px;
+  background: -o-linear-gradient(315deg, #56BBB5, #56CFB5);
+  background: linear-gradient(135deg, #56BBB5, #56CFB5);
+  border-radius: 4px;
 }
 
 .primaryBtn-S:hover {
-  background: -webkit-gradient(linear, left top, right top, from(#56CFB5), to(#56BBB5));
-  background: -o-linear-gradient(left, #56CFB5, #56BBB5);
-  background: linear-gradient(90deg, #56CFB5, #56BBB5);
+  background: -o-linear-gradient(315deg, #56CFB5, #56BBB5);
+  background: linear-gradient(135deg, #56CFB5, #56BBB5);
 }
 
 .secondaryBtn-S {
+  display: block;
   padding: 8px 24px;
   background: white;
   border: 1px solid #56BBB5;
-  border-radius: 20px;
+  border-radius: 4px;
 }
 
 .secondaryBtn-S:hover {
   background: #56BBB5;
+}
+
+.secondaryBtn-S:hover a {
   color: white !important;
 }
 
@@ -169,7 +168,7 @@ img {
   padding: 2px 8px;
   background: white;
   border: 1px solid #56BBB5;
-  border-radius: 12px;
+  border-radius: 8px;
 }
 
 .secondaryBtn-XS:hover {
@@ -261,6 +260,62 @@ li {
 
 .coachCard:hover .coachCard-img {
   background-size: 125% auto;
+}
+
+.form-logIn, .form-signUp {
+  width: 280px;
+}
+
+.form-box {
+  height: 48px;
+  border: 1px solid #D9D9D9;
+  border-radius: 8px;
+}
+
+.form-box-s {
+  width: 90%;
+}
+
+.form-box::-webkit-input-placeholder {
+  color: #D9D9D9;
+}
+
+.form-box::-moz-placeholder {
+  color: #D9D9D9;
+}
+
+.form-box:-ms-input-placeholder {
+  color: #D9D9D9;
+}
+
+.form-box::-ms-input-placeholder {
+  color: #D9D9D9;
+}
+
+.form-box::placeholder {
+  color: #D9D9D9;
+}
+
+.form-sso-title::before {
+  display: inline-block;
+  position: absolute;
+  content: "";
+  width: 64px;
+  height: 1px;
+  background: #9B9B9B;
+  left: 8px;
+  top: 50%;
+}
+
+.form-sso-title::after {
+  display: inline-block;
+  position: absolute;
+  content: "";
+  width: 64px;
+  height: 1px;
+  background: #9B9B9B;
+  right: 8px;
+  top: 50%;
 }
 
 /*!
@@ -20632,12 +20687,7 @@ h1, .h1 {
 }
 
 .hero {
-  background-image: url(https://github.com/hd1313169/aobaBadminton/blob/main/app/assets/images/aoba_hero.png?raw=true);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   width: 100%;
-  height: 700px;
 }
 
 @media (min-width: 768px) {
@@ -20665,6 +20715,36 @@ h1, .h1 {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+#customBtn {
+  display: inline-block;
+  background: white;
+  border-radius: 32px;
+  border: 1px solid #d9d9d9;
+  white-space: nowrap;
+}
+
+#customBtn:hover {
+  cursor: pointer;
+}
+
+span.label {
+  font-family: serif;
+  font-weight: normal;
+}
+
+.icon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 42px;
+}
+
+span.buttonText {
+  display: inline-block;
+  vertical-align: middle;
+  /* Use the Roboto font that is loaded in the <head> */
+  font-family: 'Roboto', sans-serif;
 }
 
 /*# sourceMappingURL=all.css.map */
