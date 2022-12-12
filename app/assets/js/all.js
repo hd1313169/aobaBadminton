@@ -1,7 +1,4 @@
-$(function() {
-  console.log('Hello Bootstrap5');
-});
-
+// 首頁_教練課程輪播
 var swiper = new Swiper(".coachCard-swiper", {
   breakpoints: {
     1: {
@@ -27,3 +24,11 @@ var swiper = new Swiper(".coachCard-swiper", {
     clickable: true,
   },
 });
+
+
+// 千分位工具
+function toThousands(x){
+  let parts = x.toString().split(".");
+  parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  return parts.join(".");
+}
