@@ -53,11 +53,11 @@ img {
 // <!-- 按鈕 -->
 .primaryBtn-L{
     padding: 12px 102px;
-    background: linear-gradient( 90deg,  #56BBB5, #56CFB5);
-    border-radius: 24px;
+    background: linear-gradient( 135deg,  #56BBB5, #56CFB5);
+    border-radius: 8px;
 
     &:hover{
-        background: linear-gradient( 90deg,  #56CFB5, #56BBB5);
+        background: linear-gradient( 135deg,  #56CFB5, #56BBB5);
     }
 }
 
@@ -65,7 +65,7 @@ img {
     padding: 12px 102px;
     background: white;
     border: 1px solid #56BBB5;
-    border-radius: 24px;
+    border-radius: 8px;
 
     &:hover{
         background: #56BBB5;
@@ -77,15 +77,15 @@ img {
     display: block;
     width: 50%;
     padding: 12px 0px;
-    background: linear-gradient( 90deg,  #56BBB5, #56CFB5);
-    border-radius: 24px;
+    background: linear-gradient( 135deg,  #56BBB5, #56CFB5);
+    border-radius: 8px;
 
     @media (min-width: 992px){
 		width: 16%;
 	}
     
     &:hover{
-        background: linear-gradient( 90deg,  #56CFB5, #56BBB5);
+        background: linear-gradient( 135deg,  #56CFB5, #56BBB5);
     }
 }
 
@@ -95,7 +95,7 @@ img {
     padding: 12px 0px;
     background: white;
     border: 1px solid #56BBB5;
-    border-radius: 24px;
+    border-radius: 8px;
 
     @media (min-width: 992px){
 		width: 16%;
@@ -113,7 +113,7 @@ img {
     padding: 12px 0px;
     background: #FBB84A;
     border: 1px solid white;
-    border-radius: 24px;
+    border-radius: 8px;
 
     @media (min-width: 992px){
 		width: 16%;
@@ -126,24 +126,28 @@ img {
 }
 
 .primaryBtn-S{
+    display: block;
     padding: 8px 24px;
-    background: linear-gradient( 90deg,  #56BBB5, #56CFB5);
-    border-radius: 20px;
+    background: linear-gradient( 135deg,  #56BBB5, #56CFB5);
+    border-radius: 4px;
 
     &:hover{
-        background: linear-gradient( 90deg,  #56CFB5, #56BBB5);
+        background: linear-gradient( 135deg,  #56CFB5, #56BBB5);
     }
 }
 
 .secondaryBtn-S{
+    display: block;
     padding: 8px 24px;
     background: white;
     border: 1px solid #56BBB5;
-    border-radius: 20px;
+    border-radius: 4px;
 
     &:hover{
         background: #56BBB5;
-        color: white !important; 
+        a{
+            color: white !important;
+        }
     }
 }
 
@@ -151,7 +155,7 @@ img {
     padding: 2px 8px;
     background: white;
     border: 1px solid #56BBB5;
-    border-radius: 12px;
+    border-radius: 8px;
 
     &:hover{
         background: #56BBB5;
@@ -244,4 +248,46 @@ li{
              background-size: 125% auto;
          }
      }
+}
+
+
+.form{
+    &-logIn, &-signUp{
+        width: 280px;
+    }
+
+    &-box{
+        height: 48px;
+        border: 1px solid #D9D9D9;
+        border-radius: 8px;
+    
+        &-s{
+            width: 90%;
+        }
+        &::placeholder{
+        color: #D9D9D9;
+        }
+    }
+    &-sso-title{
+        &::before{
+            display: inline-block;
+            position: absolute;
+            content: "";
+            width: 64px;
+            height: 1px;
+            background: #9B9B9B;
+            left: 8px;
+            top: 50%;
+        }
+        &::after{
+            display: inline-block;
+            position: absolute;
+            content: "";
+            width: 64px;
+            height: 1px;
+            background: #9B9B9B;
+            right: 8px;
+            top: 50%;
+        }
+    }
 }

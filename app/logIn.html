@@ -1,0 +1,52 @@
+---
+title: aobaBadminton
+layout: ./app/layout_blank.ejs
+engine: ejs
+current: logIn
+---
+
+<div class="container mt-40">
+    <h2 class="fs-20 text-center mb-16">會員登入</h2>
+    <div class="form form-logIn mx-auto d-flex flex-column">
+        <input class="form-box d-block mb-16 ps-12" type="tel" placeholder="請填手機號碼，例：0912345678" name="phone">
+        <input class="form-box d-block mb-20 ps-12" type="password" placeholder="請填密碼" name="password">
+        <div class="d-flex justify-content-between mb-24">
+            <div class="checkBox">
+                <input type="checkbox" value="rememberMe" name="rememberMe">
+                <label class="text-center" for="rememberMe">記住我</label> 
+            </div>
+            <a href="#">忘記密碼？</a>
+        </div>
+        <a href="./index.html" class="primaryBtn-L text-light text-center mb-24">登 入</a>
+
+        <div class="d-flex mx-auto mb-24">
+            <p class="pe-8">還沒有會員帳號？</p>
+            <a href="./signUp.html">立即註冊</a>
+        </div>
+
+        <div class="form-sso">
+            <h3 class="fs-16 fw-normal text-grey text-center mb-24 form-sso-title position-relative">其他登入方式</h3>
+            <div class="form-sso-btn mb-16">
+                <div id="gSignInWrapper">
+                    <div id="customBtn" class="customGPlusSignIn d-flex align-items-center py-16">
+                        <img class="icon ps-20" src="./assets/images/google_icon.png" alt="google登入">
+                        <span class="buttonText text-center ps-60">Google 登入</span>
+                    </div>
+                  </div>
+                <div id="name"></div>
+            </div>
+            <div class="form-sso-btn mb-16">
+
+            <div id="gSignInWrapper">
+                <div id="customBtn" class="customGPlusSignIn d-flex align-items-center py-16">
+                    <img class="icon ps-20" src="./assets/images/facebook_icon.webp" alt="Facebook登入">
+                    <span class="buttonText text-center ps-60">Facebook 登入</span>
+                </div>
+              </div>
+            <div id="name"></div>
+            </div>
+        </div>
+    </div>
+    
+    
+</div>
