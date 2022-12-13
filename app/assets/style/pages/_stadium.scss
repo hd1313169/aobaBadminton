@@ -4,28 +4,74 @@
     @media (min-width: 768px){
         height: 16px;
     }
-    &-bar::after{
-        display: inline-block;
-            position: absolute;
-            content: "";
-            width: 36px;
-            height: 36px;
-            border-radius: 24px;
-            // background: $primary;
-            background: 
-                url(https://raw.githubusercontent.com/hd1313169/aobaBadminton/main/app/assets/images/aoba_badminton_icon.svg),
-                $primary;
-            background-position: center;
-            background-size: 80% 80%;
-            background-repeat: no-repeat;
-            left: calc(33% - 18px);
-    }
-    &-bar-33{
-        width: 33%;
-    }
+
     &-bar-gradient{
         background: linear-gradient(90deg, $light, $primary-light, $primary);
     }
+
+    &-bar-33{
+        width: 33.33%;
+
+        &::after{
+            display: inline-block;
+                position: absolute;
+                content: "";
+                width: 36px;
+                height: 36px;
+                border-radius: 24px;
+                // background: $primary;
+                background: 
+                    url(https://raw.githubusercontent.com/hd1313169/aobaBadminton/main/app/assets/images/aoba_badminton_icon.svg),
+                    $primary;
+                background-position: center;
+                background-size: 80%;
+                background-repeat: no-repeat;
+                left: calc(33.33% - 18px);
+        }
+    }
+
+    &-bar-66{
+        width: 66.66%;
+
+        &::after{
+            display: inline-block;
+                position: absolute;
+                content: "";
+                width: 36px;
+                height: 36px;
+                border-radius: 24px;
+                // background: $primary;
+                background: 
+                    url(https://raw.githubusercontent.com/hd1313169/aobaBadminton/main/app/assets/images/aoba_badminton_icon.svg),
+                    $primary;
+                background-position: center;
+                background-size: 80%;
+                background-repeat: no-repeat;
+                left: calc(66.66% - 18px);
+        }
+    }
+
+    &-bar-100{
+        width: 100%;
+
+        &::after{
+            display: inline-block;
+                position: absolute;
+                content: "";
+                width: 36px;
+                height: 36px;
+                border-radius: 24px;
+                // background: $primary;
+                background: 
+                    url(https://raw.githubusercontent.com/hd1313169/aobaBadminton/main/app/assets/images/aoba_badminton_icon.svg),
+                    $primary;
+                background-position: center;
+                background-size: 80%;
+                background-repeat: no-repeat;
+                left: calc(100% - 18px);
+        }
+    }
+    
     
 }
 
