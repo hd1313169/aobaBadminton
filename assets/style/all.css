@@ -20795,7 +20795,17 @@ span.buttonText {
   }
 }
 
-.progress-bar::after {
+.progress-bar-gradient {
+  background: -webkit-gradient(linear, left top, right top, from(#fff), color-stop(#56cfb5), to(#56BBB5));
+  background: -o-linear-gradient(left, #fff, #56cfb5, #56BBB5);
+  background: linear-gradient(90deg, #fff, #56cfb5, #56BBB5);
+}
+
+.progress-bar-33 {
+  width: 33.33%;
+}
+
+.progress-bar-33::after {
   display: inline-block;
   position: absolute;
   content: "";
@@ -20804,19 +20814,45 @@ span.buttonText {
   border-radius: 24px;
   background: url(https://raw.githubusercontent.com/hd1313169/aobaBadminton/main/app/assets/images/aoba_badminton_icon.svg), #56BBB5;
   background-position: center;
-  background-size: 80% 80%;
+  background-size: 80%;
   background-repeat: no-repeat;
-  left: calc(33% - 18px);
+  left: calc(33.33% - 18px);
 }
 
-.progress-bar-33 {
-  width: 33%;
+.progress-bar-66 {
+  width: 66.66%;
 }
 
-.progress-bar-gradient {
-  background: -webkit-gradient(linear, left top, right top, from(#fff), color-stop(#56cfb5), to(#56BBB5));
-  background: -o-linear-gradient(left, #fff, #56cfb5, #56BBB5);
-  background: linear-gradient(90deg, #fff, #56cfb5, #56BBB5);
+.progress-bar-66::after {
+  display: inline-block;
+  position: absolute;
+  content: "";
+  width: 36px;
+  height: 36px;
+  border-radius: 24px;
+  background: url(https://raw.githubusercontent.com/hd1313169/aobaBadminton/main/app/assets/images/aoba_badminton_icon.svg), #56BBB5;
+  background-position: center;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  left: calc(66.66% - 18px);
+}
+
+.progress-bar-100 {
+  width: 100%;
+}
+
+.progress-bar-100::after {
+  display: inline-block;
+  position: absolute;
+  content: "";
+  width: 36px;
+  height: 36px;
+  border-radius: 24px;
+  background: url(https://raw.githubusercontent.com/hd1313169/aobaBadminton/main/app/assets/images/aoba_badminton_icon.svg), #56BBB5;
+  background-position: center;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  left: calc(100% - 18px);
 }
 
 .badminton {
