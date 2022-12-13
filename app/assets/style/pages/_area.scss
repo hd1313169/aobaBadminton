@@ -1,0 +1,22 @@
+.area-dropdown{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    @media (min-width: 768px){
+        width: 90%;
+    }
+
+    a{
+        width: 100%;
+        text-align-last: left;
+        display: block;
+
+        &::after{
+            position: absolute;
+            right: 16px;
+            top: 50%;
+        }
+    }
+}
