@@ -39,7 +39,8 @@ h1{
 
 .nav-item-btn{
 	&:hover{
-		color: $primary !important; 
+		text-decoration: underline;
+		// color: $primary !important; 
 	}
 	&-logOut{
 		&:hover{

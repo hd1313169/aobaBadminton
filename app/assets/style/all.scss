@@ -5,6 +5,8 @@
 
 @import "./base/base";
 
+@import "./components/progress";
+
 @import './layout/nav';
 @import './layout/footer';
 
@@ -12,5 +14,7 @@
 @import './pages/area';
 @import './pages/logIn';
 @import './pages/stadium';
+@import './pages/book.scss';
+
 
 
