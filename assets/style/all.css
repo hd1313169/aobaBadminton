@@ -20731,6 +20731,36 @@ h1, .h1 {
      object-fit: cover;
 }
 
+.area-dropdown {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .area-dropdown {
+    width: 90%;
+  }
+}
+
+.area-dropdown a {
+  width: 100%;
+  -moz-text-align-last: left;
+       text-align-last: left;
+  display: block;
+}
+
+.area-dropdown a::after {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+}
+
 #customBtn {
   display: inline-block;
   background: #fff;
@@ -20753,6 +20783,49 @@ span.buttonText {
   display: inline-block;
   vertical-align: middle;
   /* Use the Roboto font that is loaded in the <head> */
+}
+
+.progress {
+  height: 12px;
+}
+
+@media (min-width: 768px) {
+  .progress {
+    height: 16px;
+  }
+}
+
+.progress-bar::after {
+  display: inline-block;
+  position: absolute;
+  content: "";
+  width: 36px;
+  height: 36px;
+  border-radius: 24px;
+  background-image: url(../../images/aoba_badminton_icon.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  left: calc(33% - 18px);
+}
+
+.progress-bar-33 {
+  width: 33%;
+}
+
+.progress-bar-gradient {
+  background: -webkit-gradient(linear, left top, right top, from(#fff), color-stop(#56cfb5), to(#56BBB5));
+  background: -o-linear-gradient(left, #fff, #56cfb5, #56BBB5);
+  background: linear-gradient(90deg, #fff, #56cfb5, #56BBB5);
+}
+
+.badminton {
+  vertical-align: middle;
+  top: -50%;
+  left: calc(33% - 18px);
+  width: 36px;
+  height: 36px;
+  border-radius: 24px;
 }
 
 /*# sourceMappingURL=all.css.map */
