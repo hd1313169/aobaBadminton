@@ -229,7 +229,7 @@ li {
 
 .coachCard-img {
   height: 240px;
-  border-radius: 8px 8px 0 0  !important;
+  border-radius: 8px 8px 0 0 !important;
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
@@ -364,7 +364,7 @@ body {
   margin: 0;
   font-family: var(--bs-font-sans-serif);
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.5;
   color: #212529;
   background-color: #fff;
@@ -3710,7 +3710,7 @@ progress {
   width: 100%;
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.5;
   color: #212529;
   background-color: #fff;
@@ -3945,7 +3945,7 @@ textarea.form-control-lg {
   padding: 0.375rem 2.25rem 0.375rem 0.75rem;
   -moz-padding-start: calc(0.75rem - 3px);
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.5;
   color: #212529;
   background-color: #fff;
@@ -4402,7 +4402,7 @@ textarea.form-control-lg {
           align-items: center;
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.5;
   color: #212529;
   text-align: center;
@@ -20646,13 +20646,7 @@ a {
 }
 
 .progress {
-  height: 12px;
-}
-
-@media (min-width: 768px) {
-  .progress {
-    height: 16px;
-  }
+  height: 16px;
 }
 
 .progress-bar-gradient {
@@ -21013,6 +21007,11 @@ h1, .h1 {
 
 .hero {
   width: 100%;
+}
+
+.title-icon {
+  width: 80px;
+  height: 80px;
 }
 
 @media (min-width: 768px) {

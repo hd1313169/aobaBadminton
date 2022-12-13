@@ -1,117 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="./assets/images/aoba_title_icon.ico" rel="shortcut icon">
-    <title>aobaBadminton</title>
-    <link rel="stylesheet" href="./assets/style/all.css">
-    <script src="https://kit.fontawesome.com/6b74f216f9.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-    <style> @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap'); </style>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="./assets/images/aoba_title_icon.ico" rel="shortcut icon">
+  <title>aobaBadminton</title>
+  <link rel="stylesheet" href="./assets/style/all.css">
+  <script src="https://kit.fontawesome.com/6b74f216f9.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+  </style>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 
-  </head>
+</head>
 
-  <body>
-    <!-- 導覽列 -->
-    <nav class="navbar navbar-expand-md bg-light p-0">
-      <div class="w-100 d-flex justify-content-between align-items-center py-16">
-        <!-- logo -->
-        <a class="navbar-brand d-block ms-24" href="./index.html"><h1 class="m-0">logo</h1></a>
+<body>
+  <!-- 導覽列 -->
+  <nav class="navbar navbar-expand-md bg-light p-0">
+    <div class="w-100 d-flex justify-content-between align-items-center py-16">
+      <!-- logo -->
+      <a class="navbar-brand d-block ms-24" href="./index.html">
+        <h1 class="m-0">logo</h1>
+      </a>
 
       <!-- 電腦版導覽列 -->
-        <div class="navbar-desktop">
-          <ul class="navbar-nav justify-content-center text-center me-24">
-            <li class="nav-item me-16">
-              <a class="nav-link nav-item-btn fw-medium text-dark" aria-current="page" href="./area.html">球場租借</a>
-            </li>
-            <li class="nav-item me-16">
-              <a class="nav-link nav-item-btn fw-medium text-dark" href="#">租借紀錄</a>
-            </li>
-            <li class="nav-item me-24">
-              <a class="nav-link nav-item-btn fw-medium text-dark" href="#">會員資料</a>
-            </li>
-            <li class="nav-item primaryBtn-S">
-              <a class="nav-link text-light fw-medium p-0 " href="./logIn.html">登入 / 註冊</a>
-            </li>
-            <!-- <li class="nav-item me-16 secondaryBtn-S">
+      <div class="navbar-desktop">
+        <ul class="navbar-nav justify-content-center text-center me-24">
+          <li class="nav-item me-16">
+            <a class="nav-link nav-item-btn fw-medium text-dark" aria-current="page" href="./area.html">球場租借</a>
+          </li>
+          <li class="nav-item me-16">
+            <a class="nav-link nav-item-btn fw-medium text-dark" href="#">租借紀錄</a>
+          </li>
+          <li class="nav-item me-24">
+            <a class="nav-link nav-item-btn fw-medium text-dark" href="#">會員資料</a>
+          </li>
+          <li class="nav-item primaryBtn-S">
+            <a class="nav-link text-light fw-medium p-0 " href="./logIn.html">登入 / 註冊</a>
+          </li>
+          <!-- <li class="nav-item me-16 secondaryBtn-S">
               <a class="nav-link p-0 " href="./signUp.html">註冊</a>
             </li> -->
-            <!-- <li class="nav-item">
+          <!-- <li class="nav-item">
               <a class="nav-link text-dark nav-item-btn-logOut" href="#">登出</a>
             </li> -->
-          </ul>
-        </div>
+        </ul>
+      </div>
       <!-- 電腦版導覽列END -->
 
       <!-- 行動版導覽列 -->
-        <!-- 選單按鈕 -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-          <i class="fa-solid fa-bars text-dark"></i>
-        </button>
+      <!-- 選單按鈕 -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar">
+        <i class="fa-solid fa-bars text-dark"></i>
+      </button>
 
-        <!-- 展開選單 -->
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-          <!-- 關閉選單按鈕 -->
-          <div class="offcanvas-header justify-content-end pt-24 pr-24">
-            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <!-- 選單列表 -->
-          <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 px-56 text-center fw-medium ">
-              <li class="nav-item mb-24">
-                <a class="nav-link active text-dark" aria-current="page" href="./area.html">球場租借</a>
-              </li>
-              <li class="nav-item mb-24">
-                <a class="nav-link text-dark" href="#">租借紀錄</a>
-              </li>
-              <li class="nav-item mb-24">
-                <a class="nav-link text-dark" href="#">會員資料</a>
-              </li>
-              <li class="nav-item mb-16">
-                <a class="nav-link primaryBtn-L text-light" href="./signUp.html">註 冊 會 員</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link secondaryBtn-L text-primary" href="./logIn.html">會 員 登 入</a>
-              </li>
-              <!-- <li class="nav-item">
+      <!-- 展開選單 -->
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <!-- 關閉選單按鈕 -->
+        <div class="offcanvas-header justify-content-end pt-24 pr-24">
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <!-- 選單列表 -->
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 px-56 text-center fw-medium ">
+            <li class="nav-item mb-24">
+              <a class="nav-link active text-dark" aria-current="page" href="./area.html">球場租借</a>
+            </li>
+            <li class="nav-item mb-24">
+              <a class="nav-link text-dark" href="#">租借紀錄</a>
+            </li>
+            <li class="nav-item mb-24">
+              <a class="nav-link text-dark" href="#">會員資料</a>
+            </li>
+            <li class="nav-item mb-16">
+              <a class="nav-link primaryBtn-L text-light" href="./signUp.html">註 冊 會 員</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link secondaryBtn-L text-primary" href="./logIn.html">會 員 登 入</a>
+            </li>
+            <!-- <li class="nav-item">
                 <a class="nav-link text-dark nav-link-logOut" href="#">登出</a>
               </li> -->
-            </ul>
-          </div>
+          </ul>
         </div>
-        <!-- 展開選單END -->
-      <!-- 行動版導覽列END --> 
       </div>
-    </nav>
-
-    <!-- 導覽列裝飾線 -->
-    <div class="navbar-decoration">
-      <div class="navbar-decoration-left"></div>
-      <div class="navbar-decoration-right"></div>
+      <!-- 展開選單END -->
+      <!-- 行動版導覽列END -->
     </div>
-    <!-- 導覽列裝飾線END -->
+  </nav>
 
-<!-- 導覽列END --> 
+  <!-- 導覽列裝飾線 -->
+  <div class="navbar-decoration">
+    <div class="navbar-decoration-left"></div>
+    <div class="navbar-decoration-right"></div>
+  </div>
+  <!-- 導覽列裝飾線END -->
 
+  <!-- 導覽列END -->
 
+  
 <a href="./area.html">
-    <img class="hero mb-80" src="./assets/images/aoba_hero.png" alt="啟動極限" >
+    <img class="hero mb-60" src="./assets/images/aoba_hero.png" alt="啟動極限">
 </a>
 
 
-<div class="bg-light mb-120">
+<div class="bg-light mb-60">
     <div class="container">
-        <h2 class="fw-medium text-center mb-8 mb-md-16">熱門場館</h2>
-        <p class="fs-16 fw-light text-center text-grey mb-24 mb-md-40">最多人租借的熱門場地，放鬆運動的最佳選擇</p>
-        <div class="row mb-60">
-            <div class="col-lg-4 col-md-6 mb-40" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-offset="200">
+        <div class="title-icon mx-auto mb-8" style="background-image: url('./assets/images/aoba_field_icon.svg');">
+        </div>
+        <h2 class="fs-24 fw-medium text-center mb-8">熱門場館</h2>
+        <p class="fs-16 fw-light text-center mb-24 mb-md-40">最多人租借的熱門場地，放鬆運動的最佳選擇</p>
+        <div class="row mb-40">
+            <div class="col-lg-4 col-md-6 mb-40" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                data-aos-offset="200">
                 <div class="card border-0 areaCard">
-                    <a href="./stadium.html"><div class="areaCard-img mb-16 shadow" style="background-image:url(https://raw.githubusercontent.com/hd1313169/aobaBadminton/main/app/assets/images/area_01.jpg)"></div></a>
+                    <a href="./stadium.html">
+                        <div class="areaCard-img mb-16 shadow"
+                            style="background-image:url(https://raw.githubusercontent.com/hd1313169/aobaBadminton/main/app/assets/images/area_01.jpg)">
+                        </div>
+                    </a>
                     <h3 class="areaCard-title fs-24 ms-8 mb-8"><a href="#" class="text-dark">青葉羽球 水源館</a></h3>
                     <a href="#" class="areaCard-address text-dark ms-8 mb-24">
                         <div class="card-body d-flex align-items-center p-0">
@@ -120,13 +135,20 @@
                         </div>
                     </a>
                     <div class="areaCard-decoration"></div>
-                    <div class="areaCard-tag-lg position-absolute bg-secondary p-8"><a class="text-light" href="#">台北‧8場</a></div>
-                    <div class="areaCard-tag-sm position-absolute bg-light p-8"><a class="fs-12 text-grey-dark" href="#">最低 $300 / hr</a></div>
+                    <div class="areaCard-tag-lg position-absolute bg-secondary p-8"><a class="text-light"
+                            href="#">台北‧8場</a></div>
+                    <div class="areaCard-tag-sm position-absolute bg-light p-8"><a class="fs-12 text-grey-dark"
+                            href="#">最低 $300 / hr</a></div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 mb-40" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-offset="200">
+            <div class="col-lg-4 col-md-6 mb-40" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                data-aos-offset="200">
                 <div class="card border-0 areaCard">
-                    <a href="#"><div class="areaCard-img mb-16 shadow" style="background-image:url(https://raw.githubusercontent.com/hd1313169/aobaBadminton/main/app/assets/images/area_02.jpg)"></div></a>
+                    <a href="#">
+                        <div class="areaCard-img mb-16 shadow"
+                            style="background-image:url(https://raw.githubusercontent.com/hd1313169/aobaBadminton/main/app/assets/images/area_02.jpg)">
+                        </div>
+                    </a>
                     <h3 class="areaCard-title fs-24 ms-8 mb-8"><a href="#" class="text-dark">青葉羽球 水源館</a></h3>
                     <a href="#" class="areaCard-address text-dark ms-8 mb-24">
                         <div class="card-body d-flex align-items-center p-0">
@@ -135,13 +157,20 @@
                         </div>
                     </a>
                     <div class="areaCard-decoration"></div>
-                    <div class="areaCard-tag-lg position-absolute bg-secondary p-8"><a class="text-light" href="#">台北‧8場</a></div>
-                    <div class="areaCard-tag-sm position-absolute bg-light p-8"><a class="fs-12 text-grey-dark" href="#">最低 $300 / hr</a></div>
+                    <div class="areaCard-tag-lg position-absolute bg-secondary p-8"><a class="text-light"
+                            href="#">台北‧8場</a></div>
+                    <div class="areaCard-tag-sm position-absolute bg-light p-8"><a class="fs-12 text-grey-dark"
+                            href="#">最低 $300 / hr</a></div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 mb-40" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-offset="200">
+            <div class="col-lg-4 col-md-6 mb-40" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                data-aos-offset="200">
                 <div class="card border-0 areaCard">
-                    <a href="#"><div class="areaCard-img mb-16 shadow" style="background-image:url(https://raw.githubusercontent.com/hd1313169/aobaBadminton/main/app/assets/images/area_03.jpg)"></div></a>
+                    <a href="#">
+                        <div class="areaCard-img mb-16 shadow"
+                            style="background-image:url(https://raw.githubusercontent.com/hd1313169/aobaBadminton/main/app/assets/images/area_03.jpg)">
+                        </div>
+                    </a>
                     <h3 class="areaCard-title fs-24 ms-8 mb-8"><a href="#" class="text-dark">青葉羽球 水源館</a></h3>
                     <a href="#" class="areaCard-address text-dark ms-8 mb-24">
                         <div class="card-body d-flex align-items-center p-0">
@@ -150,13 +179,20 @@
                         </div>
                     </a>
                     <div class="areaCard-decoration"></div>
-                    <div class="areaCard-tag-lg position-absolute bg-secondary p-8"><a class="text-light" href="#">台北‧8場</a></div>
-                    <div class="areaCard-tag-sm position-absolute bg-light p-8"><a class="fs-12 text-grey-dark" href="#">最低 $300 / hr</a></div>
+                    <div class="areaCard-tag-lg position-absolute bg-secondary p-8"><a class="text-light"
+                            href="#">台北‧8場</a></div>
+                    <div class="areaCard-tag-sm position-absolute bg-light p-8"><a class="fs-12 text-grey-dark"
+                            href="#">最低 $300 / hr</a></div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 mb-40 mb-md-0" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-offset="200">
+            <div class="col-lg-4 col-md-6 mb-40 mb-md-0" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                data-aos-offset="200">
                 <div class="card border-0 areaCard">
-                    <a href="#"><div class="areaCard-img mb-16 shadow" style="background-image:url(https://raw.githubusercontent.com/hd1313169/aobaBadminton/main/app/assets/images/area_04.jpg)"></div></a>
+                    <a href="#">
+                        <div class="areaCard-img mb-16 shadow"
+                            style="background-image:url(https://raw.githubusercontent.com/hd1313169/aobaBadminton/main/app/assets/images/area_04.jpg)">
+                        </div>
+                    </a>
                     <h3 class="areaCard-title fs-24 ms-8 mb-8"><a href="#" class="text-dark">青葉羽球 水源館</a></h3>
                     <a href="#" class="areaCard-address text-dark ms-8 mb-24">
                         <div class="card-body d-flex align-items-center p-0">
@@ -165,13 +201,20 @@
                         </div>
                     </a>
                     <div class="areaCard-decoration"></div>
-                    <div class="areaCard-tag-lg position-absolute bg-secondary p-8"><a class="text-light" href="#">台北‧8場</a></div>
-                    <div class="areaCard-tag-sm position-absolute bg-light p-8"><a class="fs-12 text-grey-dark" href="#">最低 $300 / hr</a></div>
+                    <div class="areaCard-tag-lg position-absolute bg-secondary p-8"><a class="text-light"
+                            href="#">台北‧8場</a></div>
+                    <div class="areaCard-tag-sm position-absolute bg-light p-8"><a class="fs-12 text-grey-dark"
+                            href="#">最低 $300 / hr</a></div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 mb-40 mb-md-0" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-offset="200">
+            <div class="col-lg-4 col-md-6 mb-40 mb-md-0" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                data-aos-offset="200">
                 <div class="card border-0 areaCard">
-                    <a href="#"><div class="areaCard-img mb-16 shadow" style="background-image:url(https://raw.githubusercontent.com/hd1313169/aobaBadminton/main/app/assets/images/area_05.jpg)"></div></a>
+                    <a href="#">
+                        <div class="areaCard-img mb-16 shadow"
+                            style="background-image:url(https://raw.githubusercontent.com/hd1313169/aobaBadminton/main/app/assets/images/area_05.jpg)">
+                        </div>
+                    </a>
                     <h3 class="areaCard-title fs-24 ms-8 mb-8"><a href="#" class="text-dark">青葉羽球 水源館</a></h3>
                     <a href="#" class="areaCard-address text-dark ms-8 mb-24">
                         <div class="card-body d-flex align-items-center p-0">
@@ -180,13 +223,20 @@
                         </div>
                     </a>
                     <div class="areaCard-decoration"></div>
-                    <div class="areaCard-tag-lg position-absolute bg-secondary p-8"><a class="text-light" href="#">台北‧8場</a></div>
-                    <div class="areaCard-tag-sm position-absolute bg-light p-8"><a class="fs-12 text-grey-dark" href="#">最低 $300 / hr</a></div>
+                    <div class="areaCard-tag-lg position-absolute bg-secondary p-8"><a class="text-light"
+                            href="#">台北‧8場</a></div>
+                    <div class="areaCard-tag-sm position-absolute bg-light p-8"><a class="fs-12 text-grey-dark"
+                            href="#">最低 $300 / hr</a></div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-offset="200">
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                data-aos-offset="200">
                 <div class="card border-0 areaCard">
-                    <a href="#"><div class="areaCard-img mb-16 shadow" style="background-image:url(https://raw.githubusercontent.com/hd1313169/aobaBadminton/main/app/assets/images/area_06.jpg)"></div></a>
+                    <a href="#">
+                        <div class="areaCard-img mb-16 shadow"
+                            style="background-image:url(https://raw.githubusercontent.com/hd1313169/aobaBadminton/main/app/assets/images/area_06.jpg)">
+                        </div>
+                    </a>
                     <h3 class="areaCard-title fs-24 ms-8 mb-8"><a href="#" class="text-dark">青葉羽球 水源館</a></h3>
                     <a href="#" class="areaCard-address text-dark ms-8 mb-24">
                         <div class="card-body d-flex align-items-center p-0">
@@ -195,8 +245,10 @@
                         </div>
                     </a>
                     <div class="areaCard-decoration"></div>
-                    <div class="areaCard-tag-lg position-absolute bg-secondary p-8"><a class="text-light" href="#">台北‧8場</a></div>
-                    <div class="areaCard-tag-sm position-absolute bg-light p-8"><a class="fs-12 text-grey-dark" href="#">最低 $300 / hr</a></div>
+                    <div class="areaCard-tag-lg position-absolute bg-secondary p-8"><a class="text-light"
+                            href="#">台北‧8場</a></div>
+                    <div class="areaCard-tag-sm position-absolute bg-light p-8"><a class="fs-12 text-grey-dark"
+                            href="#">最低 $300 / hr</a></div>
                 </div>
             </div>
         </div>
@@ -204,9 +256,11 @@
     </div>
 </div>
 
-<div class="bg-secondary pt-60 pb-120">
+<div class="bg-secondary pt-60 pb-80">
     <div class="container">
-        <h2 class="fw-medium text-center text-light mb-8 mb-md-16">教練課程</h2>
+        <div class="title-icon mx-auto mb-8" style="background-image: url('./assets/images/aoba_racket_icon.svg');">
+        </div>
+        <h2 class="fs-24 fw-medium text-center text-light mb-8">教練課程</h2>
         <p class="fs-16 fw-light text-center text-light mb-24 mb-md-40">多元的課程資源，符合每個階段的學習需求</p>
     </div>
     <div class="container">
@@ -292,117 +346,129 @@
                 </div>
             </div>
         </div> -->
-    </div>        
+    </div>
     <div class="swiper coachCard-swiper ms-60 mb-40">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                  <div class="card border-0 coachCard mb-16 mb-md-0 shadow-sm">
-                      <div class="row g-0">
-                          <div class="col-12">
-                              <div class="coachCard-img" style="background-image:url(https://raw.githubusercontent.com/hd1313169/aobaBadminton/main/app/assets/images/coach_01.JPG)"></div>
-                          </div>
-                          <div class="col-12">
-                              <div class="coachCard-content p-24">
-                                  <h3 class="coachCard-title fs-20 mb-12">陳明均 教練</h3>
-                                  <div class="coachCard-tag fs-12 mb-8">
-                                      <a href="#" class="secondaryBtn-XS">台北</a>
-                                      <a href="#" class="secondaryBtn-XS">入門</a>
-                                  </div>
-                                  <p class="fs-12 m-0 p-0">帶領無基礎的平民老百姓，從基礎出發，使用最淺顯易懂的語言，帶你輕鬆入門。</p>
-                              </div>
-                          </div>
-                      </div>
-                      <a href="#" class="stretched-link"></a>
-                  </div>
-              </div>
-              <div class="swiper-slide">
-                  <div class="card border-0 coachCard mb-16 mb-md-0 shadow-sm">
-                      <div class="row g-0">
-                          <div class="col-12">
-                              <div class="coachCard-img" style="background-image:url(https://raw.githubusercontent.com/hd1313169/aobaBadminton/main/app/assets/images/coach_02.JPG)"></div>
-                          </div>
-                          <div class="col-12">
-                              <div class="coachCard-content p-24">
-                                  <h3 class="coachCard-title fs-20 mb-12">Alex 教練</h3>
-                                  <div class="coachCard-tag fs-12 mb-8">
-                                      <a href="#" class="secondaryBtn-XS">台北</a>
-                                      <a href="#" class="secondaryBtn-XS">入門</a>
-                                  </div>
-                                  <p class="fs-12 m-0 p-0">帶領無基礎的平民老百姓，從基礎出發，使用最淺顯易懂的語言，帶你輕鬆入門。</p>
-                              </div>
-                          </div>
-                      </div>
-                      <a href="#" class="stretched-link"></a>
-                  </div>
-      
-              </div>
-              <div class="swiper-slide">
-                  <div class="card border-0 coachCard mb-16 mb-md-0 shadow-sm">
-                      <div class="row g-0">
-                          <div class="col-12">
-                              <div class="coachCard-img" style="background-image:url(https://raw.githubusercontent.com/hd1313169/aobaBadminton/main/app/assets/images/coach_03.JPG)"></div>
-                          </div>
-                          <div class="col-12">
-                              <div class="coachCard-content p-24">
-                                  <h3 class="coachCard-title fs-20 mb-12">李明均 教練</h3>
-                                  <div class="coachCard-tag fs-12 mb-8">
-                                      <a href="#" class="secondaryBtn-XS">台北</a>
-                                      <a href="#" class="secondaryBtn-XS">入門</a>
-                                  </div>
-                                  <p class="fs-12 m-0 p-0">帶領無基礎的平民老百姓，從基礎出發，使用最淺顯易懂的語言，帶你輕鬆入門。</p>
-                              </div>
-                          </div>
-                      </div>
-                      <a href="#" class="stretched-link"></a>
-                  </div>
-      
-              </div>
-              <div class="swiper-slide">
-                  <div class="card border-0 coachCard mb-16 mb-md-0 shadow-sm">
-                      <div class="row g-0">
-                          <div class="col-12">
-                              <div class="coachCard-img" style="background-image:url(https://raw.githubusercontent.com/hd1313169/aobaBadminton/main/app/assets/images/coach_04.jpg)"></div>
-                          </div>
-                          <div class="col-12">
-                              <div class="coachCard-content p-24">
-                                  <h3 class="coachCard-title fs-20 mb-12">王明均 教練</h3>
-                                  <div class="coachCard-tag fs-12 mb-8">
-                                      <a href="#" class="secondaryBtn-XS">台北</a>
-                                      <a href="#" class="secondaryBtn-XS">入門</a>
-                                  </div>
-                                  <p class="fs-12 m-0 p-0">帶領無基礎的平民老百姓，從基礎出發，使用最淺顯易懂的語言，帶你輕鬆入門。</p>
-                              </div>
-                          </div>
-                      </div>
-                      <a href="#" class="stretched-link"></a>
-                  </div>
-              </div>        
-              <div class="swiper-slide">
-                  <div class="card border-0 coachCard mb-16 mb-md-0 shadow-sm">
-                      <div class="row g-0">
-                          <div class="col-12">
-                              <div class="coachCard-img" style="background-image:url(https://raw.githubusercontent.com/hd1313169/aobaBadminton/main/app/assets/images/coach_05.jpg)"></div>
-                          </div>
-                          <div class="col-12">
-                              <div class="coachCard-content p-24">
-                                  <h3 class="coachCard-title fs-20 mb-12">Ann 教練</h3>
-                                  <div class="coachCard-tag fs-12 mb-8">
-                                      <a href="#" class="secondaryBtn-XS">台北</a>
-                                      <a href="#" class="secondaryBtn-XS">入門</a>
-                                  </div>
-                                  <p class="fs-12 m-0 p-0">帶領無基礎的平民老百姓，從基礎出發，使用最淺顯易懂的語言，帶你輕鬆入門。</p>
-                              </div>
-                          </div>
-                      </div>
-                      <a href="#" class="stretched-link"></a>
-                  </div>
-      
-              </div>
-              <div class="swiper-slide">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
                 <div class="card border-0 coachCard mb-16 mb-md-0 shadow-sm">
                     <div class="row g-0">
                         <div class="col-12">
-                            <div class="coachCard-img" style="background-image:url(https://raw.githubusercontent.com/hd1313169/aobaBadminton/main/app/assets/images/coach_06.jpg)"></div>
+                            <div class="coachCard-img"
+                                style="background-image:url(https://raw.githubusercontent.com/hd1313169/aobaBadminton/main/app/assets/images/coach_01.JPG)">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="coachCard-content p-24">
+                                <h3 class="coachCard-title fs-20 mb-12">陳明均 教練</h3>
+                                <div class="coachCard-tag fs-12 mb-8">
+                                    <a href="#" class="secondaryBtn-XS">台北</a>
+                                    <a href="#" class="secondaryBtn-XS">入門</a>
+                                </div>
+                                <p class="fs-12 m-0 p-0">帶領無基礎的平民老百姓，從基礎出發，使用最淺顯易懂的語言，帶你輕鬆入門。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="stretched-link"></a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="card border-0 coachCard mb-16 mb-md-0 shadow-sm">
+                    <div class="row g-0">
+                        <div class="col-12">
+                            <div class="coachCard-img"
+                                style="background-image:url(https://raw.githubusercontent.com/hd1313169/aobaBadminton/main/app/assets/images/coach_02.JPG)">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="coachCard-content p-24">
+                                <h3 class="coachCard-title fs-20 mb-12">Alex 教練</h3>
+                                <div class="coachCard-tag fs-12 mb-8">
+                                    <a href="#" class="secondaryBtn-XS">台北</a>
+                                    <a href="#" class="secondaryBtn-XS">入門</a>
+                                </div>
+                                <p class="fs-12 m-0 p-0">帶領無基礎的平民老百姓，從基礎出發，使用最淺顯易懂的語言，帶你輕鬆入門。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="stretched-link"></a>
+                </div>
+
+            </div>
+            <div class="swiper-slide">
+                <div class="card border-0 coachCard mb-16 mb-md-0 shadow-sm">
+                    <div class="row g-0">
+                        <div class="col-12">
+                            <div class="coachCard-img"
+                                style="background-image:url(https://raw.githubusercontent.com/hd1313169/aobaBadminton/main/app/assets/images/coach_03.JPG)">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="coachCard-content p-24">
+                                <h3 class="coachCard-title fs-20 mb-12">李明均 教練</h3>
+                                <div class="coachCard-tag fs-12 mb-8">
+                                    <a href="#" class="secondaryBtn-XS">台北</a>
+                                    <a href="#" class="secondaryBtn-XS">入門</a>
+                                </div>
+                                <p class="fs-12 m-0 p-0">帶領無基礎的平民老百姓，從基礎出發，使用最淺顯易懂的語言，帶你輕鬆入門。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="stretched-link"></a>
+                </div>
+
+            </div>
+            <div class="swiper-slide">
+                <div class="card border-0 coachCard mb-16 mb-md-0 shadow-sm">
+                    <div class="row g-0">
+                        <div class="col-12">
+                            <div class="coachCard-img"
+                                style="background-image:url(https://raw.githubusercontent.com/hd1313169/aobaBadminton/main/app/assets/images/coach_04.jpg)">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="coachCard-content p-24">
+                                <h3 class="coachCard-title fs-20 mb-12">王明均 教練</h3>
+                                <div class="coachCard-tag fs-12 mb-8">
+                                    <a href="#" class="secondaryBtn-XS">台北</a>
+                                    <a href="#" class="secondaryBtn-XS">入門</a>
+                                </div>
+                                <p class="fs-12 m-0 p-0">帶領無基礎的平民老百姓，從基礎出發，使用最淺顯易懂的語言，帶你輕鬆入門。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="stretched-link"></a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="card border-0 coachCard mb-16 mb-md-0 shadow-sm">
+                    <div class="row g-0">
+                        <div class="col-12">
+                            <div class="coachCard-img"
+                                style="background-image:url(https://raw.githubusercontent.com/hd1313169/aobaBadminton/main/app/assets/images/coach_05.jpg)">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="coachCard-content p-24">
+                                <h3 class="coachCard-title fs-20 mb-12">Ann 教練</h3>
+                                <div class="coachCard-tag fs-12 mb-8">
+                                    <a href="#" class="secondaryBtn-XS">台北</a>
+                                    <a href="#" class="secondaryBtn-XS">入門</a>
+                                </div>
+                                <p class="fs-12 m-0 p-0">帶領無基礎的平民老百姓，從基礎出發，使用最淺顯易懂的語言，帶你輕鬆入門。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="stretched-link"></a>
+                </div>
+
+            </div>
+            <div class="swiper-slide">
+                <div class="card border-0 coachCard mb-16 mb-md-0 shadow-sm">
+                    <div class="row g-0">
+                        <div class="col-12">
+                            <div class="coachCard-img"
+                                style="background-image:url(https://raw.githubusercontent.com/hd1313169/aobaBadminton/main/app/assets/images/coach_06.jpg)">
+                            </div>
                         </div>
                         <div class="col-12">
                             <div class="coachCard-content p-24">
@@ -417,30 +483,32 @@
                     </div>
                     <a href="#" class="stretched-link"></a>
                 </div>
-    
+
             </div>
-            </div>
-            <!-- <div class="swiper-pagination"></div> -->
-          </div>
-        <div class="container"> 
-            <a href="./area.html" class="specialBtn-M text-center text-light mx-auto">更多教練課程</a>
         </div>
+        <!-- <div class="swiper-pagination"></div> -->
+    </div>
+    <div class="container">
+        <a href="./area.html" class="specialBtn-M text-center text-light mx-auto">更多教練課程</a>
+    </div>
 </div>
 
 
 <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
-
-<!-- 頁尾 -->
-<footer class="footer container py-20">
-  <ul class="d-flex justify-content-center m-0 p-0 pb-8">
-    <li class="pe-20"><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook fs-24 text-gradient"></i></a></li>
-    <li class="pe-20"><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram fs-24 text-gradient"></i></a></li>
-    <li><a href="mailto:wsad71155@gmail.com" target="_blank"><i class="fa-solid fa-envelope fs-24 text-gradient"></i></a></li>
-  </ul>
-  <p class="text-center fs-12 fw-light m-0">aoba badminton © 2022  All rights reserved</p>
-</footer>
-<!-- 頁尾END -->
+    <!-- 頁尾 -->
+    <footer class="footer container py-20">
+      <ul class="d-flex justify-content-center m-0 p-0 pb-8">
+        <li class="pe-20"><a href="https://www.facebook.com/" target="_blank"><i
+              class="fa-brands fa-facebook fs-24 text-gradient"></i></a></li>
+        <li class="pe-20"><a href="https://www.instagram.com/" target="_blank"><i
+              class="fa-brands fa-instagram fs-24 text-gradient"></i></a></li>
+        <li><a href="mailto:wsad71155@gmail.com" target="_blank"><i
+              class="fa-solid fa-envelope fs-24 text-gradient"></i></a></li>
+      </ul>
+      <p class="text-center fs-12 fw-light m-0">aoba badminton © 2022 All rights reserved</p>
+    </footer>
+    <!-- 頁尾END -->
 
 
     <script src="./assets/js/vendors.js"></script>
@@ -450,9 +518,9 @@
       AOS.init();
     </script>
 
-  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
 
-  </body>
+</body>
 
 </html>
