@@ -1,9 +1,5 @@
 .progress{
-    height: 12px;
-
-    @media (min-width: 768px){
-        height: 16px;
-    }
+    height: 16px;
 
     &-bar-gradient{
         background: linear-gradient(90deg, $light 0%, $primary-light 60%, $primary 100%);

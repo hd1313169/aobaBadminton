@@ -1,87 +1,92 @@
-
-    
 // 圓角矩形
-.rounded-8{
+.rounded-8 {
     border-radius: 8px !important;
 }
-.rounded-12{
+
+.rounded-12 {
     border-radius: 12px !important;
 }
-.rounded-16{
+
+.rounded-16 {
     border-radius: 16px !important;
 }
-.rounded-24{
+
+.rounded-24 {
     border-radius: 24px !important;
 }
+
 // <!-- 文字 -->
 
 // 字體
-.ff-ns{
+.ff-ns {
     font-family: 'Noto Sans TC';
 }
-.ff-rb{
+
+.ff-rb {
     font-family: roboto;
 }
 
 // 文字漸層
-.text-gradient{
-    background: linear-gradient( 90deg,  $primary, $primary-light);
-    background: -webkit-linear-gradient( 90deg,  $primary-light, $primary);
+.text-gradient {
+    background: linear-gradient(90deg, $primary, $primary-light);
+    background: -webkit-linear-gradient(90deg, $primary-light, $primary);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
 
-    &:hover{
-        background: linear-gradient( 90deg,  $primary, $primary-light);
-        background: -webkit-linear-gradient( 90deg,  $primary, $primary-light);
+    &:hover {
+        background: linear-gradient(90deg, $primary, $primary-light);
+        background: -webkit-linear-gradient(90deg, $primary, $primary-light);
         background-clip: text;
         -webkit-background-clip: text;
         color: transparent;
     }
-};
+}
+
+;
 // <!-- 文字END -->
 
 
 // <!-- 按鈕 -->
-.primaryBtn-L{
+.primaryBtn-L {
     padding: 12px 102px;
-    background: linear-gradient( 135deg,  $primary, $primary-light);
+    background: linear-gradient(135deg, $primary, $primary-light);
     border-radius: 8px;
 
-    &:hover{
-        background: linear-gradient( 135deg, $primary-light, $primary);
+    &:hover {
+        background: linear-gradient(135deg, $primary-light, $primary);
     }
 }
 
-.secondaryBtn-L{
+.secondaryBtn-L {
     padding: 12px 102px;
     background: $light;
     border: 1px solid $primary;
     border-radius: 8px;
 
-    &:hover{
+    &:hover {
         background: $primary;
-        color: $light !important; 
+        color: $light !important;
     }
 }
 
-.primaryBtn-M{
+.primaryBtn-M {
     display: block;
     width: 50%;
     padding: 12px 0px;
-    background: linear-gradient( 135deg,  $primary, $primary-light);
+    background: linear-gradient(135deg, $primary, $primary-light);
     border-radius: 8px;
 
-    @media (min-width: 992px){
-		width: 16%;
-	}
-    
-    &:hover{
-        background: linear-gradient( 135deg, $primary-light, $primary);
+    @media (min-width: 992px) {
+        width: 16%;
+    }
+
+    &:hover {
+        background: linear-gradient(135deg, $primary-light, $primary);
     }
 }
 
-.secondaryBtn-M{
+.secondaryBtn-M {
     display: block;
     width: 50%;
     padding: 12px 0px;
@@ -89,17 +94,17 @@
     border: 1px solid $primary;
     border-radius: 8px;
 
-    @media (min-width: 992px){
-		width: 16%;
-	}
+    @media (min-width: 992px) {
+        width: 16%;
+    }
 
-    &:hover{
+    &:hover {
         background: $primary;
-        color: $light !important; 
+        color: $light !important;
     }
 }
 
-.specialBtn-M{
+.specialBtn-M {
     display: block;
     width: 50%;
     padding: 12px 0px;
@@ -107,64 +112,66 @@
     border: 1px solid $light;
     border-radius: 8px;
 
-    @media (min-width: 992px){
-		width: 16%;
-	}
+    @media (min-width: 992px) {
+        width: 16%;
+    }
 
-    &:hover{
+    &:hover {
         background: white;
-        color: $secondary !important; 
+        color: $secondary !important;
     }
 }
 
-.primaryBtn-S{
+.primaryBtn-S {
     display: block;
     padding: 8px 16px;
-    background: linear-gradient( 135deg,  $primary, $primary-light);
+    background: linear-gradient(135deg, $primary, $primary-light);
     border-radius: 4px;
 
-    &:hover{
-        background: linear-gradient( 135deg, $primary-light, $primary);
+    &:hover {
+        background: linear-gradient(135deg, $primary-light, $primary);
     }
 }
 
-.secondaryBtn-S{
+.secondaryBtn-S {
     display: block;
     padding: 8px 16px;
     background: $light;
     border: 1px solid $primary;
     border-radius: 4px;
 
-    &:hover{
+    &:hover {
         background: $primary;
-        a{
+
+        a {
             color: $light !important;
         }
     }
 }
 
-.secondaryBtn-XS{
+.secondaryBtn-XS {
     padding: 2px 8px;
     background: $light;
     border: 1px solid $primary;
     border-radius: 8px;
 
-    &:hover{
+    &:hover {
         background: $primary;
-        color: $light !important; 
+        color: $light !important;
     }
 }
+
 // <!-- 按鈕END -->
 
-li{
-    list-style:none;
+li {
+    list-style: none;
 }
 
-.areaCard{
+.areaCard {
     position: relative;
     border-radius: 8px !important;
 
-    &-img{
+    &-img {
         width: 100%;
         height: 240px;
         border-radius: 8px !important;
@@ -175,93 +182,98 @@ li{
         transition: all .5s ease-in-out;
     }
 
-    &-address{
-        p{
-            &:hover{
+    &-address {
+        p {
+            &:hover {
                 text-decoration: underline;
             }
         }
     }
 
-    &-decoration{
+    &-decoration {
         width: 0px;
         height: 4px;
-        transition:width .5s;
+        transition: width .5s;
 
     }
 
-    &:hover{
-        .areaCard-decoration{
+    &:hover {
+        .areaCard-decoration {
             width: 100%;
-            background: linear-gradient( 90deg,  $primary, $primary-light);
+            background: linear-gradient(90deg, $primary, $primary-light);
         }
 
-        .areaCard-img{
+        .areaCard-img {
             background-size: 125% 125%;
         }
     }
 
-    &-tag-lg{
+    &-tag-lg {
         top: 16px;
         left: 0;
     }
 
-    &-tag-sm{
+    &-tag-sm {
         top: 64px;
         left: 0;
     }
 }
 
-.coachCard{
+.coachCard {
     position: relative;
     border-radius: 8px !important;
-    &-img{
+
+    &-img {
         height: 240px;
-        border-radius: 8px 8px 0 0  !important;
+        border-radius: 8px 8px 0 0 !important;
 
         background-position: top;
         background-size: cover;
         background-repeat: no-repeat;
         transition: all .5s ease-in-out;
 
-        @media (min-width: 768px){
+        @media (min-width: 768px) {
             height: 200px;
         }
 
-        @media (min-width: 992px){
+        @media (min-width: 992px) {
             height: 240px;
         }
 
     }
 
-    
-    &:hover{
-        .coachCard-img{
-             background-size: 125% auto;
-         }
-     }
+
+    &:hover {
+        .coachCard-img {
+            background-size: 125% auto;
+        }
+    }
 }
 
 
-.form{
-    &-logIn, &-signUp{
+.form {
+
+    &-logIn,
+    &-signUp {
         width: 280px;
     }
 
-    &-box{
+    &-box {
         height: 48px;
         border: 1px solid $grey-light;
         border-radius: 8px;
-    
-        &-s{
+
+        &-s {
             width: 90%;
         }
-        &::placeholder{
-        color: $grey-light;
+
+        &::placeholder {
+            color: $grey-light;
         }
     }
-    &-sso-title{
-        &::before{
+
+    &-sso-title {
+        &::before {
             display: inline-block;
             position: absolute;
             content: "";
@@ -271,7 +283,8 @@ li{
             left: 8px;
             top: 50%;
         }
-        &::after{
+
+        &::after {
             display: inline-block;
             position: absolute;
             content: "";
