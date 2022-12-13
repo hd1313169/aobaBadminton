@@ -12,9 +12,11 @@
             height: 36px;
             border-radius: 24px;
             // background: $primary;
-            background-image: url(https://raw.githubusercontent.com/hd1313169/aobaBadminton/main/app/assets/images/aoba_badminton_icon.png);
+            background: 
+                url(https://raw.githubusercontent.com/hd1313169/aobaBadminton/main/app/assets/images/aoba_badminton_icon.svg),
+                $primary;
             background-position: center;
-            background-size: cover;
+            background-size: 80% 80%;
             background-repeat: no-repeat;
             left: calc(33% - 18px);
     }
