@@ -21139,4 +21139,29 @@ span.buttonText {
   width: 100%;
 }
 
+.stadium-info-location {
+  display: block;
+  margin-bottom: 16px;
+}
+
+@media (min-width: 576px) {
+  .stadium-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .stadium-info-location {
+    margin-bottom: 0px;
+    margin-right: 40px;
+  }
+}
+
+.court-icon {
+  width: 20px;
+  height: 20px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 /*# sourceMappingURL=all.css.map */
