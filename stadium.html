@@ -106,7 +106,7 @@
 
   <!-- 導覽列END -->
 
-  <div class="bg-light py-60 border-bottom">
+  <div class="bg-light py-40 border-bottom">
     <div class="container ">
         <div class="row">
             <div class="offset-1 col-10 offset-1 offset-md-3 col-md-6 offset-md-3">
@@ -120,7 +120,75 @@
         </div>
     </div>
 </div>
-<div class="bg-light">
+
+<div class="bg-light py-12">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-8">
+                <div class="stadium-img" data-bs-toggle="modal" data-bs-target="#stadium-img-modal">
+                    <div class="stadium-img-main" style="background-image: url(./assets/images/area_01.jpg);"></div>
+                </div>
+            </div>
+            <div class="col-0 col-lg-4 stadium-img-display">
+                <div class="stadium-img d-flex flex-column justify-content-between">
+                    <div class="stadium-img-side" style="background-image: url(./assets/images/area_01_a.jpg);"
+                        data-bs-toggle="modal" data-bs-target="#stadium-img-modal"></div>
+                    <div class="stadium-img-side" style="background-image: url(./assets/images/area_01_b.jpg);"
+                        data-bs-toggle="modal" data-bs-target="#stadium-img-modal"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade mx-auto" id="stadium-img-modal" tabindex="-1" aria-labelledby="stadium-img-modal-label"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg ">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <div id="stadium-img-modal-carouselControls" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="0" class="active" aria-current="true"
+                                        aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="./assets/images/area_01.jpg" class="stadium-img-modal" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./assets/images/area_01_a.jpg" class="stadium-img-modal" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./assets/images/area_01_b.jpg" class="stadium-img-modal" alt="...">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button"
+                                    data-bs-target="#stadium-img-modal-carouselControls" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button"
+                                    data-bs-target="#stadium-img-modal-carouselControls" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bg-light py-24">
     <div class="container">
         <h3 class="fs-24 mb-8"><a href="#" class="text-dark">青葉羽球 水源館</a></h3>
         <a href="#" class="areaCard-address text-dark mb-24">
@@ -134,17 +202,19 @@
 </div>
 
     <!-- 頁尾 -->
-    <footer class="footer container py-20">
-      <ul class="d-flex justify-content-center m-0 p-0 pb-8">
-        <li class="pe-20"><a href="https://www.facebook.com/" target="_blank"><i
-              class="fa-brands fa-facebook fs-24 text-gradient"></i></a></li>
-        <li class="pe-20"><a href="https://www.instagram.com/" target="_blank"><i
-              class="fa-brands fa-instagram fs-24 text-gradient"></i></a></li>
-        <li><a href="mailto:wsad71155@gmail.com" target="_blank"><i
-              class="fa-solid fa-envelope fs-24 text-gradient"></i></a></li>
-      </ul>
-      <p class="text-center fs-12 fw-light m-0">aoba badminton © 2022 All rights reserved</p>
-    </footer>
+    <div class="bg-light">
+      <footer class="footer container py-20">
+        <ul class="d-flex justify-content-center m-0 p-0 pb-8">
+          <li class="pe-20"><a href="https://www.facebook.com/" target="_blank"><i
+                class="fa-brands fa-facebook fs-24 text-gradient"></i></a></li>
+          <li class="pe-20"><a href="https://www.instagram.com/" target="_blank"><i
+                class="fa-brands fa-instagram fs-24 text-gradient"></i></a></li>
+          <li><a href="mailto:wsad71155@gmail.com" target="_blank"><i
+                class="fa-solid fa-envelope fs-24 text-gradient"></i></a></li>
+        </ul>
+        <p class="text-center fs-12 fw-light m-0">aoba badminton © 2022 All rights reserved</p>
+      </footer>
+    </div>
     <!-- 頁尾END -->
 
 

@@ -21095,4 +21095,48 @@ span.buttonText {
   /* Use the Roboto font that is loaded in the <head> */
 }
 
+.stadium-img {
+  width: 100%;
+  height: 280px;
+}
+
+@media (min-width: 992px) {
+  .stadium-img {
+    height: 500px;
+  }
+}
+
+.stadium-img-main {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.stadium-img-side {
+  width: 100%;
+  height: 48%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.stadium-img-display {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .stadium-img-display {
+    display: block;
+  }
+}
+
+.stadium-img-modal {
+  display: block;
+  width: 100%;
+}
+
 /*# sourceMappingURL=all.css.map */
