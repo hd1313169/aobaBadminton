@@ -38,3 +38,24 @@
     }
 }
 
+.stadium-info{
+    &-location{
+        display: block;
+        margin-bottom: 16px;
+    }
+
+    @media (min-width: 576px) {
+        display: flex;
+        &-location{
+            margin-bottom: 0px;
+            margin-right: 40px;
+        }
+    }
+}
+.court-icon{
+    width: 20px;
+	height: 20px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

@@ -4,6 +4,7 @@ layout: ./app/layout.ejs
 engine: ejs
 current: stadium
 ---
+<!-- 預約進度 -->
 <div class="bg-light py-40 border-bottom">
     <div class="container ">
         <div class="row">
@@ -18,7 +19,9 @@ current: stadium
         </div>
     </div>
 </div>
+<!-- 預約進度END -->
 
+<!-- 場地圖片 -->
 <div class="bg-light py-12">
     <div class="container">
         <div class="row">
@@ -38,7 +41,7 @@ current: stadium
         </div>
     </div>
 </div>
-<!-- Modal -->
+<!-- 場地圖片燈箱 -->
 <div class="modal fade mx-auto" id="stadium-img-modal" tabindex="-1" aria-labelledby="stadium-img-modal-label"
     aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg ">
@@ -86,15 +89,70 @@ current: stadium
         </div>
     </div>
 </div>
-<div class="bg-light py-24">
+<!-- 場地圖片END -->
+
+<div class="bg-light">
     <div class="container">
-        <h3 class="fs-24 mb-8"><a href="#" class="text-dark">青葉羽球 水源館</a></h3>
-        <a href="#" class="areaCard-address text-dark mb-24">
-            <div class="card-body d-flex align-items-center p-0">
-                <i class="fa-solid fa-location-dot text-gradient pe-4"></i>
-                <p class="card-text fs-12 text-grey-dark">台北市公館路12號</p>
+        <div class="row">
+
+            <!-- 場地租借內容 -->
+            <div class="col-12 col-md-8">
+
+                <!-- 標題與資訊 -->
+                <div class="py-24 border-bottom border-grey-light">
+                    <h2 class="mb-24"><a href="#" class="text-dark">青葉羽球 水源館</a></h3>
+                        <div class="stadium-info">
+                            <a href="#" class="stadium-info-location">
+                                <div class="card-body d-flex align-items-center p-0">
+                                    <i class="fa-solid fa-location-dot text-grey"></i>
+                                    <p class="card-text text-grey-dark ps-8">台北市公館路12號</p>
+                                </div>
+                            </a>
+                            <div class="d-flex align-items-center stadium-info-court">
+                                <div class="court-icon"
+                                    style="background-image: url('./assets/images/aoba_court_icon.svg');">
+                                </div>
+                                <p class="card-text text-grey-dark ps-8">8 面場地</p>
+                            </div>
+                        </div>
+                </div>
+
+                <!-- 設備與服務 -->
+                <div class="py-24 border-bottom border-grey-light">
+                    <h3 class="fs-24 mb-24">設備與服務</h3>
+                    <div class="stadium-equipment">
+                        <div class="row">
+                            <div class="col-6 col-md-3 d-flex"><span><i class="fa-solid fa-check me-8"></i></span>
+                                <p>置物櫃</p>
+                            </div>
+                            <div class="col-6 col-md-3 d-flex"><span><i class="fa-solid fa-check me-8"></i></span>
+                                <p>廁所</p>
+                            </div>
+                            <div class="col-6 col-md-3 d-flex"><span><i class="fa-solid fa-check me-8"></i></span>
+                                <p>飲水機</p>
+                            </div>
+                            <div class="col-6 col-md-3 d-flex"><span><i class="fa-solid fa-check me-8"></i></span>
+                                <p>自動販賣機</p>
+                            </div>
+                            <div class="col-6 col-md-3 d-flex"><span><i class="fa-solid fa-check me-8"></i></span>
+                                <p>停車場</p>
+                            </div>
+                            <div class="col-6 col-md-3 d-flex"><span><i class="fa-solid fa-check me-8"></i></span>
+                                <p>垃圾桶</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 預約場地 -->
+                <div class="py-24 border-bottom border-grey-light">
+                    <h3 class="fs-24 mb-24">預約場地</h3>
+                </div>
+                
             </div>
-        </a>
-        <div><a href="./book.html" class="primaryBtn-M text-center text-white my-20">NEXT</a></div>
+            <div><a href="./book.html" class="primaryBtn-M text-center text-white my-20">NEXT</a></div>
+
+        </div>
     </div>
+</div>
 </div>
