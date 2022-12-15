@@ -1,4 +1,7 @@
 // 圓角矩形
+.rounded-4 {
+    border-radius: 4px !important;
+}
 .rounded-8 {
     border-radius: 8px !important;
 }
@@ -49,6 +52,7 @@
 
 // <!-- 按鈕 -->
 .primaryBtn-L {
+    display: block;
     padding: 12px 102px;
     background: linear-gradient(135deg, $primary, $primary-light);
     border-radius: 8px;
@@ -59,6 +63,7 @@
 }
 
 .secondaryBtn-L {
+    display: block;
     padding: 12px 102px;
     background: $light;
     border: 1px solid $primary;

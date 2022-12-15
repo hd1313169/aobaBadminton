@@ -41,7 +41,7 @@
 .stadium-info{
     &-location{
         display: block;
-        margin-bottom: 16px;
+        margin-bottom: 8px;
     }
 
     @media (min-width: 576px) {
@@ -60,6 +60,39 @@
     background-repeat: no-repeat;
 }
 
+.stadium-dropdown{
+    width: 342px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.stadium-court-item{
+    display: block;
+    width: 56px;
+    height: 56px;
+    background: $light;
+    border: 1px solid $grey-light;
+    border-radius: 4px;
+    text-align: center;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    padding: 16px 0;
+    &:hover{
+        background: $primary-light;
+        color: $light !important;
+    }
+    &:focus{
+        background: $primary;
+        color: $light !important;
+    }
+    &-disabled{
+        pointer-events: none;
+        cursor: default;
+        background: $grey-light;
+        color: $light !important;
+    }
+}
 .bookList{
     display: none;
     @media (min-width: 1200px){
@@ -83,3 +116,4 @@
         display: none;
     }
  }
+
