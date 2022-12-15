@@ -342,7 +342,7 @@ li {
   --bs-grey: #9b9b9b;
   --bs-grey-dark: #5f5f5f;
   --bs-dark: #1e1e1e;
-  --bs-font-sans-serif: "Noto Sans TC", Roboto, system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-sans-serif: Roboto, "Noto Sans TC", system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(90deg, #56BBB5, #56CFB5);
 }
