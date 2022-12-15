@@ -2,4 +2,11 @@
 .footer{
 	border-top: 1px solid $grey-light;
 }
+
+.stadium-footer{
+    display: none;
+	@media (min-width: 1200px){
+        display: block;
+    }
+}
 // <!-- 頁尾END -->

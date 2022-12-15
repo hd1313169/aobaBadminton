@@ -1,6 +1,6 @@
 ---
 title: aobaBadminton
-layout: ./app/layout.ejs
+layout: ./app/layout_stadium.ejs
 engine: ejs
 current: stadium
 ---
@@ -91,13 +91,12 @@ current: stadium
 </div>
 <!-- 場地圖片END -->
 
+<!-- 場地租借功能 -->
 <div class="bg-light">
     <div class="container">
         <div class="row">
-
             <!-- 場地租借內容 -->
-            <div class="col-12 col-md-8">
-
+            <div class="col-12 col-xl-8">
                 <!-- 標題與資訊 -->
                 <div class="py-24 border-bottom border-grey-light">
                     <h2 class="fs-24 mb-24"><a href="#" class="text-dark">青葉羽球 水源館</a></h3>
@@ -148,7 +147,7 @@ current: stadium
                 <div class="py-24 border-bottom border-grey-light">
                     <h3 class="fs-20 mb-24">預約場地</h3>
                     <div class="row">
-                        <div class="col-12 col-md-6">
+                        <div class="col-12 col-lg-6">
                             <!-- step1 選擇日期 -->
                             <div class="d-flex align-items-center">
                                 <div class="step-decoration bg-secondary rounded-24 px-8 py-8 me-8" style="width:72px">
@@ -175,30 +174,374 @@ current: stadium
                     </div>
                 </div>
 
-                 <!-- 場地規範 -->
-                 <div class="py-24 border-bottom border-grey-light">
+                <!-- 場地規範 -->
+                <div class="py-24 border-bottom border-grey-light">
                     <h3 class="fs-20 mb-24">場地規範</h3>
                     <ul class="m-0 p-0">
                         <li class="fw-light mb-8"><span class="me-4 ">1.</span>歡迎使用公共空間，但請遵守一切使用規範。</li>
                         <li class="fw-light mb-8"><span class="me-4">2.</span>若造成環境或設備損壞，將視情況收取金額賠償。</li>
-                        <li class="fw-light mb-8"><span class="me-4">3.</span>禁止攜帶寵物（導盲犬不在此限）、吸菸、吸毒、攜帶危險物品以及賭博等違反法令規定、公共秩序或善良風俗的行為。如違反上述之行為，將請執法人員強制驅離，且不退還任何費用。</li>
+                        <li class="fw-light mb-8"><span
+                                class="me-4">3.</span>禁止攜帶寵物（導盲犬不在此限）、吸菸、吸毒、攜帶危險物品以及賭博等違反法令規定、公共秩序或善良風俗的行為。如違反上述之行為，將請執法人員強制驅離，且不退還任何費用。
+                        </li>
                         <li class="fw-light mb-8"><span class="me-4">4.</span>任何放置於場館內之物品，館方不負責任何保管及賠償責任。</li>
                         <li class="fw-light mb-8"><span class="me-4">5.</span>館方保有取消、變更空間使用者預訂之權利。</li>
                         <li class="fw-light"><span class="me-4">6.</span>場地使用完畢後，請將物品攜帶離開，並將垃圾丟置垃圾桶內。</li>
                     </ul>
                 </div>
 
-                 <!-- 退訂政策 -->
-                 <div class="py-24 border-bottom border-grey-light">
+                <!-- 退訂政策 -->
+                <div class="py-24 border-bottom border-grey-light">
                     <h3 class="fs-20 mb-24">退訂政策</h3>
                     <ul class="m-0 p-0">
-                        <li class="fw-light mb-8"><span class="me-4 ">1.</span>提供24小時前無條件更改預約服務，更改預約僅包含「取消預約」、「更改時間」，時間以館方公告為準。</li>
+                        <li class="fw-light mb-8"><span
+                                class="me-4 ">1.</span>提供24小時前無條件更改預約服務，更改預約僅包含「取消預約」、「更改時間」，時間以館方公告為準。</li>
                         <li class="fw-light mb-8"><span class="me-4">2.</span>更改訂單時，請撥打球館連絡電話 02-22221122。</li>
                     </ul>
                 </div>
             </div>
-            <div><a href="./book.html" class="primaryBtn-M text-center text-white my-20">NEXT</a></div>
+            <!-- 預約清單 -->
+            <div class="col-12 col-xl-4 position-relative">
+                <div class="bookList">
+                    <div class="bg-light border rounded-8 pt-24 shadow">
+                        <div class="container">
+                            <table class="w-100">
+                                <thead class="border-bottom border-grey-light">
+                                    <tr>
+                                        <th width="8%">
+                                            <p class="m-0 pb-16">#</p>
+                                        </th>
+                                        <th width="38%">
+                                            <p class="m-0 pb-16">日期</p>
+                                        </th>
+                                        <th width="28%">
+                                            <p class="m-0 pb-16">時段</p>
+                                        </th>
+                                        <th width="16%" class="text-center">
+                                            <p class="m-0 pb-16">場地</p>
+                                        </th>
+                                        <th width="10%" class="text-center">
+                                            <p class="m-0 pb-16"></p>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody class="mt-16 border-bottom border-grey-light">
+                                    <tr>
+                                        <td>
+                                            <p class="m-0 py-16">1</p>
+                                        </td>
+                                        <td>
+                                            <p class="m-0 py-16">2023/01/16(一)</p>
+                                        </td>
+                                        <td>
+                                            <p class="m-0 py-16">16:00-17:00</p>
+                                        </td>
+                                        <td class="text-center">
+                                            <p class="m-0 py-16">C</p>
+                                        </td>
+                                        <td class="text-center"><a href="#"
+                                                class="bookList-cancelBtn text-center text-grey-light align-middle"><i
+                                                    class="fa-solid fa-xmark m-0 py-16"></i></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="m-0 py-16">2</p>
+                                        </td>
+                                        <td>
+                                            <p class="m-0 py-16">2023/01/16(一)</p>
+                                        </td>
+                                        <td>
+                                            <p class="m-0 py-16">16:00-17:00</p>
+                                        </td>
+                                        <td class="text-center">
+                                            <p class="m-0 py-16">D</p>
+                                        </td>
+                                        <td class="text-center"><a href="#"
+                                                class="text-center text-grey-light align-middle"><i
+                                                    class="fa-solid fa-xmark m-0 py-16"></i></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="m-0 py-16">3</p>
+                                        </td>
+                                        <td>
+                                            <p class="m-0 py-16">2023/01/16(一)</p>
+                                        </td>
+                                        <td>
+                                            <p class="m-0 py-16">17:00-18:00</p>
+                                        </td>
+                                        <td class="text-center">
+                                            <p class="m-0 py-16">C</p>
+                                        </td>
+                                        <td class="text-center"><a href="#"
+                                                class="text-center text-grey-light align-middle"><i
+                                                    class="fa-solid fa-xmark m-0 py-16"></i></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="m-0 py-16">4</p>
+                                        </td>
+                                        <td>
+                                            <p class="m-0 py-16">2023/01/16(一)</p>
+                                        </td>
+                                        <td>
+                                            <p class="m-0 py-16">17:00-18:00</p>
+                                        </td>
+                                        <td class="text-center">
+                                            <p class="m-0 py-16">D</p>
+                                        </td>
+                                        <td class="text-center"><a href="#"
+                                                class="text-center text-grey-light align-middle"><i
+                                                    class="fa-solid fa-xmark m-0 py-16"></i></a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="d-flex justify-content-between py-24">
+                                <p class="m-0">$300 × 4 小時</p>
+                                <p class="m-0">$1,200</p>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <p class="m-0">總計</p>
+                                <h5 class="m-0">$1,200</h5>
+                            </div>
+                            <a href="./book.html" class="d-block primaryBtn-L text-center text-white my-24">立 即 預 約</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+        </div>
+    </div>
+</div>
+
+<!-- 行動版底部收合選單 -->
+<div class="bookList-modal bg-light border-top py-24">
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+            <div class="bookList-modal-btn position-relative">
+                <h5 class="mb-8">總計 $1,200</h5>
+                <div class="text-primary"><i class="fa-solid fa-list me-4"></i><span>租借清單</span></div>
+                <a href="#" class="stretched-link" data-bs-toggle="modal" data-bs-target="#bookListModal"></a>
+            </div>
+            <a href="./book.html" class="d-block primaryBtn-M text-center text-white">立 即 預 約</a>
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="bookListModal" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header border-0">
+                <h5 class="modal-title" id="staticBackdropLabel"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <table class="w-100">
+                        <thead class="border-bottom border-grey-light">
+                            <tr>
+                                <th width="8%">
+                                    <p class="m-0 pb-8">#</p>
+                                </th>
+                                <th width="38%">
+                                    <p class="m-0 pb-8">日期</p>
+                                </th>
+                                <th width="28%">
+                                    <p class="m-0 pb-8">時段</p>
+                                </th>
+                                <th width="16%" class="text-center">
+                                    <p class="m-0 pb-8">場地</p>
+                                </th>
+                                <th width="10%" class="text-center">
+                                    <p class="m-0 pb-8"></p>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody class="mt-16">
+                            <tr>
+                                <td>
+                                    <p class="m-0 py-16">1</p>
+                                </td>
+                                <td>
+                                    <p class="m-0 py-16">2023/01/16(一)</p>
+                                </td>
+                                <td>
+                                    <p class="m-0 py-16">16:00-17:00</p>
+                                </td>
+                                <td class="text-center">
+                                    <p class="m-0 py-16">C</p>
+                                </td>
+                                <td class="text-center"><a href="#"
+                                        class="bookList-cancelBtn text-center text-grey-light align-middle"><i
+                                            class="fa-solid fa-xmark m-0 py-16"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="m-0 py-16">2</p>
+                                </td>
+                                <td>
+                                    <p class="m-0 py-16">2023/01/16(一)</p>
+                                </td>
+                                <td>
+                                    <p class="m-0 py-16">16:00-17:00</p>
+                                </td>
+                                <td class="text-center">
+                                    <p class="m-0 py-16">D</p>
+                                </td>
+                                <td class="text-center"><a href="#" class="text-center text-grey-light align-middle"><i
+                                            class="fa-solid fa-xmark m-0 py-16"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="m-0 py-16">3</p>
+                                </td>
+                                <td>
+                                    <p class="m-0 py-16">2023/01/16(一)</p>
+                                </td>
+                                <td>
+                                    <p class="m-0 py-16">17:00-18:00</p>
+                                </td>
+                                <td class="text-center">
+                                    <p class="m-0 py-16">C</p>
+                                </td>
+                                <td class="text-center"><a href="#" class="text-center text-grey-light align-middle"><i
+                                            class="fa-solid fa-xmark m-0 py-16"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="m-0 py-16">4</p>
+                                </td>
+                                <td>
+                                    <p class="m-0 py-16">2023/01/16(一)</p>
+                                </td>
+                                <td>
+                                    <p class="m-0 py-16">17:00-18:00</p>
+                                </td>
+                                <td class="text-center">
+                                    <p class="m-0 py-16">D</p>
+                                </td>
+                                <td class="text-center"><a href="#" class="text-center text-grey-light align-middle"><i
+                                            class="fa-solid fa-xmark m-0 py-16"></i></a></td>
+                            </tr>
+                            <!-- 滾輪測試填充 -->
+                            <tr>
+                                <td>
+                                    <p class="m-0 py-16">N</p>
+                                </td>
+                                <td>
+                                    <p class="m-0 py-16">9999/99/99(一)</p>
+                                </td>
+                                <td>
+                                    <p class="m-0 py-16">99:99-99:99</p>
+                                </td>
+                                <td class="text-center">
+                                    <p class="m-0 py-16">X</p>
+                                </td>
+                                <td class="text-center"><a href="#" class="text-center text-grey-light align-middle"><i
+                                            class="fa-solid fa-xmark m-0 py-16"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="m-0 py-16">N</p>
+                                </td>
+                                <td>
+                                    <p class="m-0 py-16">9999/99/99(一)</p>
+                                </td>
+                                <td>
+                                    <p class="m-0 py-16">99:99-99:99</p>
+                                </td>
+                                <td class="text-center">
+                                    <p class="m-0 py-16">X</p>
+                                </td>
+                                <td class="text-center"><a href="#" class="text-center text-grey-light align-middle"><i
+                                            class="fa-solid fa-xmark m-0 py-16"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="m-0 py-16">N</p>
+                                </td>
+                                <td>
+                                    <p class="m-0 py-16">9999/99/99(一)</p>
+                                </td>
+                                <td>
+                                    <p class="m-0 py-16">99:99-99:99</p>
+                                </td>
+                                <td class="text-center">
+                                    <p class="m-0 py-16">X</p>
+                                </td>
+                                <td class="text-center"><a href="#" class="text-center text-grey-light align-middle"><i
+                                            class="fa-solid fa-xmark m-0 py-16"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="m-0 py-16">N</p>
+                                </td>
+                                <td>
+                                    <p class="m-0 py-16">9999/99/99(一)</p>
+                                </td>
+                                <td>
+                                    <p class="m-0 py-16">99:99-99:99</p>
+                                </td>
+                                <td class="text-center">
+                                    <p class="m-0 py-16">X</p>
+                                </td>
+                                <td class="text-center"><a href="#" class="text-center text-grey-light align-middle"><i
+                                            class="fa-solid fa-xmark m-0 py-16"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="m-0 py-16">N</p>
+                                </td>
+                                <td>
+                                    <p class="m-0 py-16">9999/99/99(一)</p>
+                                </td>
+                                <td>
+                                    <p class="m-0 py-16">99:99-99:99</p>
+                                </td>
+                                <td class="text-center">
+                                    <p class="m-0 py-16">X</p>
+                                </td>
+                                <td class="text-center"><a href="#" class="text-center text-grey-light align-middle"><i
+                                            class="fa-solid fa-xmark m-0 py-16"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="m-0 py-16">N</p>
+                                </td>
+                                <td>
+                                    <p class="m-0 py-16">9999/99/99(一)</p>
+                                </td>
+                                <td>
+                                    <p class="m-0 py-16">99:99-99:99</p>
+                                </td>
+                                <td class="text-center">
+                                    <p class="m-0 py-16">X</p>
+                                </td>
+                                <td class="text-center"><a href="#" class="text-center text-grey-light align-middle"><i
+                                            class="fa-solid fa-xmark m-0 py-16"></i></a></td>
+                            </tr>
+
+                            <!-- 滾輪測試填充END -->
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="modal-footer d-block">
+                <div class="container">
+
+                    <div class="d-flex justify-content-between mb-16">
+                        <p class="m-0">$300 × 4 小時</p>
+                        <p class="m-0">$1,200</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <p class="m-0">總計</p>
+                        <h5 class="m-0">$1,200</h5>
+                    </div>
+                    <a href="./book.html" class="d-block primaryBtn-L text-center text-white my-16">立 即 預 約</a>
+                </div>
+
+            </div>
         </div>
     </div>
 </div>

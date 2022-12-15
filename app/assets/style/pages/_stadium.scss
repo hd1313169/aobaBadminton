@@ -59,3 +59,27 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+.bookList{
+    display: none;
+    @media (min-width: 1200px){
+        display: block;
+        position: sticky;
+        top: 0;
+    }
+
+    &-cancelBtn{
+        &:hover{
+            color: $secondary !important;
+        }
+    }
+}
+
+
+ .bookList-modal{
+    position: sticky;
+    bottom: 0;
+    @media (min-width: 1200px){
+        display: none;
+    }
+ }
