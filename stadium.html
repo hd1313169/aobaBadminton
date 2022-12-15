@@ -197,7 +197,7 @@
             <!-- 場地租借內容 -->
             <div class="col-12 col-xl-8">
                 <!-- 標題與資訊 -->
-                <div class="py-24 border-bottom border-grey-light">
+                <div class="py-24 border-bottom">
                     <h2 class="fs-24 mb-24"><a href="#" class="text-dark">青葉羽球 水源館</a></h3>
                         <div class="stadium-info">
                             <a href="#" class="stadium-info-location">
@@ -216,7 +216,7 @@
                 </div>
 
                 <!-- 設備與服務 -->
-                <div class="py-24 border-bottom border-grey-light">
+                <div class="py-24 border-bottom">
                     <h3 class="fs-20 mb-24">設備與服務</h3>
                     <div class="stadium-equipment">
                         <div class="row">
@@ -243,38 +243,66 @@
                 </div>
 
                 <!-- 預約場地 -->
-                <div class="py-24 border-bottom border-grey-light">
+                <div class="py-24 border-bottom">
                     <h3 class="fs-20 mb-24">預約場地</h3>
                     <div class="row">
                         <div class="col-12 col-lg-6">
                             <!-- step1 選擇日期 -->
                             <div class="d-flex align-items-center">
-                                <div class="step-decoration bg-secondary rounded-24 px-8 py-8 me-8" style="width:72px">
+                                <div class="step-decoration bg-secondary rounded-24 px-8 py-4 me-8" style="width:72px">
                                     <h4 class="fs-16 text-center text-light m-0">Step 1</h4>
                                 </div>
                                 <h4 class="fs-16 fw-normal m-0">選擇日期</h4>
                             </div>
                         </div>
-                        <div class="col-12 col-md-6">
-                            <div class="d-flex align-items-center">
-                                <div class="step-decoration bg-secondary rounded-24 px-8 py-8 me-8" style="width:72px">
+                        <div class="col-12 col-lg-6">
+                            <div class="d-flex align-items-center mb-16">
+                                <div class="step-decoration bg-secondary rounded-24 px-8 py-4 me-8" style="width:72px">
                                     <h4 class="fs-16 text-center text-light m-0">Step 2</h4>
                                 </div>
-                                <h4 class="fs-16 fw-normal m-0">選擇時段</h4>
+                                <h4 class="fs-16 fw-normal m-0">選擇時段</h4>                               
                             </div>
-
-                            <div class="d-flex align-items-center">
-                                <div class="step-decoration bg-secondary rounded-24 px-8 py-8 me-8" style="width:72px">
+                            <!-- 時段下拉選單 -->
+                            <div class="dropdown area-dropdown mb-40 stadium-dropdown">
+                                <a class="btn btn-light border border-grey-light rounded-8 text-grey-light dropdown-toggle ps-16 py-12" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-regular fa-clock me-12"></i>請選擇時段</a>         
+                                <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuLink">
+                                    <li><a class="dropdown-item disabled" href="#">08:00 - 09:00</a></li>
+                                    <li><a class="dropdown-item disabled" href="#">09:00 - 10:00</a></li>
+                                    <li><a class="dropdown-item disabled" href="#">10:00 - 11:00</a></li>
+                                    <li><a class="dropdown-item disabled" href="#">11:00 - 12:00</a></li>
+                                    <li><a class="dropdown-item disabled" href="#">12:00 - 13:00</a></li>
+                                    <li><a class="dropdown-item disabled" href="#">13:00 - 14:00</a></li>
+                                    <li><a class="dropdown-item disabled" href="#">14:00 - 15:00</a></li>
+                                    <li><a class="dropdown-item disabled" href="#">15:00 - 16:00</a></li>
+                                    <li><a class="dropdown-item" href="#">16:00 - 17:00</a></li>
+                                    <li><a class="dropdown-item" href="#">17:00 - 18:00</a></li>
+                                    <li><a class="dropdown-item disabled" href="#">18:00 - 19:00</a></li>
+                                    <li><a class="dropdown-item disabled" href="#">20:00 - 21:00</a></li>
+                                </ul>
+                            </div>
+                            <div class="d-flex align-items-center mb-16">
+                                <div class="step-decoration bg-secondary rounded-24 px-8 py-4 me-8" style="width:72px">
                                     <h4 class="fs-16 text-center text-light m-0">Step 3</h4>
                                 </div>
                                 <h4 class="fs-16 fw-normal m-0">選擇場地</h4>
+                            </div>
+                            <p class="text-grey mb-16">所選時段還有 6 個場地</p>
+                            <div class="stadium-court d-flex flex-wrap">
+                                <button class="stadium-court-item stadium-court-item-disabled text-dark">A</button>
+                                <button class="stadium-court-item stadium-court-item-disabled text-dark">B</button>
+                                <button class="stadium-court-item text-dark">C</button>
+                                <button class="stadium-court-item text-dark">D</button>
+                                <button class="stadium-court-item text-dark">E</button>
+                                <button class="stadium-court-item text-dark">F</button>
+                                <button class="stadium-court-item text-dark">G</button>
+                                <button class="stadium-court-item text-dark">H</button>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- 場地規範 -->
-                <div class="py-24 border-bottom border-grey-light">
+                <div class="py-24 border-bottom">
                     <h3 class="fs-20 mb-24">場地規範</h3>
                     <ul class="m-0 p-0">
                         <li class="fw-light mb-8"><span class="me-4 ">1.</span>歡迎使用公共空間，但請遵守一切使用規範。</li>
@@ -289,7 +317,7 @@
                 </div>
 
                 <!-- 退訂政策 -->
-                <div class="py-24 border-bottom border-grey-light">
+                <div class="py-24">
                     <h3 class="fs-20 mb-24">退訂政策</h3>
                     <ul class="m-0 p-0">
                         <li class="fw-light mb-8"><span
@@ -413,7 +441,7 @@
 </div>
 
 <!-- 行動版底部收合選單 -->
-<div class="bookList-modal bg-light border-top py-24">
+<div class="bookList-modal bg-light border-top pt-24 pb-40">
     <div class="container">
         <div class="d-flex justify-content-between align-items-center">
             <div class="bookList-modal-btn position-relative">
@@ -426,8 +454,8 @@
     </div>
 </div>
 <!-- Modal -->
-<div class="modal fade" id="bookListModal" data-bs-keyboard="false" tabindex="-1"
-    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<div class="modal fade" id="bookListModal" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+    aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
         <div class="modal-content">
             <div class="modal-header border-0">
@@ -487,7 +515,8 @@
                                 <td class="text-center">
                                     <p class="m-0 py-16">D</p>
                                 </td>
-                                <td class="text-center"><a href="#" class="text-center text-grey-light align-middle"><i
+                                <td class="text-center"><a href="#"
+                                        class="bookList-cancelBtn text-center text-grey-light align-middle"><i
                                             class="fa-solid fa-xmark m-0 py-16"></i></a></td>
                             </tr>
                             <tr>
@@ -503,7 +532,8 @@
                                 <td class="text-center">
                                     <p class="m-0 py-16">C</p>
                                 </td>
-                                <td class="text-center"><a href="#" class="text-center text-grey-light align-middle"><i
+                                <td class="text-center"><a href="#"
+                                        class="bookList-cancelBtn text-center text-grey-light align-middle"><i
                                             class="fa-solid fa-xmark m-0 py-16"></i></a></td>
                             </tr>
                             <tr>
@@ -519,7 +549,8 @@
                                 <td class="text-center">
                                     <p class="m-0 py-16">D</p>
                                 </td>
-                                <td class="text-center"><a href="#" class="text-center text-grey-light align-middle"><i
+                                <td class="text-center"><a href="#"
+                                        class="bookList-cancelBtn text-center text-grey-light align-middle"><i
                                             class="fa-solid fa-xmark m-0 py-16"></i></a></td>
                             </tr>
                             <!-- 滾輪測試填充 -->
@@ -619,17 +650,14 @@
                                 <td class="text-center"><a href="#" class="text-center text-grey-light align-middle"><i
                                             class="fa-solid fa-xmark m-0 py-16"></i></a></td>
                             </tr>
-
                             <!-- 滾輪測試填充END -->
-
                         </tbody>
                     </table>
                 </div>
             </div>
-            <div class="modal-footer d-block">
-                <div class="container">
-
-                    <div class="d-flex justify-content-between mb-16">
+            <div class="modal-footer d-block border-0">
+                <div class="container border-top">
+                    <div class="d-flex justify-content-between py-16">
                         <p class="m-0">$300 × 4 小時</p>
                         <p class="m-0">$1,200</p>
                     </div>
@@ -637,7 +665,7 @@
                         <p class="m-0">總計</p>
                         <h5 class="m-0">$1,200</h5>
                     </div>
-                    <a href="./book.html" class="d-block primaryBtn-L text-center text-white my-16">立 即 預 約</a>
+                    <a href="./book.html" class="d-block primaryBtn-L text-center text-white mx-auto my-16">立 即 預 約</a>
                 </div>
 
             </div>

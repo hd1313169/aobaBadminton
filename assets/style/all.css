@@ -1,4 +1,8 @@
 @charset "UTF-8";
+.rounded-4 {
+  border-radius: 4px !important;
+}
+
 .rounded-8 {
   border-radius: 8px !important;
 }
@@ -44,6 +48,7 @@
 }
 
 .primaryBtn-L {
+  display: block;
   padding: 12px 102px;
   background: -o-linear-gradient(315deg, #56BBB5, #56cfb5);
   background: linear-gradient(135deg, #56BBB5, #56cfb5);
@@ -56,6 +61,7 @@
 }
 
 .secondaryBtn-L {
+  display: block;
   padding: 12px 102px;
   background: #fff;
   border: 1px solid #56BBB5;
@@ -20650,9 +20656,9 @@ a {
 }
 
 .progress-bar-gradient {
-  background: -webkit-gradient(linear, left top, right top, from(#fff), color-stop(60%, #56cfb5), to(#56BBB5));
-  background: -o-linear-gradient(left, #fff 0%, #56cfb5 60%, #56BBB5 100%);
-  background: linear-gradient(90deg, #fff 0%, #56cfb5 60%, #56BBB5 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#fff), color-stop(60%, #56cfb5), color-stop(80%, #56BBB5));
+  background: -o-linear-gradient(left, #fff 0%, #56cfb5 60%, #56BBB5 80%);
+  background: linear-gradient(90deg, #fff 0%, #56cfb5 60%, #56BBB5 80%);
 }
 
 .progress-bar-33 {
@@ -21017,11 +21023,16 @@ h1, .h1 {
 
 .hero {
   width: 100%;
+  height: 680px;
+  background-image: url(https://raw.githubusercontent.com/hd1313169/aobaBadminton/main/app/assets/images/aoba_hero.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .title-icon {
-  width: 80px;
-  height: 80px;
+  width: 64px;
+  height: 64px;
 }
 
 @media (min-width: 768px) {
@@ -21151,7 +21162,7 @@ span.buttonText {
 
 .stadium-info-location {
   display: block;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 
 @media (min-width: 576px) {
@@ -21172,6 +21183,47 @@ span.buttonText {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.stadium-dropdown {
+  width: 342px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+.stadium-court-item {
+  display: block;
+  width: 56px;
+  height: 56px;
+  background: #fff;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  text-align: center;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  padding: 16px 0;
+}
+
+.stadium-court-item:hover {
+  background: #56cfb5;
+  color: #fff !important;
+}
+
+.stadium-court-item:focus {
+  background: #56BBB5;
+  color: #fff !important;
+}
+
+.stadium-court-item-disabled {
+  pointer-events: none;
+  cursor: default;
+  background: #d9d9d9;
+  color: #fff !important;
 }
 
 .bookList {
