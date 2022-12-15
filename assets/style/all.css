@@ -21005,6 +21005,16 @@ h1, .h1 {
   border-top: 1px solid #d9d9d9;
 }
 
+.stadium-footer {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .stadium-footer {
+    display: block;
+  }
+}
+
 .hero {
   width: 100%;
 }
@@ -21162,6 +21172,35 @@ span.buttonText {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.bookList {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .bookList {
+    display: block;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+  }
+}
+
+.bookList-cancelBtn:hover {
+  color: #fbb84a !important;
+}
+
+.bookList-modal {
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+}
+
+@media (min-width: 1200px) {
+  .bookList-modal {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=all.css.map */
