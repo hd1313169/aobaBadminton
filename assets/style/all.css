@@ -21185,6 +21185,104 @@ span.buttonText {
   background-repeat: no-repeat;
 }
 
+.step-decoration {
+  width: 72px;
+  background-color: #fbb84a;
+  border-radius: 24px;
+  padding: 8px;
+}
+
+.calendar-monthBtn {
+  display: block;
+  width: 32px;
+  height: 32px;
+  border: 1px solid #9b9b9b;
+  border-radius: 48px;
+  background-color: #fff;
+  text-align: center;
+  color: #9b9b9b;
+  padding: 4px 4px;
+}
+
+.calendar-monthBtn:hover {
+  background-color: #9b9b9b;
+  color: #fff !important;
+}
+
+.calendar-monthBtn-disabled {
+  pointer-events: none;
+  cursor: default;
+  border-color: #d9d9d9;
+  background: #fff;
+  color: #d9d9d9 !important;
+}
+
+.calendar-week {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #9b9b9b;
+}
+
+.calendar-week-item {
+  width: 44px;
+  height: 44px;
+  margin: 0 4px;
+  padding: 10px;
+}
+
+.calendar-date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.calendar-date-item {
+  width: 44px;
+  height: 44px;
+  margin: 0 4px;
+  padding: 10px;
+  border: 1px solid #fff;
+  border-radius: 48px;
+}
+
+.calendar-date-item:hover {
+  background-color: #56cfb5 !important;
+  border-color: #56cfb5 !important;
+  color: #fff !important;
+}
+
+.calendar-date-item:focus {
+  background: #56BBB5;
+  border-color: #56BBB5;
+  color: #fff !important;
+}
+
+.calendar-date-item-today {
+  border: 1px solid #9b9b9b;
+}
+
+.calendar-date-item-disabled {
+  pointer-events: none;
+  cursor: default;
+  background: #fff;
+  color: #d9d9d9 !important;
+}
+
 .stadium-dropdown {
   width: 342px;
   display: -webkit-box;
@@ -21216,6 +21314,7 @@ span.buttonText {
 
 .stadium-court-item:focus {
   background: #56BBB5;
+  border-color: #56BBB5;
   color: #fff !important;
 }
 
