@@ -31,43 +31,134 @@
             display: block;
         }
     }
-    
-    &-modal{
+
+    &-modal {
         display: block;
         width: 100%;
     }
 }
 
-.stadium-info{
-    &-location{
+.stadium-info {
+    &-location {
         display: block;
         margin-bottom: 8px;
     }
 
     @media (min-width: 576px) {
         display: flex;
-        &-location{
+
+        &-location {
             margin-bottom: 0px;
             margin-right: 40px;
         }
     }
 }
-.court-icon{
+
+.court-icon {
     width: 20px;
-	height: 20px;
+    height: 20px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.stadium-dropdown{
+.step-decoration{
+    width: 72px;
+    background-color: $secondary;
+    border-radius: 24px;
+    padding: 8px;
+}
+.calendar {
+    &-monthBtn {
+        display: block;
+        width: 32px;
+        height: 32px;
+        border: 1px solid $grey;
+        border-radius: 48px;
+        background-color: $light;
+        text-align: center;
+        color: $grey;
+        padding: 4px 4px;
+
+        &:hover {
+            background-color: $grey;
+            color: $light !important;
+        }
+
+        &-disabled {
+            pointer-events: none;
+            cursor: default;
+            border-color: $grey-light;
+            background: $light;
+            color: $grey-light !important;
+        }
+    }
+
+    &-week {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: $grey;
+
+        &-item {
+            width: 44px;
+            height: 44px;
+            margin: 0 4px;
+            padding: 10px;
+        }
+    }
+
+    &-date {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        &-item {
+            width: 44px;
+            height: 44px;
+            margin: 0 4px;
+            padding: 10px;
+            border: 1px solid $light ;
+            border-radius: 48px;
+
+            &:hover {
+                background-color: $primary-light !important;
+                border-color: $primary-light !important;
+                color: $light !important;
+            }
+
+            &:focus {
+                background: $primary;
+                border-color: $primary;
+                color: $light !important;
+            }
+
+            &-today {
+                border: 1px solid $grey;
+            }
+
+            &-disabled {
+                pointer-events: none;
+                cursor: default;
+                background: $light;
+                color: $grey-light !important;
+            }
+
+        }
+    }
+
+}
+
+.stadium-dropdown {
     width: 342px;
     display: flex;
     justify-content: space-between;
     position: relative;
 }
 
-.stadium-court-item{
+.stadium-court-item {
     display: block;
     width: 56px;
     height: 56px;
@@ -78,42 +169,49 @@
     margin-right: 8px;
     margin-bottom: 8px;
     padding: 16px 0;
-    &:hover{
+
+    &:hover {
         background: $primary-light;
         color: $light !important;
+
     }
-    &:focus{
+
+    &:focus {
         background: $primary;
+        border-color: $primary;
         color: $light !important;
     }
-    &-disabled{
+
+    &-disabled {
         pointer-events: none;
         cursor: default;
         background: $grey-light;
         color: $light !important;
     }
 }
-.bookList{
+
+.bookList {
     display: none;
-    @media (min-width: 1200px){
+
+    @media (min-width: 1200px) {
         display: block;
         position: sticky;
         top: 0;
     }
 
-    &-cancelBtn{
-        &:hover{
+    &-cancelBtn {
+        &:hover {
             color: $secondary !important;
         }
     }
 }
 
 
- .bookList-modal{
+.bookList-modal {
     position: sticky;
     bottom: 0;
-    @media (min-width: 1200px){
+
+    @media (min-width: 1200px) {
         display: none;
     }
- }
-
+}
