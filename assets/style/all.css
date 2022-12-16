@@ -21023,11 +21023,18 @@ h1, .h1 {
 
 .hero {
   width: 100%;
-  height: 680px;
-  background-image: url(https://raw.githubusercontent.com/hd1313169/aobaBadminton/main/app/assets/images/aoba_hero.png);
+  height: 280px;
+  background-image: url(https://raw.githubusercontent.com/hd1313169/aobaBadminton/main/app/assets/images/aoba_hero_mobile.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    background-image: url(https://raw.githubusercontent.com/hd1313169/aobaBadminton/main/app/assets/images/aoba_hero.png);
+    height: 680px;
+  }
 }
 
 .title-icon {
