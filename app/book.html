@@ -5,7 +5,8 @@ engine: ejs
 current: book
 ---
 
-<div class="bg-light py-60 border-bottom">
+<!-- 租借進度 -->
+<div class="bg-light py-40">
     <div class="container ">
         <div class="row">
             <div class="offset-1 col-10 offset-1 offset-md-3 col-md-6 offset-md-3">
@@ -19,5 +20,56 @@ current: book
         </div>
     </div>
 </div>
+<!-- 租借進度END -->
 
+<div class="bg-ligh py-40">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-12 col-md-4">
+                <!-- 租借人資料 -->
+                <div class="p-24">
+                    <h2 class="fs-20 text-center mb-24">租借人資料</h2>
+                    <div class="form form-signUp mx-auto d-flex flex-column">
+                        <div class="d-flex justify-content-between mb-16">
+                            <div class="form-signUp-item">
+                                <label for="firstName" class="mb-4">姓氏</label>
+                                <input name="firstName" class="form-box form-box-s d-block ps-12" type="text">
+                            </div>
+                            <div class="form-signUp-item">
+                                <label for="lastName" class="mb-4">名字</label>
+                                <input name="lastName" class="form-box form-box-s d-block ps-12" type="text">
+                            </div>
+                        </div>
+                        <div class="form-signUp-item mb-16">
+                            <label for="phone" class="mb-4">手機</label>
+                            <input name="phone" class="form-box w-100 d-block ps-12" type="text"
+                                placeholder="請填手機號碼，例：0912345678">
+                        </div>
+                        <div class="form-signUp-item mb-24">
+                            <label for="email" class="mb-4">信箱</label>
+                            <input name="email" class="form-box w-100 d-block ps-12" type="text"
+                                placeholder="請填信箱，例：abc@gmail.com">
+                        </div>
+
+                        <div class="checkBox mb-24 ">
+                            <input type="checkbox" value="rememberMe" name="rememberMe">
+                            <label class="text-center" for="rememberMe">我已詳閱並同意<a href="#"
+                                    class="link-primary">租借規範</a></label>
+                        </div>
+                        <a href="./logIn.html" class="primaryBtn-L text-light text-center mb-16">確 認 預 約</a>
+                        <a href="./stadium.html" class="secondaryBtn-L text-primary text-center">回 上 一 步</a>
+                    </div>
+                </div>
+            </div>
+            <!-- 租借人資料END -->
+
+            <div class="col-12 col-md-4">
+                <div class="border rounded-8 py-24"></div>
+            </div>
+            <div class="col-md-2"></div>
+
+        </div>
+    </div>
+</div>
 <div><a href="./success.html" class="primaryBtn-M text-center text-white my-20">NEXT</a></div>

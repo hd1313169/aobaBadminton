@@ -1,6 +1,12 @@
 // <!-- 頁尾 -->
 .footer{
 	border-top: 1px solid $grey-light;
+
+    &-icon{
+        &:hover{
+            color: $primary !important;
+        }
+    }
 }
 
 .stadium-footer{

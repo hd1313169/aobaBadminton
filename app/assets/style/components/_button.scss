@@ -1,0 +1,116 @@
+// <!-- 按鈕 -->
+.primaryBtn-L {
+    display: block;
+    padding: 12px 88px;
+    background: linear-gradient(135deg, $primary, $primary-light);
+    border-radius: 8px;
+
+    &:hover {
+        background: linear-gradient(135deg, $primary-light, $primary);
+    }
+}
+
+.secondaryBtn-L {
+    display: block;
+    padding: 12px 88px;
+    background: $light;
+    border: 1px solid $primary;
+    border-radius: 8px;
+    &:hover {
+        background: $primary;
+        color: $light !important;
+    }
+}
+
+.primaryBtn-M {
+    display: block;
+    width: 50%;
+    padding: 12px 0px;
+    background: linear-gradient(135deg, $primary, $primary-light);
+    border-radius: 8px;
+
+    @media (min-width: 992px) {
+        width: 16%;
+    }
+
+    &:hover {
+        background: linear-gradient(135deg, $primary-light, $primary);
+    }
+}
+
+.secondaryBtn-M {
+    display: block;
+    width: 50%;
+    padding: 12px 0px;
+    background: $light;
+    border: 1px solid $primary;
+    border-radius: 8px;
+
+    @media (min-width: 992px) {
+        width: 16%;
+    }
+
+    &:hover {
+        background: $primary;
+        color: $light !important;
+    }
+}
+
+.specialBtn-M {
+    display: block;
+    width: 50%;
+    padding: 12px 0px;
+    background: $secondary;
+    border: 1px solid $light;
+    border-radius: 8px;
+
+    @media (min-width: 992px) {
+        width: 16%;
+    }
+
+    &:hover {
+        background: white;
+        color: $secondary !important;
+    }
+}
+
+.primaryBtn-S {
+    display: block;
+    padding: 8px 16px;
+    background: linear-gradient(135deg, $primary, $primary-light);
+    border-radius: 4px;
+
+    &:hover {
+        background: linear-gradient(135deg, $primary-light, $primary);
+    }
+}
+
+.secondaryBtn-S {
+    display: block;
+    padding: 8px 16px;
+    background: $light;
+    border: 1px solid $primary;
+    border-radius: 4px;
+
+    &:hover {
+        background: $primary;
+
+        a {
+            color: $light !important;
+        }
+    }
+}
+
+.secondaryBtn-XS {
+    padding: 2px 8px;
+    background: $light;
+    border: 1px solid $primary;
+    border-radius: 8px;
+
+    &:hover {
+        background: $primary;
+        color: $light !important;
+    }
+}
+
+// <!-- 按鈕END -->

@@ -13,22 +13,26 @@ h1{
 	overflow: hidden;
 }
 
-
-.navbar-decoration{
-	display: flex;
-	width: 100%;
-	height: 4px;
-	&-left{
-		width: 50%;
-		height: 4px;
-		background: $primary;
-	};
-	&-right{
-		width: 50%;
-		height: 4px;
-		background: $warning;
-	}
-}
+// .navbar{
+// 	&::before{
+// 		position: absolute;
+// 		content: "";
+// 		width: 50%;
+// 		height: 4px;
+// 		background: $primary;
+// 		bottom: -4px;
+// 		left: 0;
+// 	}
+// 	&::after{
+// 		position: absolute;
+// 		content: "";
+// 		width: 50%;
+// 		height: 4px;
+// 		background: $warning;
+// 		bottom: -4px;
+// 		right: 0;
+// 	}
+// }
 
 .navbar-desktop{
 	display: none;

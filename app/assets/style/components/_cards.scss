@@ -1,0 +1,81 @@
+.areaCard {
+    position: relative;
+    border-radius: 8px !important;
+
+    &-img {
+        width: 100%;
+        height: 240px;
+        border-radius: 8px !important;
+
+        background-position: 50%;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        transition: all .5s ease-in-out;
+    }
+
+    &-address {
+        p {
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &-decoration {
+        width: 0px;
+        height: 4px;
+        transition: width .5s;
+
+    }
+
+    &:hover {
+        // .areaCard-decoration {
+        //     width: 100%;
+        //     background: linear-gradient(90deg, $primary, $primary-light);
+        // }
+        .areaCard-img {
+            background-size: 125% 125%;
+        }
+    }
+
+    &-tag-lg {
+        top: 16px;
+        left: 0;
+    }
+
+    &-tag-sm {
+        top: 64px;
+        left: 0;
+    }
+}
+
+.coachCard {
+    position: relative;
+    border-radius: 8px !important;
+
+    &-img {
+        height: 240px;
+        border-radius: 8px 8px 0 0 !important;
+
+        background-position: top;
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: all .5s ease-in-out;
+
+        @media (min-width: 768px) {
+            height: 200px;
+        }
+
+        @media (min-width: 992px) {
+            height: 240px;
+        }
+
+    }
+
+
+    &:hover {
+        .coachCard-img {
+            background-size: 125% auto;
+        }
+    }
+}

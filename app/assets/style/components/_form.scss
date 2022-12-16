@@ -1,0 +1,45 @@
+
+.form {
+    &-logIn,
+    &-signUp {
+        width: 280px;
+    }
+
+    &-box {
+        height: 48px;
+        border: 1px solid $grey-light;
+        border-radius: 8px;
+
+        &-s {
+            width: 90%;
+        }
+
+        &::placeholder {
+            color: $grey-light;
+        }
+    }
+
+    &-sso-title {
+        &::before {
+            display: inline-block;
+            position: absolute;
+            content: "";
+            width: 64px;
+            height: 1px;
+            background: $grey;
+            left: 8px;
+            top: 50%;
+        }
+
+        &::after {
+            display: inline-block;
+            position: absolute;
+            content: "";
+            width: 64px;
+            height: 1px;
+            background: $grey;
+            right: 8px;
+            top: 50%;
+        }
+    }
+}
