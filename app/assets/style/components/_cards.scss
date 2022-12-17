@@ -1,5 +1,4 @@
 .areaCard {
-    position: relative;
     border-radius: 8px !important;
 
     &-img {
@@ -43,9 +42,14 @@
         left: 0;
     }
 
-    &-tag-sm {
-        top: 64px;
-        left: 0;
+    &-tag{
+        position: absolute;
+        padding: 8px;
+        bottom: 0;
+        right: 0;
+        background-color: rgba(30,30,30,.5);
+        border-radius: 0 0 8px 0 ;
+        font-size: 14px;
     }
 }
 
@@ -79,10 +83,15 @@
             background-size: 125% auto;
         }
     }
+}
 
-    &-tag{
-        background-color: rgba(86,187,181,.2);
-        padding: 4px 8px;
-        border-radius: 4px;
+.card-tag{
+    background-color: rgba(86,187,181,.2);
+    padding: 4px 8px;
+    border-radius: 4px;
+
+    &-secondary{
+        color: $secondary !important;
+        background-color: rgba(251,184,74,.2);
     }
 }

@@ -1,0 +1,20 @@
+.book-booklist {
+    max-width: 414px;
+    margin: 0 auto;
+}
+
+.trangle {
+    position: absolute;
+    bottom: -24px;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 16px 16px 0 16px;
+    border-color: $light transparent transparent transparent;
+    filter: drop-shadow(0px 2px 4px rgba(30, 30, 30, .2));
+
+    @media(min-width: 992px) {
+        display: none;
+    }
+}
