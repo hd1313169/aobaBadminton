@@ -20418,17 +20418,11 @@ a {
 
 .primaryBtn-M {
   display: block;
-  width: 50%;
-  padding: 12px 0px;
+  min-width: 120px;
+  padding: 12px 24px;
   background: -o-linear-gradient(315deg, #56BBB5, #56cfb5);
   background: linear-gradient(135deg, #56BBB5, #56cfb5);
   border-radius: 8px;
-}
-
-@media (min-width: 992px) {
-  .primaryBtn-M {
-    width: 16%;
-  }
 }
 
 .primaryBtn-M:hover {
@@ -20438,17 +20432,11 @@ a {
 
 .secondaryBtn-M {
   display: block;
-  width: 50%;
-  padding: 12px 0px;
+  min-width: 120px;
+  padding: 12px 24px;
   background: #fff;
   border: 1px solid #56BBB5;
   border-radius: 8px;
-}
-
-@media (min-width: 992px) {
-  .secondaryBtn-M {
-    width: 16%;
-  }
 }
 
 .secondaryBtn-M:hover {
@@ -20518,7 +20506,6 @@ a {
 }
 
 .areaCard {
-  position: relative;
   border-radius: 8px !important;
 }
 
@@ -20555,9 +20542,14 @@ a {
   left: 0;
 }
 
-.areaCard-tag-sm {
-  top: 64px;
-  left: 0;
+.areaCard-tag {
+  position: absolute;
+  padding: 8px;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(30, 30, 30, 0.5);
+  border-radius: 0 0 8px 0;
+  font-size: 14px;
 }
 
 .coachCard {
@@ -20593,10 +20585,15 @@ a {
   background-size: 125% auto;
 }
 
-.coachCard-tag {
+.card-tag {
   background-color: rgba(86, 187, 181, 0.2);
   padding: 4px 8px;
   border-radius: 4px;
+}
+
+.card-tag-secondary {
+  color: #fbb84a !important;
+  background-color: rgba(251, 184, 74, 0.2);
 }
 
 .form-logIn, .form-signUp {
@@ -21351,6 +21348,30 @@ span.buttonText {
 
 @media (min-width: 1200px) {
   .bookList-modal {
+    display: none;
+  }
+}
+
+.book-booklist {
+  max-width: 414px;
+  margin: 0 auto;
+}
+
+.trangle {
+  position: absolute;
+  bottom: -24px;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 16px 16px 0 16px;
+  border-color: #fff transparent transparent transparent;
+  -webkit-filter: drop-shadow(0px 2px 4px rgba(30, 30, 30, 0.2));
+          filter: drop-shadow(0px 2px 4px rgba(30, 30, 30, 0.2));
+}
+
+@media (min-width: 992px) {
+  .trangle {
     display: none;
   }
 }
