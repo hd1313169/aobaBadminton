@@ -13,6 +13,7 @@
         background-size: cover;
         background-repeat: no-repeat;
         cursor: pointer;
+        border-radius: 8px 0 0 8px;
     }
 
     &-side {
@@ -22,6 +23,12 @@
         background-size: cover;
         background-repeat: no-repeat;
         cursor: pointer;
+        &-top{
+            border-radius: 0 8px 0 0;
+        }
+        &-bottom{
+            border-radius: 0 0 8px 0;
+        }
     }
 
     &-display {
