@@ -1,50 +1,18 @@
 .hero{
 	width: 100%;
-	height: 280px;
-	background-image: url(https://raw.githubusercontent.com/hd1313169/aobaBadminton/main/app/assets/images/aoba_hero_mobile.png);
+	height: 540px;
+	background-image: url(https://raw.githubusercontent.com/hd1313169/aobaBadminton/main/app/assets/images/aoba_hero_960x540.png);
 	background-size: cover;
 	background-position:  center;
 	background-repeat: no-repeat;
 
 	@media (min-width: 768px){
-		background-image: url(https://raw.githubusercontent.com/hd1313169/aobaBadminton/main/app/assets/images/aoba_hero.png);
-		height: 680px;
+		background-image: url(https://raw.githubusercontent.com/hd1313169/aobaBadminton/main/app/assets/images/aoba_hero_960x540.png);
+		height: 540px;
 	}
 }
 
 .title-icon{
-	width: 64px;
-	height: 64px;
+	width: 48px;
+	height: 48px;
 }
-
-.coachCard-swiper{
-    // height: 400px;
-
-	@media (min-width: 768px){
-		display: block;
-	}
-}
-
-.swiper-slide {
-
-	/* Center slide text vertically */
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: -webkit-flex;
-	display: flex;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	-webkit-justify-content: center;
-	justify-content: center;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	-webkit-align-items: center;
-	align-items: center;
-  }
-
-  .swiper-slide img {
-	display: block;
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-  }
