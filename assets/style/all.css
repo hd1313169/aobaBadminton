@@ -20771,7 +20771,7 @@ a {
           animation-duration: 1s;
 }
 
-.progress-bar-100 {
+.progress-bar-99 {
   width: 99.99%;
   -webkit-animation-name: barAnimation_99;
           animation-name: barAnimation_99;
@@ -20779,7 +20779,7 @@ a {
           animation-duration: 1s;
 }
 
-.progress-bar-100::before {
+.progress-bar-99::before {
   display: inline-block;
   position: absolute;
   content: "租借成功";
@@ -20794,7 +20794,7 @@ a {
           animation-duration: 1s;
 }
 
-.progress-bar-100::after {
+.progress-bar-99::after {
   display: inline-block;
   position: absolute;
   content: "";
@@ -21374,6 +21374,10 @@ span.buttonText {
   .trangle {
     display: none;
   }
+}
+
+.success-info {
+  width: 280px;
 }
 
 /*# sourceMappingURL=all.css.map */
