@@ -127,7 +127,7 @@ hr:not([size]) {
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   margin-top: 0;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0;
   font-weight: 500;
   line-height: 1.2;
 }
@@ -182,7 +182,7 @@ h6, .h6 {
 
 p {
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
 }
 
 abbr[title],
@@ -20505,6 +20505,36 @@ a {
   color: #fff !important;
 }
 
+.fab {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  right: 8px;
+  bottom: 40px;
+  z-index: 1035;
+}
+
+.fab-messenger {
+  width: 56px;
+  height: 56px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #56BBB5;
+  border-radius: 48px;
+}
+
 .areaCard {
   border-radius: 8px !important;
 }
@@ -21058,6 +21088,24 @@ h1, .h1 {
   position: absolute;
   right: 0;
   top: 16px;
+}
+
+.intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.intro-content h3 span, .intro-content .h3 span {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-color: #fff;
+  text-align: center;
+  border-radius: 48px;
 }
 
 .area-dropdown {
