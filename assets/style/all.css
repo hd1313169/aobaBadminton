@@ -21116,9 +21116,9 @@ h1, .h1 {
 }
 
 .intro-icon-next {
-  width: 20px;
-  height: 20px;
-  background-image: url(https://raw.githubusercontent.com/hd1313169/aobaBadminton/main/app/assets/images/aoba_next_icon.svg);
+  width: 24px;
+  height: 24px;
+  background-image: url(https://raw.githubusercontent.com/hd1313169/aobaBadminton/main/app/assets/images/aoba_down_icon.svg);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -21126,7 +21126,7 @@ h1, .h1 {
 
 @media (min-width: 768px) {
   .intro-icon-next {
-    background-image: url(https://raw.githubusercontent.com/hd1313169/aobaBadminton/main/app/assets/images/aoba_down_icon.svg);
+    background-image: url(https://raw.githubusercontent.com/hd1313169/aobaBadminton/main/app/assets/images/aoba_next_icon.svg);
   }
 }
 
