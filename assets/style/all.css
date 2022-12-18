@@ -21108,11 +21108,26 @@ h1, .h1 {
 }
 
 .intro-icon {
-  width: 60px;
-  height: 60px;
+  width: 120px;
+  height: 120px;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.intro-icon-next {
+  width: 20px;
+  height: 20px;
+  background-image: url(https://raw.githubusercontent.com/hd1313169/aobaBadminton/main/app/assets/images/aoba_next_icon.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 768px) {
+  .intro-icon-next {
+    background-image: url(https://raw.githubusercontent.com/hd1313169/aobaBadminton/main/app/assets/images/aoba_down_icon.svg);
+  }
 }
 
 .intro-content h3 span, .intro-content .h3 span {
