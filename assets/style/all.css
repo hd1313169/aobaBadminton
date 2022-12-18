@@ -21108,19 +21108,11 @@ h1, .h1 {
 }
 
 .intro-icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   width: 60px;
   height: 60px;
-  background: #fff;
-  border-radius: 100px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .intro-content h3 span, .intro-content .h3 span {
