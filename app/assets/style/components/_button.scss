@@ -108,4 +108,24 @@
     }
 }
 
-// <!-- 按鈕END -->
+// <!--fab -->
+.fab{
+	position: fixed;
+	display: flex;
+    flex-direction: column;
+	right: 8px;
+	bottom: 40px;
+	z-index: 1035;
+
+
+    &-messenger{
+        width: 56px;
+        height: 56px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: $primary;
+        border-radius: 48px;
+    }
+
+}

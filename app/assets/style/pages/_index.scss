@@ -21,3 +21,20 @@
 	right: 0;
 	top: 16px;
 }
+
+
+.intro{
+	display: flex;
+	align-items: center;
+	
+	&-content{
+		h3 span{
+			display: inline-block;
+			width: 24px;
+			height: 24px;
+			background-color: $light;
+			text-align: center;
+			border-radius: 48px;
+		}
+	}
+}
