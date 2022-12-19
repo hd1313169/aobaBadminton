@@ -133,14 +133,16 @@
     <div class="container">
         <div class="d-flex justify-content-between align-items-center">
             <div class="d-flex align-items-center">
-                <div class="stadium-title-img shadow me-8" style="background-image: url(https://raw.githubusercontent.com/hd1313169/aobaBadminton/main/app/assets/images/aoba_logo_120.png);"></div>
+                <div class="stadium-title-img shadow me-8"
+                    style="background-image: url(https://raw.githubusercontent.com/hd1313169/aobaBadminton/main/app/assets/images/aoba_logo_120.png);">
+                </div>
                 <div>
-                    <h3 class="areaCard-title fs-20 mb-4">青葉羽球 水源館</h3>
+                    <h3 class="areaCard-title fs-16 mb-4">青葉羽球 水源館</h3>
                     <p class="fs-14 fw-light">台北市公館路 12 號</p>
                 </div>
             </div>
-            <div class="d-flex">
-                <a href="#" class="link-grey-dark me-16"><i class="fa-regular fa-bookmark me-8"></i>收藏</a>
+            <div class="d-flex justify-content-end flex-wrap">
+                <a href="#" class="link-grey-dark me-16 "><i class="fa-regular fa-bookmark me-8"></i>收藏</a>
                 <a href="#" class="link-grey-dark"><i class="fa-solid fa-arrow-up-from-bracket me-8"></i>分享</a>
             </div>
         </div>
@@ -152,47 +154,49 @@
 <div class="bg-light mb-40">
     <div class="container">
         <div class="row">
-            <div class="col-12 col-md-7">
+            <div class="col-12 col-lg-7">
                 <!-- 場地圖片 -->
-                <div id="stadium-img-modal-carouselControls" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                            class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                            aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                            aria-label="Slide 3"></button>
+                <div class="mb-24 mb-lg-0">
+                    <div id="stadium-img-modal-carouselControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./assets/images/area_01.jpg" class="stadium-img-modal rounded-8" alt="1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/images/area_11.jpg" class="stadium-img-modal rounded-8" alt="2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/images/area_12.jpg" class="stadium-img-modal rounded-8" alt="3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button"
+                            data-bs-target="#stadium-img-modal-carouselControls" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button"
+                            data-bs-target="#stadium-img-modal-carouselControls" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="./assets/images/area_01.jpg" class="stadium-img-modal rounded-8" alt="1">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./assets/images/area_11.jpg" class="stadium-img-modal rounded-8" alt="2">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./assets/images/area_12.jpg" class="stadium-img-modal rounded-8" alt="3">
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#stadium-img-modal-carouselControls"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#stadium-img-modal-carouselControls"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
                 </div>
                 <!-- 場地圖片END -->
             </div>
-            <div class="col-12 col-md-5">
-                <div class="px-24">
+            <div class="col-12 col-lg-5">
+                <div class="px-lg-24">
                     <!-- 場地資訊 -->
-                    <div class="border-bottom pb-40 mb-24">
-                        <h3 class="fs-20 mb-24">場地資訊</h3>
-                        <ul class="fs-16 fw-light text-dark p-0">
+                    <div class="border-bottom pb-40">
+                        <h3 class="fs-20 mb-16">場地資訊</h3>
+                        <ul class="fs-16 fw-light text-dark">
                             <li class="mb-16">
                                 <a href="#" class="link-dark">
                                     <i class="fa-solid fa-location-dot me-8"></i>
@@ -200,12 +204,12 @@
                                 </a>
                             </li>
                             <li class="mb-16">
-                                <div class="">
+                                <div>
                                     <i class="fa-solid fa-hashtag me-8"></i>
                                     <span>8 面場地</span>
                                 </div>
                             </li>
-                            <li class="">
+                            <li>
                                 <a href="#" class="link-dark">
                                     <i class="fa-solid fa-star me-8"></i>
                                     <span>4.8 (76則評價)</span>
@@ -216,10 +220,10 @@
                     <!-- 場地資訊END -->
 
                     <!-- 設備與服務 -->
-                    <div class="border-bottom pb-40 position-relative">
-                        <h3 class="fs-20 mb-24">設備與服務</h3>
-                        <ul class="p-0 mb-24">
-                            <li class="mb-16 fw-light">
+                    <div class="border-bottom py-40 position-relative">
+                        <h3 class="fs-20 mb-16">設備與服務</h3>
+                        <ul class="mb-24">
+                            <li class="mb-16 fs-14 fw-light">
                                 <div class="row">
                                     <div class="col-4">
                                         <p><i class="fa-solid fa-check me-8"></i>置物櫃</p>
@@ -232,7 +236,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="mb-16 fw-light">
+                            <li class="mb-16 fs-14 fw-light">
                                 <div class="row">
                                     <div class="col-4">
                                         <p><i class="fa-solid fa-check me-8"></i>自動販賣機</p>
@@ -247,7 +251,7 @@
                             </li>
                         </ul>
                         <a href="#"
-                            class="d-inline-block fs-14 link-grey-dark border border-grey-dark rounded-8 px-16 py-8">全部設備與服務
+                            class="d-inline-block fs-14 link-grey-dark border border-grey-dark rounded-8 px-16 py-12">顯示全部設備與服務
                         </a>
                     </div>
                     <!-- 設備與服務END -->
@@ -265,182 +269,196 @@
             <!-- 場地租借內容 -->
             <div class="col-12 col-xl-8">
                 <!-- 預約場地 -->
-                <div class="py-24 border-bottom">
+                <div class="py-40 border-bottom">
                     <h3 class="fs-20 mb-24">預約場地</h3>
                     <div class="row">
-                        <div class="col-12 col-lg-6 mb-40 mb-lg-0">
+                        <div class="col-12 col-lg-6">
                             <!-- step1 選擇日期 -->
-                            <div class="d-flex align-items-center">
-                                <div class="step-decoration me-8">
-                                    <h4 class="fs-16 text-center text-light m-0">Step 1</h4>
+                            <div class="mb-40 mb-lg-0">
+                                <div class="d-flex align-items-center mb-16">
+                                    <h4 class="step-decoration fs-14 me-8">Step 1</h4>
+                                    <h4 class="fs-16 fw-normal">選擇日期</h4>
                                 </div>
-                                <h4 class="fs-16 fw-normal m-0">選擇日期</h4>
-                            </div>
-                            <!-- 日期選擇月曆 -->
-                            <div class="me-72 py-16">
-                                <div class="calendar">
-                                    <div class="calendar-title d-flex justify-content-center align-items-center mb-16">
-                                        <a href="#" class="calendar-monthBtn calendar-monthBtn-disabled"><i
-                                                class="fa-solid fa-arrow-left"></i></a>
-                                        <h5 class="fs-16 fw-normal mx-96">20223年1月</h5>
-                                        <a href="#" class="calendar-monthBtn"><i
-                                                class="fa-solid fa-arrow-right"></i></a>
-                                    </div>
-                                    <div class="calendar-body">
-                                        <div class="calendar-week mb-8">
-                                            <div class="calendar-week-item">日</div>
-                                            <div class="calendar-week-item">一</div>
-                                            <div class="calendar-week-item">二</div>
-                                            <div class="calendar-week-item">三</div>
-                                            <div class="calendar-week-item">四</div>
-                                            <div class="calendar-week-item">五</div>
-                                            <div class="calendar-week-item">六</div>
+                                <!-- 日期選擇月曆 -->
+                                <div class="me-72 py-16 d-flex justify-content-start">
+                                    <div class="calendar">
+                                        <div
+                                            class="calendar-title d-flex justify-content-center align-items-center mb-16">
+                                            <a href="#" class="calendar-monthBtn calendar-monthBtn-disabled"><i
+                                                    class="fa-solid fa-arrow-left"></i></a>
+                                            <h5 class="fs-16 fw-normal mx-96">20223年1月</h5>
+                                            <a href="#" class="calendar-monthBtn"><i
+                                                    class="fa-solid fa-arrow-right"></i></a>
                                         </div>
-                                        <!-- 第一週 -->
+                                        <div class="calendar-body">
+                                            <div class="calendar-week mb-8">
+                                                <div class="calendar-week-item">日</div>
+                                                <div class="calendar-week-item">一</div>
+                                                <div class="calendar-week-item">二</div>
+                                                <div class="calendar-week-item">三</div>
+                                                <div class="calendar-week-item">四</div>
+                                                <div class="calendar-week-item">五</div>
+                                                <div class="calendar-week-item">六</div>
+                                            </div>
+                                            <!-- 第一週 -->
 
-                                        <div class="calendar-date mb-8">
-                                            <input type="button" value="1" data-date="1"
-                                                class="btn calendar-date-item calendar-date-item-disabled">
-                                            <input type="button" value="2" data-date="2"
-                                                class="btn calendar-date-item calendar-date-item-disabled">
-                                            <input type="button" value="3" data-date="3"
-                                                class="btn calendar-date-item calendar-date-item-disabled">
-                                            <input type="button" value="4" data-date="4"
-                                                class="btn calendar-date-item calendar-date-item-disabled">
-                                            <input type="button" value="5" data-date="5"
-                                                class="btn calendar-date-item calendar-date-item-disabled">
-                                            <input type="button" value="6" data-date="6"
-                                                class="btn calendar-date-item calendar-date-item-disabled">
-                                            <input type="button" value="7" data-date="7"
-                                                class="btn calendar-date-item calendar-date-item-disabled">
-                                        </div>
-                                        <!-- 第二週 -->
-                                        <div class="calendar-date mb-8">
-                                            <input type="button" value="8" data-date="8"
-                                                class="btn calendar-date-item calendar-date-item-disabled">
-                                            <input type="button" value="9" data-date="9"
-                                                class="btn calendar-date-item calendar-date-item-disabled">
-                                            <input type="button" value="10" data-date="10"
-                                                class="btn calendar-date-item calendar-date-item-disabled">
-                                            <input type="button" value="11" data-date="11"
-                                                class="btn calendar-date-item calendar-date-item-disabled">
-                                            <input type="button" value="12" data-date="12"
-                                                class="btn calendar-date-item calendar-date-item-disabled">
-                                            <input type="button" value="13" data-date="13"
-                                                class="btn calendar-date-item calendar-date-item-disabled">
-                                            <input type="button" value="14" data-date="14"
-                                                class="btn calendar-date-item calendar-date-item-disabled">
-                                        </div>
-                                        <!-- 第三週 -->
-                                        <div class="calendar-date mb-8">
-                                            <input type="button" value="15" data-date="15"
-                                                class="btn calendar-date-item calendar-date-item-today">
-                                            <input type="button" value="16" data-date="16"
-                                                class="btn calendar-date-item">
-                                            <input type="button" value="17" data-date="17"
-                                                class="btn calendar-date-item">
-                                            <input type="button" value="18" data-date="18"
-                                                class="btn calendar-date-item">
-                                            <input type="button" value="19" data-date="19"
-                                                class="btn calendar-date-item">
-                                            <input type="button" value="20" data-date="20"
-                                                class="btn calendar-date-item calendar-date-item-disabled">
-                                            <input type="button" value="21" data-date="21"
-                                                class="btn calendar-date-item calendar-date-item-disabled">
-                                        </div>
-                                        <!-- 第四週 -->
-                                        <div class="calendar-date mb-8">
-                                            <input type="button" value="22" data-date="22"
-                                                class="btn calendar-date-item calendar-date-item-disabled">
-                                            <input type="button" value="23" data-date="23"
-                                                class="btn calendar-date-item calendar-date-item-disabled">
-                                            <input type="button" value="24" data-date="24"
-                                                class="btn calendar-date-item calendar-date-item-disabled">
-                                            <input type="button" value="25" data-date="25"
-                                                class="btn calendar-date-item calendar-date-item-disabled">
-                                            <input type="button" value="26" data-date="26"
-                                                class="btn calendar-date-item calendar-date-item-disabled">
-                                            <input type="button" value="27" data-date="27"
-                                                class="btn calendar-date-item calendar-date-item-disabled">
-                                            <input type="button" value="28" data-date="28"
-                                                class="btn calendar-date-item calendar-date-item-disabled">
-                                        </div>
-                                        <!-- 第五週 -->
-                                        <div class="calendar-date mb-8">
-                                            <input type="button" value="29" data-date="29"
-                                                class="btn calendar-date-item">
-                                            <input type="button" value="30" data-date="30"
-                                                class="btn calendar-date-item">
-                                            <input type="button" value="31" data-date="31"
-                                                class="btn calendar-date-item">
-                                            <input type="button" value="" data-date=""
-                                                class="btn calendar-date-item calendar-date-item-disabled">
-                                            <input type="button" value="" data-date=""
-                                                class="btn calendar-date-item calendar-date-item-disabled">
-                                            <input type="button" value="" data-date=""
-                                                class="btn calendar-date-item calendar-date-item-disabled">
-                                            <input type="button" value="" data-date=""
-                                                class="btn calendar-date-item calendar-date-item-disabled">
+                                            <div class="calendar-date mb-8">
+                                                <input type="button" value="1" data-date="1"
+                                                    class="btn calendar-date-item calendar-date-item-disabled">
+                                                <input type="button" value="2" data-date="2"
+                                                    class="btn calendar-date-item calendar-date-item-disabled">
+                                                <input type="button" value="3" data-date="3"
+                                                    class="btn calendar-date-item calendar-date-item-disabled">
+                                                <input type="button" value="4" data-date="4"
+                                                    class="btn calendar-date-item calendar-date-item-disabled">
+                                                <input type="button" value="5" data-date="5"
+                                                    class="btn calendar-date-item calendar-date-item-disabled">
+                                                <input type="button" value="6" data-date="6"
+                                                    class="btn calendar-date-item calendar-date-item-disabled">
+                                                <input type="button" value="7" data-date="7"
+                                                    class="btn calendar-date-item calendar-date-item-disabled">
+                                            </div>
+                                            <!-- 第二週 -->
+                                            <div class="calendar-date mb-8">
+                                                <input type="button" value="8" data-date="8"
+                                                    class="btn calendar-date-item calendar-date-item-disabled">
+                                                <input type="button" value="9" data-date="9"
+                                                    class="btn calendar-date-item calendar-date-item-disabled">
+                                                <input type="button" value="10" data-date="10"
+                                                    class="btn calendar-date-item calendar-date-item-disabled">
+                                                <input type="button" value="11" data-date="11"
+                                                    class="btn calendar-date-item calendar-date-item-disabled">
+                                                <input type="button" value="12" data-date="12"
+                                                    class="btn calendar-date-item calendar-date-item-disabled">
+                                                <input type="button" value="13" data-date="13"
+                                                    class="btn calendar-date-item calendar-date-item-disabled">
+                                                <input type="button" value="14" data-date="14"
+                                                    class="btn calendar-date-item calendar-date-item-disabled">
+                                            </div>
+                                            <!-- 第三週 -->
+                                            <div class="calendar-date mb-8">
+                                                <input type="button" value="15" data-date="15"
+                                                    class="btn calendar-date-item calendar-date-item-today">
+                                                <input type="button" value="16" data-date="16"
+                                                    class="btn calendar-date-item">
+                                                <input type="button" value="17" data-date="17"
+                                                    class="btn calendar-date-item">
+                                                <input type="button" value="18" data-date="18"
+                                                    class="btn calendar-date-item">
+                                                <input type="button" value="19" data-date="19"
+                                                    class="btn calendar-date-item">
+                                                <input type="button" value="20" data-date="20"
+                                                    class="btn calendar-date-item calendar-date-item-disabled">
+                                                <input type="button" value="21" data-date="21"
+                                                    class="btn calendar-date-item calendar-date-item-disabled">
+                                            </div>
+                                            <!-- 第四週 -->
+                                            <div class="calendar-date mb-8">
+                                                <input type="button" value="22" data-date="22"
+                                                    class="btn calendar-date-item calendar-date-item-disabled">
+                                                <input type="button" value="23" data-date="23"
+                                                    class="btn calendar-date-item calendar-date-item-disabled">
+                                                <input type="button" value="24" data-date="24"
+                                                    class="btn calendar-date-item calendar-date-item-disabled">
+                                                <input type="button" value="25" data-date="25"
+                                                    class="btn calendar-date-item calendar-date-item-disabled">
+                                                <input type="button" value="26" data-date="26"
+                                                    class="btn calendar-date-item calendar-date-item-disabled">
+                                                <input type="button" value="27" data-date="27"
+                                                    class="btn calendar-date-item calendar-date-item-disabled">
+                                                <input type="button" value="28" data-date="28"
+                                                    class="btn calendar-date-item calendar-date-item-disabled">
+                                            </div>
+                                            <!-- 第五週 -->
+                                            <div class="calendar-date mb-8">
+                                                <input type="button" value="29" data-date="29"
+                                                    class="btn calendar-date-item">
+                                                <input type="button" value="30" data-date="30"
+                                                    class="btn calendar-date-item">
+                                                <input type="button" value="31" data-date="31"
+                                                    class="btn calendar-date-item">
+                                                <input type="button" value="" data-date=""
+                                                    class="btn calendar-date-item calendar-date-item-disabled">
+                                                <input type="button" value="" data-date=""
+                                                    class="btn calendar-date-item calendar-date-item-disabled">
+                                                <input type="button" value="" data-date=""
+                                                    class="btn calendar-date-item calendar-date-item-disabled">
+                                                <input type="button" value="" data-date=""
+                                                    class="btn calendar-date-item calendar-date-item-disabled">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            <!-- step1 選擇日期END -->
                         </div>
                         <div class="col-12 col-lg-6">
-                            <div class="d-flex align-items-center mb-16">
-                                <div class="step-decoration me-8">
-                                    <h4 class="fs-16 text-center text-light m-0">Step 2</h4>
+                            <!-- step2 選擇時段 -->
+                            <div class="mb-40">
+                                <div class="d-flex align-items-center mb-16">
+                                    <h4 class="step-decoration fs-14 me-8">Step 2</h4>
+                                    <h4 class="fs-16 fw-normal">選擇時段</h4>
                                 </div>
-                                <h4 class="fs-16 fw-normal m-0">選擇時段</h4>
-                            </div>
-                            <!-- 時段下拉選單 -->
-                            <div class="dropdown area-dropdown mb-40 stadium-dropdown">
-                                <a class="btn btn-light border border-grey-light rounded-8 text-grey-light dropdown-toggle ps-16 py-12"
-                                    href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
-                                    aria-expanded="false"><i class="fa-regular fa-clock me-12"></i>請選擇時段</a>
-                                <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuLink">
-                                    <li><a class="dropdown-item disabled" href="#">08:00 - 09:00</a></li>
-                                    <li><a class="dropdown-item disabled" href="#">09:00 - 10:00</a></li>
-                                    <li><a class="dropdown-item disabled" href="#">10:00 - 11:00</a></li>
-                                    <li><a class="dropdown-item disabled" href="#">11:00 - 12:00</a></li>
-                                    <li><a class="dropdown-item disabled" href="#">12:00 - 13:00</a></li>
-                                    <li><a class="dropdown-item disabled" href="#">13:00 - 14:00</a></li>
-                                    <li><a class="dropdown-item disabled" href="#">14:00 - 15:00</a></li>
-                                    <li><a class="dropdown-item disabled" href="#">15:00 - 16:00</a></li>
-                                    <li><a class="dropdown-item" href="#">16:00 - 17:00</a></li>
-                                    <li><a class="dropdown-item" href="#">17:00 - 18:00</a></li>
-                                    <li><a class="dropdown-item disabled" href="#">18:00 - 19:00</a></li>
-                                    <li><a class="dropdown-item disabled" href="#">20:00 - 21:00</a></li>
-                                </ul>
-                            </div>
-                            <!-- 場地選單 -->
-                            <div class="d-flex align-items-center mb-16">
-                                <div class="step-decoration me-8">
-                                    <h4 class="fs-16 text-center text-light m-0">Step 3</h4>
+                                <!-- 時段下拉選單 -->
+                                <div class="dropdown area-dropdown stadium-dropdown">
+                                    <a class="btn btn-light border border-grey-light rounded-8 text-grey-light dropdown-toggle ps-16 py-12"
+                                        href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+                                        aria-expanded="false"><i class="fa-regular fa-clock me-12"></i>請選擇時段</a>
+                                    <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuLink">
+                                        <li><a class="dropdown-item disabled" href="#">08:00 - 09:00</a></li>
+                                        <li><a class="dropdown-item disabled" href="#">09:00 - 10:00</a></li>
+                                        <li><a class="dropdown-item disabled" href="#">10:00 - 11:00</a></li>
+                                        <li><a class="dropdown-item disabled" href="#">11:00 - 12:00</a></li>
+                                        <li><a class="dropdown-item disabled" href="#">12:00 - 13:00</a></li>
+                                        <li><a class="dropdown-item disabled" href="#">13:00 - 14:00</a></li>
+                                        <li><a class="dropdown-item disabled" href="#">14:00 - 15:00</a></li>
+                                        <li><a class="dropdown-item disabled" href="#">15:00 - 16:00</a></li>
+                                        <li><a class="dropdown-item" href="#">16:00 - 17:00</a></li>
+                                        <li><a class="dropdown-item" href="#">17:00 - 18:00</a></li>
+                                        <li><a class="dropdown-item disabled" href="#">18:00 - 19:00</a></li>
+                                        <li><a class="dropdown-item disabled" href="#">20:00 - 21:00</a></li>
+                                    </ul>
                                 </div>
-                                <h4 class="fs-16 fw-normal m-0">選擇場地</h4>
                             </div>
-                            <p class="text-grey mb-16">所選時段還有 6 個場地</p>
-                            <div class="stadium-court d-flex flex-wrap">
-                                <input type="button" value="A" data-court="A"
-                                    class="stadium-court-item text-dark stadium-court-item-disabled">
-                                <input type="button" value="B" data-court="B"
-                                    class="stadium-court-item text-dark stadium-court-item-disabled">
-                                <input type="button" value="C" data-court="C" class="btn stadium-court-item text-dark">
-                                <input type="button" value="D" data-court="D" class="btn stadium-court-item text-dark">
-                                <input type="button" value="E" data-court="E" class="btn stadium-court-item text-dark">
-                                <input type="button" value="F" data-court="F" class="btn stadium-court-item text-dark">
-                                <input type="button" value="G" data-court="G" class="btn stadium-court-item text-dark">
-                                <input type="button" value="H" data-court="H" class="btn stadium-court-item text-dark">
+                            <!-- step2 選擇時段END -->
+                            <!-- step3 選擇場地 -->
+                            <div>
+                                <div class="d-flex align-items-center mb-16">
+                                    <h4 class="step-decoration fs-14 me-8">Step 3</h4>
+                                    <h4 class="fs-16 fw-normal">選擇場地</h4>
+                                </div>
+                                <p class="fs-14 text-grey mb-16">所選時段還有 6 個場地</p>
+                                <!-- 場地選單 -->
+
+                                <div class="stadium-court d-flex flex-wrap">
+                                    <input type="button" value="A" data-court="A"
+                                        class="stadium-court-item text-dark stadium-court-item-disabled">
+                                    <input type="button" value="B" data-court="B"
+                                        class="stadium-court-item text-dark stadium-court-item-disabled">
+                                    <input type="button" value="C" data-court="C"
+                                        class="btn stadium-court-item text-dark">
+                                    <input type="button" value="D" data-court="D"
+                                        class="btn stadium-court-item text-dark">
+                                    <input type="button" value="E" data-court="E"
+                                        class="btn stadium-court-item text-dark">
+                                    <input type="button" value="F" data-court="F"
+                                        class="btn stadium-court-item text-dark">
+                                    <input type="button" value="G" data-court="G"
+                                        class="btn stadium-court-item text-dark">
+                                    <input type="button" value="H" data-court="H"
+                                        class="btn stadium-court-item text-dark">
+                                </div>
                             </div>
+                            <!-- step3 選擇場地END -->
                         </div>
                     </div>
                 </div>
+                <!-- 預約場地END -->
 
                 <!-- 場地規範 -->
-                <div class="py-24 border-bottom">
-                    <h3 class="fs-20 mb-24">場地規範</h3>
-                    <ul class="m-0">
+                <div class="py-40 border-bottom">
+                    <h3 class="fs-20 mb-16">場地規範</h3>
+                    <ul>
                         <li class="fw-light mb-8"><span class="me-4 ">1.</span>歡迎使用公共空間，但請遵守一切使用規範。</li>
                         <li class="fw-light mb-8"><span class="me-4">2.</span>若造成環境或設備損壞，將視情況收取金額賠償。</li>
                         <li class="fw-light mb-8"><span
@@ -451,19 +469,78 @@
                         <li class="fw-light"><span class="me-4">6.</span>場地使用完畢後，請將物品攜帶離開，並將垃圾丟置垃圾桶內。</li>
                     </ul>
                 </div>
+                <!-- 場地規範END -->
 
                 <!-- 退訂政策 -->
-                <div class="py-24">
-                    <h3 class="fs-20 mb-24">退訂政策</h3>
-                    <ul class="m-0">
+                <div class="py-40">
+                    <h3 class="fs-20 mb-16">退訂政策</h3>
+                    <ul>
                         <li class="fw-light mb-8"><span
                                 class="me-4 ">1.</span>提供24小時前無條件更改預約服務，更改預約僅包含「取消預約」、「更改時間」，時間以館方公告為準。</li>
                         <li class="fw-light mb-8"><span class="me-4">2.</span>更改訂單時，請撥打球館連絡電話 02-22221122。</li>
                     </ul>
                 </div>
+                <!-- 退訂政策END -->
+
+                <!-- 評價 -->
+                <div class="py-40">
+                    <h3 class="fs-20 mb-16">4.8 (76則評價)</h3>
+                    <ul>
+                        <div class="row">
+                            <!-- 單則留言 -->
+                            <div class="col-12 col-md-6">
+                                <div class="rate border-bottom py-16 mb-16 mb-md-24">
+                                    <h5 class="fs-16 mb-4">Alen<span class="fs-14 fw-bold text-secondary ms-4"><i
+                                                class="fa-solid fa-star"></i>4</span></h5>
+                                    <p class="fs-12 fw-normal text-grey mb-8">2022年07月28日</p>
+                                    <p class="rate-content fs-14 fw-light">
+                                        很乾淨場邊空間很大而且還有停車場。淋浴間水很小洗澡的時候有點痛苦，其他無話可說。很乾淨場邊空間很大而且還有停車場。淋浴間水很小洗澡的時候有點痛苦，其他無話可說
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- 單則留言END -->
+                            <div class="col-12 col-md-6">
+                                <div class="rate border-bottom py-16 mb-16 mb-md-24">
+                                    <h5 class="fs-16 mb-4">林<span class="fs-14 fw-bold text-secondary ms-4"><i
+                                                class="fa-solid fa-star"></i>4</span></h5>
+                                    <p class="fs-12 fw-normal text-grey mb-8">2022年07月28日</p>
+                                    <p class="rate-content fs-14 fw-light">
+                                        無話可說 </p>
+                                </div>
+                            </div>
+                            <!-- 單則留言END -->
+                            <!-- 單則留言END -->
+                            <div class="col-12 col-md-6">
+                                <div class="rate border-bottom py-16 mb-16 mb-md-24">
+                                    <h5 class="fs-16 mb-4">Ryan Chiang<span class="fs-14 fw-bold text-secondary ms-4"><i
+                                                class="fa-solid fa-star"></i>4</span></h5>
+                                    <p class="fs-12 fw-normal text-grey mb-8">2022年07月28日</p>
+                                    <p class="rate-content fs-14 fw-light"></p>
+                                </div>
+                            </div>
+                            <!-- 單則留言END -->
+                            <!-- 單則留言END -->
+                            <div class="col-12 col-md-6">
+                                <div class="rate border-bottom py-16 mb-16 mb-md-24">
+                                    <h5 class="fs-16 mb-4">☆㊣↙煞氣a賭聖↗㊣☆<span class="fs-14 fw-bold text-secondary ms-4"><i
+                                                class="fa-solid fa-star"></i>4</span></h5>
+                                    <p class="fs-12 fw-normal text-grey mb-8">2022年07月28日</p>
+                                    <p class="rate-content fs-14 fw-light">很乾淨場邊空間很大而且還有停車場</p>
+                                </div>
+                            </div>
+                            <!-- 單則留言END -->
+                        </div>
+                    </ul>
+                    <a href="#"
+                        class="d-inline-block fs-14 link-grey-dark border border-grey-dark rounded-8 px-16 py-12">顯示全部評價</a>
+                </div>
+                <!-- 評價END -->
+
+
             </div>
-            <!-- 預約清單 -->
+
             <div class="col-12 col-xl-4 position-relative">
+                <!-- 預約清單 -->
                 <div class="bookList">
                     <div class="bg-light border rounded-8 pt-24 shadow">
                         <div class="container">
@@ -559,12 +636,12 @@
                                 </tbody>
                             </table>
                             <div class="d-flex justify-content-between py-24">
-                                <p class="m-0">$300 × 4 小時</p>
-                                <p class="m-0">$1,200</p>
+                                <p>$300 × 4 小時</p>
+                                <p>$1,200</p>
                             </div>
                             <div class="d-flex justify-content-between">
-                                <p class="m-0">總計</p>
-                                <h5 class="m-0">$1,200</h5>
+                                <p>總計</p>
+                                <h5>$1,200</h5>
                             </div>
                             <a href="./book.html" class="d-block primaryBtn-L text-center text-white my-24">立 即 預 約</a>
                         </div>
@@ -589,225 +666,7 @@
         </div>
     </div>
 </div>
-<!-- Modal -->
-<div class="modal fade" id="bookListModal" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
-    aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-        <div class="modal-content">
-            <div class="modal-header border-0">
-                <h5 class="modal-title" id="staticBackdropLabel"></h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <div class="container">
-                    <table class="w-100">
-                        <thead class="border-bottom border-grey-light">
-                            <tr>
-                                <th width="8%">
-                                    <p class="pb-8">#</p>
-                                </th>
-                                <th width="38%">
-                                    <p class="pb-8">日期</p>
-                                </th>
-                                <th width="28%">
-                                    <p class="pb-8">時段</p>
-                                </th>
-                                <th width="16%" class="text-center">
-                                    <p class="pb-8">場地</p>
-                                </th>
-                                <th width="10%" class="text-center">
-                                    <p class="pb-8"></p>
-                                </th>
-                            </tr>
-                        </thead>
-                        <tbody class="mt-16">
-                            <tr>
-                                <td>
-                                    <p class="py-16">1</p>
-                                </td>
-                                <td>
-                                    <p class="py-16">2023/01/16(一)</p>
-                                </td>
-                                <td>
-                                    <p class="py-16">16:00-17:00</p>
-                                </td>
-                                <td class="text-center">
-                                    <p class="py-16">C</p>
-                                </td>
-                                <td class="text-center"><a href="#"
-                                        class="bookList-cancelBtn text-center text-grey-light align-middle"><i
-                                            class="fa-solid fa-xmark py-16"></i></a></td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p class="py-16">2</p>
-                                </td>
-                                <td>
-                                    <p class="py-16">2023/01/16(一)</p>
-                                </td>
-                                <td>
-                                    <p class="py-16">16:00-17:00</p>
-                                </td>
-                                <td class="text-center">
-                                    <p class="py-16">D</p>
-                                </td>
-                                <td class="text-center"><a href="#"
-                                        class="bookList-cancelBtn text-center text-grey-light align-middle"><i
-                                            class="fa-solid fa-xmark py-16"></i></a></td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p class="py-16">3</p>
-                                </td>
-                                <td>
-                                    <p class="py-16">2023/01/16(一)</p>
-                                </td>
-                                <td>
-                                    <p class="py-16">17:00-18:00</p>
-                                </td>
-                                <td class="text-center">
-                                    <p class="py-16">C</p>
-                                </td>
-                                <td class="text-center"><a href="#"
-                                        class="bookList-cancelBtn text-center text-grey-light align-middle"><i
-                                            class="fa-solid fa-xmark py-16"></i></a></td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p class="py-16">4</p>
-                                </td>
-                                <td>
-                                    <p class="py-16">2023/01/16(一)</p>
-                                </td>
-                                <td>
-                                    <p class="py-16">17:00-18:00</p>
-                                </td>
-                                <td class="text-center">
-                                    <p class="py-16">D</p>
-                                </td>
-                                <td class="text-center"><a href="#"
-                                        class="bookList-cancelBtn text-center text-grey-light align-middle"><i
-                                            class="fa-solid fa-xmark py-16"></i></a></td>
-                            </tr>
-                            <!-- 滾輪測試填充 -->
-                            <tr>
-                                <td>
-                                    <p class="py-16">N</p>
-                                </td>
-                                <td>
-                                    <p class="py-16">9999/99/99(一)</p>
-                                </td>
-                                <td>
-                                    <p class="py-16">99:99-99:99</p>
-                                </td>
-                                <td class="text-center">
-                                    <p class="py-16">X</p>
-                                </td>
-                                <td class="text-center"><a href="#" class="text-center text-grey-light align-middle"><i
-                                            class="fa-solid fa-xmark py-16"></i></a></td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p class="py-16">N</p>
-                                </td>
-                                <td>
-                                    <p class="py-16">9999/99/99(一)</p>
-                                </td>
-                                <td>
-                                    <p class="py-16">99:99-99:99</p>
-                                </td>
-                                <td class="text-center">
-                                    <p class="py-16">X</p>
-                                </td>
-                                <td class="text-center"><a href="#" class="text-center text-grey-light align-middle"><i
-                                            class="fa-solid fa-xmark py-16"></i></a></td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p class="py-16">N</p>
-                                </td>
-                                <td>
-                                    <p class="py-16">9999/99/99(一)</p>
-                                </td>
-                                <td>
-                                    <p class="py-16">99:99-99:99</p>
-                                </td>
-                                <td class="text-center">
-                                    <p class="py-16">X</p>
-                                </td>
-                                <td class="text-center"><a href="#" class="text-center text-grey-light align-middle"><i
-                                            class="fa-solid fa-xmark py-16"></i></a></td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p class="py-16">N</p>
-                                </td>
-                                <td>
-                                    <p class="py-16">9999/99/99(一)</p>
-                                </td>
-                                <td>
-                                    <p class="py-16">99:99-99:99</p>
-                                </td>
-                                <td class="text-center">
-                                    <p class="py-16">X</p>
-                                </td>
-                                <td class="text-center"><a href="#" class="text-center text-grey-light align-middle"><i
-                                            class="fa-solid fa-xmark py-16"></i></a></td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p class="py-16">N</p>
-                                </td>
-                                <td>
-                                    <p class="py-16">9999/99/99(一)</p>
-                                </td>
-                                <td>
-                                    <p class="py-16">99:99-99:99</p>
-                                </td>
-                                <td class="text-center">
-                                    <p class="py-16">X</p>
-                                </td>
-                                <td class="text-center"><a href="#" class="text-center text-grey-light align-middle"><i
-                                            class="fa-solid fa-xmark py-16"></i></a></td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p class="py-16">N</p>
-                                </td>
-                                <td>
-                                    <p class="py-16">9999/99/99(一)</p>
-                                </td>
-                                <td>
-                                    <p class="py-16">99:99-99:99</p>
-                                </td>
-                                <td class="text-center">
-                                    <p class="py-16">X</p>
-                                </td>
-                                <td class="text-center"><a href="#" class="text-center text-grey-light align-middle"><i
-                                            class="fa-solid fa-xmark py-16"></i></a></td>
-                            </tr>
-                            <!-- 滾輪測試填充END -->
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-            <div class="modal-footer d-block border-0">
-                <div class="container border-top">
-                    <div class="d-flex justify-content-between py-16">
-                        <p class="m-0">$300 × 4 小時</p>
-                        <p class="m-0">$1,200</p>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <p class="m-0">總計</p>
-                        <h5 class="m-0">$1,200</h5>
-                    </div>
-                    <a href="./book.html" class="d-block primaryBtn-L text-center text-white mx-auto my-16">立 即 預 約</a>
-                </div>
 
-            </div>
-        </div>
-    </div>
-</div>
 </div>
 
     <!-- 頁尾 -->

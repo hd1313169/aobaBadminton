@@ -7157,7 +7157,7 @@ fieldset:disabled .btn {
 .list-group-item {
   position: relative;
   display: block;
-  padding: 0.5rem 1rem;
+  padding: 0 0;
   color: #212529;
   background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.125);
@@ -20378,6 +20378,7 @@ fieldset:disabled .btn {
 
 ul {
   margin-bottom: 0;
+  padding-left: 0;
 }
 
 img {
@@ -21266,10 +21267,11 @@ span.buttonText {
 }
 
 .step-decoration {
-  width: 72px;
   background-color: #56BBB5;
-  border-radius: 24px;
-  padding: 8px;
+  border-radius: 48px;
+  padding: 6px 12px;
+  color: #fff !important;
+  text-align: center;
 }
 
 .calendar-monthBtn {
@@ -21403,6 +21405,26 @@ span.buttonText {
   cursor: default;
   background: #d9d9d9;
   color: #fff !important;
+}
+
+.rate {
+  width: 75%;
+}
+
+@media (min-width: 768px) {
+  .rate {
+    width: 75%;
+  }
+}
+
+.rate-content {
+  height: 63px;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
 
 .bookList {
