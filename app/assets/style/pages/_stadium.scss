@@ -1,5 +1,5 @@
-.stadium-title{
-    &-img{
+.stadium-title {
+    &-img {
         width: 60px;
         height: 60px;
         border-radius: 48px;
@@ -8,6 +8,7 @@
         background-repeat: no-repeat;
     }
 }
+
 .stadium-img {
     width: 100%;
     height: 100%;
@@ -29,10 +30,12 @@
         background-size: cover;
         background-repeat: no-repeat;
         cursor: pointer;
-        &-top{
+
+        &-top {
             border-radius: 0 8px 0 0;
         }
-        &-bottom{
+
+        &-bottom {
             border-radius: 0 0 8px 0;
         }
     }
@@ -75,12 +78,14 @@
     background-repeat: no-repeat;
 }
 
-.step-decoration{
-    width: 72px;
+.step-decoration {
     background-color: $primary;
-    border-radius: 24px;
-    padding: 8px;
+    border-radius: 48px;
+    padding: 6px 12px;
+    color: $light !important;
+    text-align: center;
 }
+
 .calendar {
     &-monthBtn {
         display: block;
@@ -202,6 +207,23 @@
         color: $light !important;
     }
 }
+
+
+.rate{
+    width: 75%;
+    @media (min-width: 768px) {
+        width: 75%;
+    }
+    &-content {
+        height: 63px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+    }
+}
+
 
 .bookList {
     display: none;
