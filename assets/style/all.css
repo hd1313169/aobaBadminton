@@ -21083,11 +21083,11 @@ h1, .h1 {
   background-repeat: no-repeat;
 }
 
-.moreArea {
+.more-btn {
   font-weight: light;
   position: absolute;
   right: 0;
-  top: 16px;
+  top: 8px;
 }
 
 .intro-item {
@@ -21184,15 +21184,15 @@ span.buttonText {
   /* Use the Roboto font that is loaded in the <head> */
 }
 
-.stadium-img {
-  width: 100%;
-  height: 280px;
+.stadium-title-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 48px;
 }
 
-@media (min-width: 992px) {
-  .stadium-img {
-    height: 500px;
-  }
+.stadium-img {
+  width: 100%;
+  height: 100%;
 }
 
 .stadium-img-main {
@@ -21202,7 +21202,7 @@ span.buttonText {
   background-size: cover;
   background-repeat: no-repeat;
   cursor: pointer;
-  border-radius: 8px 0 0 8px;
+  border-radius: 8px;
 }
 
 .stadium-img-side {
