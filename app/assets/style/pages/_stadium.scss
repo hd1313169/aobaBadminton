@@ -1,10 +1,13 @@
+.stadium-title{
+    &-img{
+        width: 60px;
+        height: 60px;
+        border-radius: 48px;
+    }
+}
 .stadium-img {
     width: 100%;
-    height: 280px;
-
-    @media (min-width: 992px) {
-        height: 500px;
-    }
+    height: 100%;
 
     &-main {
         width: 100%;
@@ -13,7 +16,7 @@
         background-size: cover;
         background-repeat: no-repeat;
         cursor: pointer;
-        border-radius: 8px 0 0 8px;
+        border-radius: 8px;
     }
 
     &-side {
