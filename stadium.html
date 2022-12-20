@@ -134,7 +134,7 @@
         <div class="d-flex justify-content-between align-items-center">
             <div class="d-flex align-items-center">
                 <div class="stadium-title-img shadow me-8"
-                    style="background-image: url(https://raw.githubusercontent.com/hd1313169/aobaBadminton/main/app/assets/images/aoba_logo_120.png);">
+                    style="background-image: url(https://raw.githubusercontent.com/hd1313169/aobaBadminton/main/app/assets/images/aoba_logo_120_bg-primary.png);">
                 </div>
                 <div>
                     <h3 class="areaCard-title fs-16 mb-4">青葉羽球 水源館</h3>
@@ -667,11 +667,167 @@
     </div>
 </div>
 
+<div class="container">
+    <!-- Modal -->
+<div class="modal fade" id="bookListModal" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+        <div class="modal-header border-0">
+            <h5 class="modal-title" id="staticBackdropLabel"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="container">
+                <table class="w-100">
+                    <thead class="border-bottom border-grey-light">
+                        <tr>
+                            <th width="8%">
+                                <p class="m-0 pb-8">#</p>
+                            </th>
+                            <th width="38%">
+                                <p class="m-0 pb-8">日期</p>
+                            </th>
+                            <th width="28%">
+                                <p class="m-0 pb-8">時段</p>
+                            </th>
+                            <th width="16%" class="text-center">
+                                <p class="m-0 pb-8">場地</p>
+                            </th>
+                            <th width="10%" class="text-center">
+                                <p class="m-0 pb-8"></p>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody class="mt-16">
+                        <tr>
+                            <td>
+                                <p class="m-0 py-16">1</p>
+                            </td>
+                            <td>
+                                <p class="m-0 py-16">2023/01/16(一)</p>
+                            </td>
+                            <td>
+                                <p class="m-0 py-16">16:00-17:00</p>
+                            </td>
+                            <td class="text-center">
+                                <p class="m-0 py-16">C</p>
+                            </td>
+                            <td class="text-center"><a href="#"
+                                    class="bookList-cancelBtn text-center text-grey-light align-middle"><i
+                                        class="fa-solid fa-xmark m-0 py-16"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="m-0 py-16">2</p>
+                            </td>
+                            <td>
+                                <p class="m-0 py-16">2023/01/16(一)</p>
+                            </td>
+                            <td>
+                                <p class="m-0 py-16">16:00-17:00</p>
+                            </td>
+                            <td class="text-center">
+                                <p class="m-0 py-16">D</p>
+                            </td>
+                            <td class="text-center"><a href="#"
+                                    class="bookList-cancelBtn text-center text-grey-light align-middle"><i
+                                        class="fa-solid fa-xmark m-0 py-16"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="m-0 py-16">3</p>
+                            </td>
+                            <td>
+                                <p class="m-0 py-16">2023/01/16(一)</p>
+                            </td>
+                            <td>
+                                <p class="m-0 py-16">17:00-18:00</p>
+                            </td>
+                            <td class="text-center">
+                                <p class="m-0 py-16">C</p>
+                            </td>
+                            <td class="text-center"><a href="#"
+                                    class="bookList-cancelBtn text-center text-grey-light align-middle"><i
+                                        class="fa-solid fa-xmark m-0 py-16"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="m-0 py-16">4</p>
+                            </td>
+                            <td>
+                                <p class="m-0 py-16">2023/01/16(一)</p>
+                            </td>
+                            <td>
+                                <p class="m-0 py-16">17:00-18:00</p>
+                            </td>
+                            <td class="text-center">
+                                <p class="m-0 py-16">D</p>
+                            </td>
+                            <td class="text-center"><a href="#"
+                                    class="bookList-cancelBtn text-center text-grey-light align-middle"><i
+                                        class="fa-solid fa-xmark m-0 py-16"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="m-0 py-16">5</p>
+                            </td>
+                            <td>
+                                <p class="m-0 py-16">2023/01/16(一)</p>
+                            </td>
+                            <td>
+                                <p class="m-0 py-16">17:00-18:00</p>
+                            </td>
+                            <td class="text-center">
+                                <p class="m-0 py-16">D</p>
+                            </td>
+                            <td class="text-center"><a href="#"
+                                    class="bookList-cancelBtn text-center text-grey-light align-middle"><i
+                                        class="fa-solid fa-xmark m-0 py-16"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="m-0 py-16">6</p>
+                            </td>
+                            <td>
+                                <p class="m-0 py-16">2023/01/16(一)</p>
+                            </td>
+                            <td>
+                                <p class="m-0 py-16">17:00-18:00</p>
+                            </td>
+                            <td class="text-center">
+                                <p class="m-0 py-16">D</p>
+                            </td>
+                            <td class="text-center"><a href="#"
+                                    class="bookList-cancelBtn text-center text-grey-light align-middle"><i
+                                        class="fa-solid fa-xmark m-0 py-16"></i></a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="modal-footer d-block border-0">
+            <div class="container border-top">
+                <div class="d-flex justify-content-between py-16">
+                    <p class="m-0">$300 × 4 小時</p>
+                    <p class="m-0">$1,200</p>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <p class="m-0">總計</p>
+                    <h5 class="m-0">$1,200</h5>
+                </div>
+                <a href="./book.html" class="d-block primaryBtn-L text-center text-white mx-auto my-16">立 即 預 約</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+</div>
 </div>
 
     <!-- 頁尾 -->
-    <div class="bg-light stadium-footer">
-      <footer class="footer container py-20">
+    <footer class="footer stadium-footer">
+      <div class="container py-20">
         <ul class="d-flex justify-content-center pb-8">
           <li class="pe-20"><a href="https://www.facebook.com/" target="_blank"><i
                 class="fa-brands fa-facebook fs-24 text-dark footer-icon"></i></a></li>
@@ -681,13 +837,15 @@
                 class="fa-solid fa-envelope fs-24 text-dark footer-icon"></i></a></li>
         </ul>
         <p class="text-center fs-12 fw-light m-0">aoba badminton © 2022 All rights reserved</p>
-      </footer>
-    </div>
+      </div>
+    </footer>
     <!-- 頁尾END -->
 
     <!-- fab -->
-    <div class="fab d-flex">
-      <a href="https://www.messenger.com/" target="_blank" class="d-block fs-40 text-light text-center"><i class="fa-brands fa-facebook-messenger"></i></a>
+    <div class="fab d-flex" >
+      <div class="fab-messenger d-flex">
+        <a href="https://www.messenger.com/" target="_blank" class="d-block fs-28 text-light text-center"><i class="fa-brands fa-facebook-messenger"></i></a>
+      </div>
     </div>
     <!-- fab END -->
 
