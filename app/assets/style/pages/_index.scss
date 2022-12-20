@@ -1,11 +1,6 @@
 .hero {
-	width: auto;
-	height: 100%;
-
-	@media (min-width: 576px) {
-		width: 100%;
-		height: auto;
-	}
+	width: 100%;
+	height: auto;
 }
 
 .title-icon {
@@ -43,7 +38,7 @@
 		background-position: center;
 		background-repeat: no-repeat;
 
-		&-next{
+		&-next {
 			width: 24px;
 			height: 24px;
 			background-image: url(https://raw.githubusercontent.com/hd1313169/aobaBadminton/main/app/assets/images/aoba_down_icon.svg);
