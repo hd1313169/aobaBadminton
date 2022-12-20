@@ -21070,15 +21070,8 @@ h1, .h1 {
 }
 
 .hero {
-  width: auto;
-  height: 100%;
-}
-
-@media (min-width: 576px) {
-  .hero {
-    width: 100%;
-    height: auto;
-  }
+  width: 100%;
+  height: auto;
 }
 
 .title-icon {
@@ -21194,7 +21187,7 @@ span.buttonText {
   width: 60px;
   height: 60px;
   border-radius: 48px;
-  background-size: 90%;
+  background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
 }
