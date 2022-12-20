@@ -16,6 +16,7 @@
     background: $light;
     border: 1px solid $primary;
     border-radius: 8px;
+
     &:hover {
         background: $primary;
         color: $light !important;
@@ -109,16 +110,16 @@
 }
 
 // <!--fab -->
-.fab{
-	position: fixed;
-	display: flex;
+.fab {
+    position: fixed;
+    display: flex;
     flex-direction: column;
-	right: 8px;
-	bottom: 40px;
-	z-index: 1035;
+    right: 8px;
+    bottom: 120px;
+    z-index: 1035;
 
 
-    &-messenger{
+    &-messenger {
         width: 56px;
         height: 56px;
         display: flex;
@@ -127,5 +128,4 @@
         background: $primary;
         border-radius: 48px;
     }
-
 }
