@@ -21142,8 +21142,8 @@ span.buttonText {
 }
 
 .stadium-title-img {
-  width: 60px;
-  height: 60px;
+  width: 48px;
+  height: 48px;
   border-radius: 48px;
   background-size: cover;
   background-position: top;
@@ -21352,7 +21352,7 @@ span.buttonText {
     display: block;
     position: -webkit-sticky;
     position: sticky;
-    top: 0;
+    top: 88px;
   }
 }
 
