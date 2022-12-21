@@ -1,7 +1,7 @@
 .stadium-title {
     &-img {
-        width: 60px;
-        height: 60px;
+        width: 48px;
+        height: 48px;
         border-radius: 48px;
         background-size: cover;
         background-position: top;
@@ -195,7 +195,7 @@
     @media (min-width: 1200px) {
         display: block;
         position: sticky;
-        top: 0;
+        top: 88px;
     }
 
     &-cancelBtn {
