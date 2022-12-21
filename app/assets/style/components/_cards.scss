@@ -15,35 +15,10 @@
         transition: all .5s ease-in-out;
     }
 
-    &-address {
-        p {
-            &:hover {
-                text-decoration: underline;
-            }
-        }
-    }
-
-    &-decoration {
-        width: 0px;
-        height: 4px;
-        transition: width .5s;
-
-    }
-
     &:hover {
-
-        // .areaCard-decoration {
-        //     width: 100%;
-        //     background: linear-gradient(90deg, $primary, $primary-light);
-        // }
         .areaCard-img {
             background-size: 125% 125%;
         }
-    }
-
-    &-tag-lg {
-        top: 16px;
-        left: 0;
     }
 
     &-tag {
