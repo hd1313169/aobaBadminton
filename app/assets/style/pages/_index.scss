@@ -1,6 +1,31 @@
 .hero {
+	position: relative;
 	width: 100%;
-	height: auto;
+	height: 240px;
+	border-radius: 8px;
+	background-image: url(https://raw.githubusercontent.com/hd1313169/aobaBadminton/main/app/assets/images/banner.jpg);
+	background-size: 150%;
+	background-position: 40% 20%;
+	background-repeat: no-repeat;
+
+	@media (min-width: 576px) {
+		height: 320px;
+	}
+	@media (min-width: 768px) {
+		height: 440px;
+	}
+
+	&-content{
+		position: absolute;
+		left: 8%;
+		bottom: 16%;
+		color: $light;
+
+		@media (min-width: 992px) {
+			left: 12%;
+			bottom: 20%;
+		}
+	}
 }
 
 .title-icon {
