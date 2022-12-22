@@ -21289,8 +21289,40 @@ h1, .h1 {
 }
 
 .hero {
+  position: relative;
   width: 100%;
-  height: auto;
+  height: 240px;
+  border-radius: 8px;
+  background-image: url(https://raw.githubusercontent.com/hd1313169/aobaBadminton/main/app/assets/images/banner.jpg);
+  background-size: 150%;
+  background-position: 40% 20%;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 576px) {
+  .hero {
+    height: 320px;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero {
+    height: 440px;
+  }
+}
+
+.hero-content {
+  position: absolute;
+  left: 8%;
+  bottom: 16%;
+  color: #fff;
+}
+
+@media (min-width: 992px) {
+  .hero-content {
+    left: 12%;
+    bottom: 20%;
+  }
 }
 
 .title-icon {
