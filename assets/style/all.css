@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .rounded-4 {
   border-radius: 4px !important;
 }
@@ -73,6 +72,7 @@ li {
   --bs-gray-dark: #343a40;
   --bs-primary: #56BBB5;
   --bs-primary-light: #56cfb5;
+  --bs-primary-30: #CDEBE9;
   --bs-secondary: #fbb84a;
   --bs-success: #56b1b5;
   --bs-info: #669cc0;
@@ -4522,6 +4522,47 @@ fieldset:disabled .btn {
   border-color: #56cfb5;
 }
 
+.btn-primary-30 {
+  color: #000;
+  background-color: #CDEBE9;
+  border-color: #CDEBE9;
+}
+
+.btn-primary-30:hover {
+  color: #000;
+  background-color: #d5eeec;
+  border-color: #d2edeb;
+}
+
+.btn-check:focus + .btn-primary-30, .btn-primary-30:focus {
+  color: #000;
+  background-color: #d5eeec;
+  border-color: #d2edeb;
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(174, 200, 198, 0.5);
+          box-shadow: 0 0 0 0.25rem rgba(174, 200, 198, 0.5);
+}
+
+.btn-check:checked + .btn-primary-30,
+.btn-check:active + .btn-primary-30, .btn-primary-30:active, .btn-primary-30.active,
+.show > .btn-primary-30.dropdown-toggle {
+  color: #000;
+  background-color: #d7efed;
+  border-color: #d2edeb;
+}
+
+.btn-check:checked + .btn-primary-30:focus,
+.btn-check:active + .btn-primary-30:focus, .btn-primary-30:active:focus, .btn-primary-30.active:focus,
+.show > .btn-primary-30.dropdown-toggle:focus {
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(174, 200, 198, 0.5);
+          box-shadow: 0 0 0 0.25rem rgba(174, 200, 198, 0.5);
+}
+
+.btn-primary-30:disabled, .btn-primary-30.disabled {
+  color: #000;
+  background-color: #CDEBE9;
+  border-color: #CDEBE9;
+}
+
 .btn-secondary {
   color: #000;
   background-color: #fbb84a;
@@ -4997,6 +5038,40 @@ fieldset:disabled .btn {
 
 .btn-outline-primary-light:disabled, .btn-outline-primary-light.disabled {
   color: #56cfb5;
+  background-color: transparent;
+}
+
+.btn-outline-primary-30 {
+  color: #CDEBE9;
+  border-color: #CDEBE9;
+}
+
+.btn-outline-primary-30:hover {
+  color: #000;
+  background-color: #CDEBE9;
+  border-color: #CDEBE9;
+}
+
+.btn-check:focus + .btn-outline-primary-30, .btn-outline-primary-30:focus {
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(205, 235, 233, 0.5);
+          box-shadow: 0 0 0 0.25rem rgba(205, 235, 233, 0.5);
+}
+
+.btn-check:checked + .btn-outline-primary-30,
+.btn-check:active + .btn-outline-primary-30, .btn-outline-primary-30:active, .btn-outline-primary-30.active, .btn-outline-primary-30.dropdown-toggle.show {
+  color: #000;
+  background-color: #CDEBE9;
+  border-color: #CDEBE9;
+}
+
+.btn-check:checked + .btn-outline-primary-30:focus,
+.btn-check:active + .btn-outline-primary-30:focus, .btn-outline-primary-30:active:focus, .btn-outline-primary-30.active:focus, .btn-outline-primary-30.dropdown-toggle.show:focus {
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(205, 235, 233, 0.5);
+          box-shadow: 0 0 0 0.25rem rgba(205, 235, 233, 0.5);
+}
+
+.btn-outline-primary-30:disabled, .btn-outline-primary-30.disabled {
+  color: #CDEBE9;
   background-color: transparent;
 }
 
@@ -6943,6 +7018,16 @@ fieldset:disabled .btn {
   color: #1b423a;
 }
 
+.alert-primary-30 {
+  color: #525e5d;
+  background-color: #f5fbfb;
+  border-color: #f0f9f8;
+}
+
+.alert-primary-30 .alert-link {
+  color: #424b4a;
+}
+
 .alert-secondary {
   color: #644a1e;
   background-color: #fef1db;
@@ -7408,6 +7493,22 @@ fieldset:disabled .btn {
   color: #fff;
   background-color: #225348;
   border-color: #225348;
+}
+
+.list-group-item-primary-30 {
+  color: #525e5d;
+  background-color: #f5fbfb;
+}
+
+.list-group-item-primary-30.list-group-item-action:hover, .list-group-item-primary-30.list-group-item-action:focus {
+  color: #525e5d;
+  background-color: #dde2e2;
+}
+
+.list-group-item-primary-30.list-group-item-action.active {
+  color: #fff;
+  background-color: #525e5d;
+  border-color: #525e5d;
 }
 
 .list-group-item-secondary {
@@ -8737,6 +8838,14 @@ fieldset:disabled .btn {
   color: #78d9c4;
 }
 
+.link-primary-30 {
+  color: #CDEBE9;
+}
+
+.link-primary-30:hover, .link-primary-30:focus {
+  color: #d7efed;
+}
+
 .link-secondary {
   color: #fbb84a;
 }
@@ -9199,6 +9308,10 @@ fieldset:disabled .btn {
 
 .border-primary-light {
   border-color: #56cfb5 !important;
+}
+
+.border-primary-30 {
+  border-color: #CDEBE9 !important;
 }
 
 .border-secondary {
@@ -11602,6 +11715,10 @@ fieldset:disabled .btn {
   color: #56cfb5 !important;
 }
 
+.text-primary-30 {
+  color: #CDEBE9 !important;
+}
+
 .text-secondary {
   color: #fbb84a !important;
 }
@@ -11672,6 +11789,10 @@ fieldset:disabled .btn {
 
 .bg-primary-light {
   background-color: #56cfb5 !important;
+}
+
+.bg-primary-30 {
+  background-color: #CDEBE9 !important;
 }
 
 .bg-secondary {
@@ -20594,6 +20715,52 @@ a {
   background-color: rgba(251, 184, 74, 0.2);
 }
 
+.joinUs-card {
+  position: relative;
+}
+
+.joinUs-card-img {
+  width: 100%;
+  height: 320px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 24px;
+  -webkit-filter: contrast(1.5);
+          filter: contrast(1.5);
+}
+
+.joinUs-card-item {
+  position: absolute;
+  width: calc(100% - 32px);
+  height: 108px;
+  bottom: 16px;
+  left: 16px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.joinUs-card-content {
+  width: 60%;
+}
+
+.joinUs-card-btn {
+  display: block;
+  width: 96px;
+  background-color: #56BBB5;
+  border-radius: 8px;
+  text-align: center;
+}
+
 .form-logIn, .form-signUp {
   width: 280px;
 }
@@ -20677,307 +20844,355 @@ a {
      object-fit: cover;
 }
 
-.progress {
-  height: 16px;
+.progress-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.progress-bar-gradient {
-  background: -webkit-gradient(linear, left top, right top, from(#fff), color-stop(60%, #56cfb5), color-stop(80%, #56BBB5));
-  background: -o-linear-gradient(left, #fff 0%, #56cfb5 60%, #56BBB5 80%);
-  background: linear-gradient(90deg, #fff 0%, #56cfb5 60%, #56BBB5 80%);
-}
-
-.progress-bar-33 {
-  width: 33.33%;
-  -webkit-animation-name: barAnimation_33;
-          animation-name: barAnimation_33;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-}
-
-.progress-bar-33::before {
-  display: inline-block;
-  position: absolute;
-  content: "預約場地";
-  color: #56BBB5;
-  width: 64px;
+.progress-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 24px;
   height: 24px;
-  left: calc(33.33% - 32px);
-  bottom: -40px;
-  -webkit-animation-name: stepAnimation_33;
-          animation-name: stepAnimation_33;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-}
-
-.progress-bar-33::after {
-  display: inline-block;
-  position: absolute;
-  content: "";
-  width: 36px;
-  height: 36px;
-  border-radius: 24px;
-  background: url(https://raw.githubusercontent.com/hd1313169/aobaBadminton/main/app/assets/images/aoba_badminton_icon.svg), #56BBB5;
-  background-position: center;
-  background-size: 80%;
-  background-repeat: no-repeat;
-  left: calc(33.33% - 18px);
-  -webkit-animation-name: patternAnimation_33;
-          animation-name: patternAnimation_33;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-}
-
-.progress-bar-66 {
-  width: 66.66%;
-  -webkit-animation-name: barAnimation_66;
-          animation-name: barAnimation_66;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-}
-
-.progress-bar-66::before {
-  display: inline-block;
-  position: absolute;
-  content: "填寫資料";
+  border: 1px solid #56BBB5;
+  border-radius: 48px;
   color: #56BBB5;
-  width: 64px;
-  height: 24px;
-  left: calc(66.66% - 32px);
-  bottom: -40px;
-  -webkit-animation-name: stepAnimation_66;
-          animation-name: stepAnimation_66;
+}
+
+.progress-icon-active {
+  background-color: #56BBB5;
+  color: #fff;
+}
+
+.progress-bar-bg {
+  height: 8px;
+  background-color: #CDEBE9;
+  border-radius: 48px;
+}
+
+.progress-bar-20 {
+  width: 20%;
+  -webkit-animation-name: barAnimation_20;
+          animation-name: barAnimation_20;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
 }
 
-.progress-bar-66::after {
-  display: inline-block;
+.progress-bar-40 {
+  width: 40%;
+  -webkit-animation-name: barAnimation_40;
+          animation-name: barAnimation_40;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+.progress-bar-60 {
+  width: 60%;
+  -webkit-animation-name: barAnimation_60;
+          animation-name: barAnimation_60;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+.progress-bar-80 {
+  width: 80%;
+  -webkit-animation-name: barAnimation_80;
+          animation-name: barAnimation_80;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+.progress-bar-100 {
+  width: 100%;
+  -webkit-animation-name: barAnimation_100;
+          animation-name: barAnimation_100;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+.progress-indicator {
   position: absolute;
-  content: "";
-  width: 36px;
-  height: 36px;
-  border-radius: 24px;
-  background: url(https://raw.githubusercontent.com/hd1313169/aobaBadminton/main/app/assets/images/aoba_badminton_icon.svg), #56BBB5;
+  width: 22px;
+  height: 22px;
+  background-color: #fff;
+  border: 1px solid #56BBB5;
+  border-radius: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.progress-indicator-bg {
+  width: 18px;
+  height: 18px;
+  background-color: #56BBB5;
+  border-radius: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.progress-indicator-icon {
+  width: 14px;
+  height: 14px;
+  background-image: url(https://raw.githubusercontent.com/hd1313169/aobaBadminton/main/app/assets/images/aoba_badminton_icon.svg);
   background-position: center;
-  background-size: 80%;
+  background-size: cover;
   background-repeat: no-repeat;
-  left: calc(66.66% - 18px);
-  -webkit-animation-name: patternAnimation_66;
-          animation-name: patternAnimation_66;
+}
+
+.progress-indicator-20 {
+  top: calc((8px / 2) - (22px / 2));
+  left: calc(20% - (22px / 2));
+  -webkit-animation-name: patternAnimation_20;
+          animation-name: patternAnimation_20;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
 }
 
-.progress-bar-99 {
-  width: 99.99%;
-  -webkit-animation-name: barAnimation_99;
-          animation-name: barAnimation_99;
+.progress-indicator-40 {
+  top: calc((8px / 2) - (22px / 2));
+  left: calc(40% - (22px / 2));
+  -webkit-animation-name: patternAnimation_40;
+          animation-name: patternAnimation_40;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
 }
 
-.progress-bar-99::before {
-  display: inline-block;
-  position: absolute;
-  content: "租借成功";
-  color: #56BBB5;
-  width: 64px;
-  height: 24px;
-  left: calc(99.99% - 32px);
-  bottom: -40px;
-  -webkit-animation-name: stepAnimation_99;
-          animation-name: stepAnimation_99;
+.progress-indicator-60 {
+  top: calc((8px / 2) - (22px / 2));
+  left: calc(60% - (22px / 2));
+  -webkit-animation-name: patternAnimation_60;
+          animation-name: patternAnimation_60;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
 }
 
-.progress-bar-99::after {
-  display: inline-block;
-  position: absolute;
-  content: "";
-  width: 36px;
-  height: 36px;
-  border-radius: 24px;
-  background: url(https://raw.githubusercontent.com/hd1313169/aobaBadminton/main/app/assets/images/aoba_badminton_icon.svg), #56BBB5;
-  background-position: center;
-  background-size: 80%;
-  background-repeat: no-repeat;
-  left: calc(99.99% - 18px);
-  -webkit-animation-name: patternAnimation_99;
-          animation-name: patternAnimation_99;
+.progress-indicator-80 {
+  top: calc((8px / 2) - (22px / 2));
+  left: calc(80% - (22px / 2));
+  -webkit-animation-name: patternAnimation_80;
+          animation-name: patternAnimation_80;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
 }
 
-.badminton {
-  vertical-align: middle;
-  top: -50%;
-  left: calc(33% - 18px);
-  width: 36px;
-  height: 36px;
-  border-radius: 24px;
+.progress-indicator-100 {
+  top: calc((8px / 2) - (22px / 2));
+  left: calc(100% - (22px / 2));
+  -webkit-animation-name: patternAnimation_100;
+          animation-name: patternAnimation_100;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 
-@-webkit-keyframes barAnimation_33 {
+@-webkit-keyframes barAnimation_20 {
   from {
-    width: 0%;
+    width: 0;
   }
   to {
-    width: 33.33%;
+    width: 20%;
   }
 }
 
-@keyframes barAnimation_33 {
+@keyframes barAnimation_20 {
   from {
-    width: 0%;
+    width: 0;
   }
   to {
-    width: 33.33%;
+    width: 20%;
   }
 }
 
-@-webkit-keyframes stepAnimation_33 {
-  from {
-    left: 0;
-  }
-  to {
-    left: calc(33.33% - 32px);
-  }
-}
-
-@keyframes stepAnimation_33 {
+@-webkit-keyframes patternAnimation_20 {
   from {
     left: 0;
   }
   to {
-    left: calc(33.33% - 32px);
+    left: calc(20% - (22px / 2));
   }
 }
 
-@-webkit-keyframes patternAnimation_33 {
+@keyframes patternAnimation_20 {
   from {
     left: 0;
   }
   to {
-    left: calc(33.33% - 18px);
+    left: calc(20% - (22px / 2));
   }
 }
 
-@keyframes patternAnimation_33 {
+@-webkit-keyframes barAnimation_40 {
   from {
-    left: 0;
+    width: 20%;
   }
   to {
-    left: calc(33.33% - 18px);
+    width: 40%;
   }
 }
 
-@-webkit-keyframes barAnimation_66 {
+@keyframes barAnimation_40 {
   from {
-    width: 33.33%;
+    width: 20%;
   }
   to {
-    width: 66.66%;
+    width: 40%;
   }
 }
 
-@keyframes barAnimation_66 {
+@-webkit-keyframes patternAnimation_40 {
   from {
-    width: 33.33%;
+    left: calc(20% - 22px);
   }
   to {
-    width: 66.66%;
+    left: calc(40% - (22px / 2));
   }
 }
 
-@-webkit-keyframes stepAnimation_66 {
+@keyframes patternAnimation_40 {
   from {
-    left: calc(33.33% - 32px);
+    left: calc(20% - 22px);
   }
   to {
-    left: calc(66.66% - 32px);
+    left: calc(40% - (22px / 2));
   }
 }
 
-@keyframes stepAnimation_66 {
+@-webkit-keyframes barAnimation_60 {
   from {
-    left: calc(33.33% - 32px);
+    width: 40%;
   }
   to {
-    left: calc(66.66% - 32px);
+    width: 60%;
   }
 }
 
-@-webkit-keyframes patternAnimation_66 {
+@keyframes barAnimation_60 {
   from {
-    left: calc(33.33% - 18px);
+    width: 40%;
   }
   to {
-    left: calc(66.66% - 18px);
+    width: 60%;
   }
 }
 
-@keyframes patternAnimation_66 {
+@-webkit-keyframes patternAnimation_60 {
   from {
-    left: calc(33.33% - 18px);
+    left: calc(40% - 22px);
   }
   to {
-    left: calc(66.66% - 18px);
+    left: calc(60% - (22px / 2));
   }
 }
 
-@-webkit-keyframes barAnimation_99 {
+@keyframes patternAnimation_60 {
   from {
-    width: 66.66%;
+    left: calc(40% - 22px);
   }
   to {
-    width: 99.99%;
+    left: calc(60% - (22px / 2));
   }
 }
 
-@keyframes barAnimation_99 {
+@-webkit-keyframes barAnimation_80 {
   from {
-    width: 66.66%;
+    width: 60%;
   }
   to {
-    width: 99.99%;
+    width: 80%;
   }
 }
 
-@-webkit-keyframes stepAnimation_99 {
+@keyframes barAnimation_80 {
   from {
-    left: calc(66.66% - 32px);
+    width: 60%;
   }
   to {
-    left: calc(99.99% - 32px);
+    width: 80%;
   }
 }
 
-@keyframes stepAnimation_99 {
+@-webkit-keyframes patternAnimation_80 {
   from {
-    left: calc(66.66% - 32px);
+    left: calc(60% - 22px);
   }
   to {
-    left: calc(99.99% - 32px);
+    left: calc(80% - (22px / 2));
   }
 }
 
-@-webkit-keyframes patternAnimation_99 {
+@keyframes patternAnimation_80 {
   from {
-    left: calc(66.66% - 18px);
+    left: calc(60% - 22px);
   }
   to {
-    left: calc(99.99% - 18px);
+    left: calc(80% - (22px / 2));
   }
 }
 
-@keyframes patternAnimation_99 {
+@-webkit-keyframes barAnimation_100 {
   from {
-    left: calc(66.66% - 18px);
+    width: 80%;
   }
   to {
-    left: calc(99.99% - 18px);
+    width: 100%;
+  }
+}
+
+@keyframes barAnimation_100 {
+  from {
+    width: 80%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes patternAnimation_100 {
+  from {
+    left: calc(80% - 22px);
+  }
+  to {
+    left: calc(100% - (22px / 2));
+  }
+}
+
+@keyframes patternAnimation_100 {
+  from {
+    left: calc(80% - 22px);
+  }
+  to {
+    left: calc(100% - (22px / 2));
   }
 }
 
