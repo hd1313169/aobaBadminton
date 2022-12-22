@@ -1,201 +1,233 @@
-.progress{
-    height: 16px;
+.progress {
 
-    &-bar-gradient{
-        background: linear-gradient(90deg, $light 0%, $primary-light 60%, $primary 80%);
+    &-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
-    &-bar-33{
-        width: 33.33%;
-        animation-name:barAnimation_33;
-        animation-duration:1s;
-        &::before{
-            display: inline-block;
-            position: absolute;
-            content: "預約場地";
-            color: $primary;
-            width: 64px;
-            height: 24px;
-            left: calc(33.33% - 32px);
-            bottom: -40px;
-            animation-name:stepAnimation_33;
-            animation-duration:1s;
+    &-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 24px;
+        height: 24px;
+        border: 1px solid $primary;
+        border-radius: 48px;
+        color: $primary;
+
+        &-active {
+            background-color: $primary;
+            color: $light;
         }
-        &::after{
-            display: inline-block;
-            position: absolute;
-            content: "";
-            width: 36px;
-            height: 36px;
-            border-radius: 24px;
-            background: 
-                url(https://raw.githubusercontent.com/hd1313169/aobaBadminton/main/app/assets/images/aoba_badminton_icon.svg),
-                    $primary;
+    }
+
+    &-bar {
+        &-bg {
+            height: 8px;
+            background-color: $primary-30;
+            border-radius: 48px;
+        }
+
+        &-20 {
+            width: 20%;
+            animation-name: barAnimation_20;
+            animation-duration: 1s;
+        }
+
+        &-40 {
+            width: 40%;
+            animation-name: barAnimation_40;
+            animation-duration: 1s;
+        }
+
+        &-60 {
+            width: 60%;
+            animation-name: barAnimation_60;
+            animation-duration: 1s;
+        }
+
+        &-80 {
+            width: 80%;
+            animation-name: barAnimation_80;
+            animation-duration: 1s;
+        }
+
+        &-100 {
+            width: 100%;
+            animation-name: barAnimation_100;
+            animation-duration: 1s;
+        }
+    }
+
+    &-indicator {
+        position: absolute;
+        width: 22px;
+        height: 22px;
+        background-color: $light;
+        border: 1px solid $primary;
+        border-radius: 48px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+        &-bg {
+            width: 18px;
+            height: 18px;
+            background-color: $primary;
+            border-radius: 48px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &-icon {
+            width: 14px;
+            height: 14px;
+            background-image: url(https://raw.githubusercontent.com/hd1313169/aobaBadminton/main/app/assets/images/aoba_badminton_icon.svg);
             background-position: center;
-            background-size: 80%;
+            background-size: cover;
             background-repeat: no-repeat;
-            left: calc(33.33% - 18px);
-            animation-name:patternAnimation_33;
-            animation-duration:1s;
+        }
+
+
+        &-20 {
+            top: calc((8px / 2) - (22px / 2));
+            left: calc(20% - (22px / 2));
+            animation-name: patternAnimation_20;
+            animation-duration: 1s;
+        }
+
+        &-40 {
+            top: calc((8px / 2) - (22px / 2));
+            left: calc(40% - (22px / 2));
+            animation-name: patternAnimation_40;
+            animation-duration: 1s;
+        }
+
+        &-60 {
+            top: calc((8px / 2) - (22px / 2));
+            left: calc(60% - (22px / 2));
+            animation-name: patternAnimation_60;
+            animation-duration: 1s;
+        }
+
+        &-80 {
+            top: calc((8px / 2) - (22px / 2));
+            left: calc(80% - (22px / 2));
+            animation-name: patternAnimation_80;
+            animation-duration: 1s;
+        }
+
+        &-100 {
+            top: calc((8px / 2) - (22px / 2));
+            left: calc(100% - (22px / 2));
+            animation-name: patternAnimation_100;
+            animation-duration: 1s;
         }
     }
 
-    &-bar-66{
-        width: 66.66%;
-        animation-name:barAnimation_66;
-        animation-duration:1s;
-
-        &::before{
-            display: inline-block;
-            position: absolute;
-            content: "填寫資料";
-            color: $primary;
-            width: 64px;
-            height: 24px;
-            left: calc(66.66% - 32px);
-            bottom: -40px;
-            animation-name:stepAnimation_66;
-            animation-duration:1s;
-            
-        }
-
-        &::after{
-            display: inline-block;
-                position: absolute;
-                content: "";
-                width: 36px;
-                height: 36px;
-                border-radius: 24px;
-                background: 
-                    url(https://raw.githubusercontent.com/hd1313169/aobaBadminton/main/app/assets/images/aoba_badminton_icon.svg),
-                    $primary;
-                background-position: center;
-                background-size: 80%;
-                background-repeat: no-repeat;
-                left: calc(66.66% - 18px);
-                animation-name:patternAnimation_66;
-                animation-duration:1s;
-        }
-    }
-
-    &-bar-99{
-        width: 99.99%;
-        animation-name:barAnimation_99;
-        animation-duration:1s;
-        &::before{
-            display: inline-block;
-            position: absolute;
-            content: "租借成功";
-            color: $primary;
-            width: 64px;
-            height: 24px;
-            left: calc(99.99% - 32px);
-            bottom: -40px;
-            animation-name:stepAnimation_99;
-            animation-duration:1s;
-            
-        }
-        &::after{
-            display: inline-block;
-                position: absolute;
-                content: "";
-                width: 36px;
-                height: 36px;
-                border-radius: 24px;
-                // background: $primary;
-                background: 
-                    url(https://raw.githubusercontent.com/hd1313169/aobaBadminton/main/app/assets/images/aoba_badminton_icon.svg),
-                    $primary;
-                background-position: center;
-                background-size: 80%;
-                background-repeat: no-repeat;
-                left: calc(99.99% - 18px);
-                animation-name:patternAnimation_99;
-                animation-duration:1s;
-        }
-    }
-    
-    
 }
 
-.badminton{
-    vertical-align: middle;
-    top: -50%;
-    left: calc(33% - 18px);
-    width: 36px;
-    height: 36px;
-    border-radius: 24px;
+@keyframes barAnimation_20 {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 20%;
+    }
 }
 
-@keyframes barAnimation_33{
-    from{
-       width: 0%;
-    }
-    to{
-        width: 33.33%;
-    }
-}
-@keyframes stepAnimation_33{
-    from{
+@keyframes patternAnimation_20 {
+    from {
         left: 0;
     }
-    to{
-        left: calc(33.33% - 32px);
+
+    to {
+        left: calc(20% - (22px / 2));
     }
 }
-@keyframes patternAnimation_33{
-    from{
-        left: 0;
+
+@keyframes barAnimation_40 {
+    from {
+        width: 20%;
     }
-    to{
-        left: calc(33.33% - 18px);
-    }
-}
-@keyframes barAnimation_66{
-    from{
-       width: 33.33%;
-    }
-    to{
-        width: 66.66%;
+
+    to {
+        width: 40%;
     }
 }
-@keyframes stepAnimation_66{
-    from{
-        left: calc(33.33% - 32px);
+
+@keyframes patternAnimation_40 {
+    from {
+        left: calc(20% - 22px);
     }
-    to{
-        left: calc(66.66% - 32px);
-    }
-}
-@keyframes patternAnimation_66{
-    from{
-        left: calc(33.33% - 18px);
-    }
-    to{
-        left: calc(66.66% - 18px);
+
+    to {
+        left: calc(40% - (22px / 2));
     }
 }
-@keyframes barAnimation_99{
-    from{
-       width: 66.66%;
+
+@keyframes barAnimation_60 {
+    from {
+        width: 40%;
     }
-    to{
-        width: 99.99%;
-    }
-}
-@keyframes stepAnimation_99{
-    from{
-        left: calc(66.66% - 32px);
-    }
-    to{
-        left: calc(99.99% - 32px);
+
+    to {
+        width: 60%;
     }
 }
-@keyframes patternAnimation_99{
-    from{
-        left: calc(66.66% - 18px);
+
+@keyframes patternAnimation_60 {
+    from {
+        left: calc(40% - 22px);
     }
-    to{
-        left: calc(99.99% - 18px);
+
+    to {
+        left: calc(60% - (22px / 2));
+    }
+}
+
+@keyframes barAnimation_80 {
+    from {
+        width: 60%;
+    }
+
+    to {
+        width: 80%;
+    }
+}
+
+@keyframes patternAnimation_80 {
+    from {
+        left: calc(60% - 22px);
+    }
+
+    to {
+        left: calc(80% - (22px / 2));
+    }
+}
+
+@keyframes barAnimation_100 {
+    from {
+        width: 80%;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes patternAnimation_100 {
+    from {
+        left: calc(80% - 22px);
+    }
+
+    to {
+        left: calc(100% - (22px / 2));
     }
 }

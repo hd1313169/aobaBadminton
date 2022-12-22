@@ -69,6 +69,7 @@ $colors: (
 // scss-docs-start theme-color-variables
 $primary:       #56BBB5; //#00cc99; // $blue !default;
 $primary-light: #56cfb5;
+$primary-30:    #CDEBE9;
 $secondary:     #fbb84a; //$gray-600 !default;
 $success:       #56b1b5; //$green !default;
 $info:          #669cc0; //$cyan !default;
@@ -85,6 +86,7 @@ $dark:          #1e1e1e; //$gray-900 !default;
 $theme-colors: (
   "primary":    $primary,
   "primary-light":    $primary-light,
+  "primary-30":    $primary-30,
   "secondary":  $secondary,
   "success":    $success,
   "info":       $info,
