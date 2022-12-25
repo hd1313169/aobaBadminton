@@ -173,7 +173,7 @@
                             </div>
                         </div>
                     </div>
-    
+
                 </div>
             </div>
         </div>
@@ -211,11 +211,11 @@
                 <div class="mb-24 mb-lg-0">
                     <div id="stadium-img-modal-carouselControls" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                                class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            <button class="carousel-indicators-btn active" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                 aria-current="true" aria-label="Slide 1"></button>
+                            <button class="carousel-indicators-btn" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
                                 aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            <button class="carousel-indicators-btn" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
                                 aria-label="Slide 3"></button>
                         </div>
                         <div class="carousel-inner">
@@ -248,12 +248,12 @@
                     <!-- 場地資訊 -->
                     <div class="border-bottom pb-40">
                         <h3 class="fs-20 mb-16">場地資訊</h3>
-                            <div class="fw-light text-dark mb-16">
-                                <a href="#" class="link-dark">
-                                    <i class="fa-solid fa-location-dot text-primary me-4"></i>
-                                    <span>台北市公館路 12 號</span>
-                                </a>
-                            </div>
+                        <div class="fw-light text-dark mb-16">
+                            <a href="#" class="link-dark">
+                                <i class="fa-solid fa-location-dot text-primary me-4"></i>
+                                <span>台北市公館路 12 號</span>
+                            </a>
+                        </div>
                         <ul class="fs-14 fw-light">
                             <li class="mb-8"><span>【捷運】</span>「中山國小」站1號出口，步行 6 分鐘</li>
                             <li class="mb-8"><span>【公車】</span>「景福宮」站，步行 4 分鐘</li>
@@ -263,7 +263,7 @@
                     <!-- 場地資訊END -->
 
                     <!-- 設備與服務 -->
-                    <div class="border-bottom py-40 position-relative">
+                    <div class="border-bottom py-24 position-relative">
                         <h3 class="fs-20 mb-16">設備與服務</h3>
                         <ul class="mb-24">
                             <li class="mb-16 fs-14 fw-light">
@@ -312,15 +312,13 @@
             <!-- 場地租借內容 -->
             <div class="col-12 col-xl-8">
                 <!-- 預約場地 -->
-                <div class="py-40 border-bottom">
-                    <h3 class="fs-20 mb-24">預約場地</h3>
+                <div class="pb-40 border-bottom">
                     <div class="row">
                         <div class="col-12 col-lg-6">
                             <!-- step1 選擇日期 -->
                             <div class="mb-40 mb-lg-0">
                                 <div class="d-flex align-items-center mb-16">
-                                    <h4 class="step-decoration fs-14 me-8">Step 1</h4>
-                                    <h4 class="fs-16 fw-normal">選擇日期</h4>
+                                    <h3 class="fs-20"><i class="fa-regular fa-calendar me-8"></i>選擇日期</h3>
                                 </div>
                                 <!-- 日期選擇月曆 -->
                                 <div class="me-72 py-16 d-flex justify-content-start">
@@ -344,90 +342,194 @@
                                                 <div class="calendar-week-item">六</div>
                                             </div>
                                             <!-- 第一週 -->
-
                                             <div class="calendar-date mb-8">
-                                                <input type="button" value="1" data-date="1"
-                                                    class="btn calendar-date-item calendar-date-item-disabled">
-                                                <input type="button" value="2" data-date="2"
-                                                    class="btn calendar-date-item calendar-date-item-disabled">
-                                                <input type="button" value="3" data-date="3"
-                                                    class="btn calendar-date-item calendar-date-item-disabled">
-                                                <input type="button" value="4" data-date="4"
-                                                    class="btn calendar-date-item calendar-date-item-disabled">
-                                                <input type="button" value="5" data-date="5"
-                                                    class="btn calendar-date-item calendar-date-item-disabled">
-                                                <input type="button" value="6" data-date="6"
-                                                    class="btn calendar-date-item calendar-date-item-disabled">
-                                                <input type="button" value="7" data-date="7"
-                                                    class="btn calendar-date-item calendar-date-item-disabled">
+                                                <input type="radio" class="btn-check" name="dateradio" id="dateradio1"
+                                                    autocomplete="off">
+                                                <label class="btn btn-outline-primary calendar-date-item disabled"
+                                                    for="dateradio1">1</label>
+
+                                                <input type="radio" class="btn-check" name="dateradio" id="dateradio2"
+                                                    autocomplete="off">
+                                                <label class="btn btn-outline-primary calendar-date-item disabled"
+                                                    for="dateradio2">2</label>
+
+                                                <input type="radio" class="btn-check" name="dateradio" id="dateradio3"
+                                                    autocomplete="off">
+                                                <label class="btn btn-outline-primary calendar-date-item disabled"
+                                                    for="dateradio3">3</label>
+
+                                                <input type="radio" class="btn-check" name="dateradio" id="dateradio4"
+                                                    autocomplete="off">
+                                                <label class="btn btn-outline-primary calendar-date-item disabled"
+                                                    for="dateradio4">4</label>
+
+                                                <input type="radio" class="btn-check" name="dateradio" id="dateradio5"
+                                                    autocomplete="off">
+                                                <label class="btn btn-outline-primary calendar-date-item disabled"
+                                                    for="dateradio5">5</label>
+
+                                                <input type="radio" class="btn-check" name="dateradio" id="dateradio6"
+                                                    autocomplete="off">
+                                                <label class="btn btn-outline-primary calendar-date-item disabled"
+                                                    for="dateradio6">6</label>
+
+                                                <input type="radio" class="btn-check" name="dateradio" id="dateradio7"
+                                                    autocomplete="off">
+                                                <label class="btn btn-outline-primary calendar-date-item disabled"
+                                                    for="dateradio7">7</label>
                                             </div>
                                             <!-- 第二週 -->
                                             <div class="calendar-date mb-8">
-                                                <input type="button" value="8" data-date="8"
-                                                    class="btn calendar-date-item calendar-date-item-disabled">
-                                                <input type="button" value="9" data-date="9"
-                                                    class="btn calendar-date-item calendar-date-item-disabled">
-                                                <input type="button" value="10" data-date="10"
-                                                    class="btn calendar-date-item calendar-date-item-disabled">
-                                                <input type="button" value="11" data-date="11"
-                                                    class="btn calendar-date-item calendar-date-item-disabled">
-                                                <input type="button" value="12" data-date="12"
-                                                    class="btn calendar-date-item calendar-date-item-disabled">
-                                                <input type="button" value="13" data-date="13"
-                                                    class="btn calendar-date-item calendar-date-item-disabled">
-                                                <input type="button" value="14" data-date="14"
-                                                    class="btn calendar-date-item calendar-date-item-disabled">
+                                                <input type="radio" class="btn-check" name="dateradio" id="dateradio8"
+                                                    autocomplete="off">
+                                                <label class="btn btn-outline-primary calendar-date-item disabled"
+                                                    for="dateradio8">8</label>
+
+                                                <input type="radio" class="btn-check" name="dateradio" id="dateradio9"
+                                                    autocomplete="off">
+                                                <label class="btn btn-outline-primary calendar-date-item disabled"
+                                                    for="dateradio9">9</label>
+
+                                                <input type="radio" class="btn-check" name="dateradio" id="dateradio10"
+                                                    autocomplete="off">
+                                                <label class="btn btn-outline-primary calendar-date-item disabled"
+                                                    for="dateradio10">10</label>
+
+                                                <input type="radio" class="btn-check" name="dateradio" id="dateradio11"
+                                                    autocomplete="off">
+                                                <label class="btn btn-outline-primary calendar-date-item disabled"
+                                                    for="dateradio11">11</label>
+
+                                                <input type="radio" class="btn-check" name="dateradio" id="dateradio12"
+                                                    autocomplete="off">
+                                                <label class="btn btn-outline-primary calendar-date-item disabled"
+                                                    for="dateradio12">12</label>
+
+                                                <input type="radio" class="btn-check" name="dateradio" id="dateradio13"
+                                                    autocomplete="off">
+                                                <label class="btn btn-outline-primary calendar-date-item disabled"
+                                                    for="dateradio13">13</label>
+
+                                                <input type="radio" class="btn-check" name="dateradio" id="dateradio14"
+                                                    autocomplete="off">
+                                                <label class="btn btn-outline-primary calendar-date-item disabled"
+                                                    for="dateradio14">14</label>
                                             </div>
                                             <!-- 第三週 -->
                                             <div class="calendar-date mb-8">
-                                                <input type="button" value="15" data-date="15"
-                                                    class="btn calendar-date-item calendar-date-item-today">
-                                                <input type="button" value="16" data-date="16"
-                                                    class="btn calendar-date-item">
-                                                <input type="button" value="17" data-date="17"
-                                                    class="btn calendar-date-item">
-                                                <input type="button" value="18" data-date="18"
-                                                    class="btn calendar-date-item">
-                                                <input type="button" value="19" data-date="19"
-                                                    class="btn calendar-date-item">
-                                                <input type="button" value="20" data-date="20"
-                                                    class="btn calendar-date-item calendar-date-item-disabled">
-                                                <input type="button" value="21" data-date="21"
-                                                    class="btn calendar-date-item calendar-date-item-disabled">
+                                                <input type="radio" class="btn-check" name="dateradio" id="dateradio15"
+                                                    autocomplete="off">
+                                                <label
+                                                    class="btn btn-outline-primary calendar-date-item calendar-date-item-today"
+                                                    for="dateradio15">15</label>
+
+                                                <input type="radio" class="btn-check" name="dateradio" id="dateradio16"
+                                                    autocomplete="off">
+                                                <label class="btn btn-outline-primary calendar-date-item"
+                                                    for="dateradio16">16</label>
+
+                                                <input type="radio" class="btn-check" name="dateradio" id="dateradio17"
+                                                    autocomplete="off">
+                                                <label class="btn btn-outline-primary calendar-date-item"
+                                                    for="dateradio17">17</label>
+
+                                                <input type="radio" class="btn-check" name="dateradio" id="dateradio18"
+                                                    autocomplete="off">
+                                                <label class="btn btn-outline-primary calendar-date-item"
+                                                    for="dateradio18">18</label>
+
+                                                <input type="radio" class="btn-check" name="dateradio" id="dateradio19"
+                                                    autocomplete="off">
+                                                <label class="btn btn-outline-primary calendar-date-item"
+                                                    for="dateradio19">19</label>
+
+                                                <input type="radio" class="btn-check" name="dateradio" id="dateradio20"
+                                                    autocomplete="off">
+                                                <label class="btn btn-outline-primary calendar-date-item disabled"
+                                                    for="dateradio20">20</label>
+
+                                                <input type="radio" class="btn-check" name="dateradio" id="dateradio21"
+                                                    autocomplete="off">
+                                                <label class="btn btn-outline-primary calendar-date-item disabled"
+                                                    for="dateradio21">21</label>
                                             </div>
                                             <!-- 第四週 -->
                                             <div class="calendar-date mb-8">
-                                                <input type="button" value="22" data-date="22"
-                                                    class="btn calendar-date-item calendar-date-item-disabled">
-                                                <input type="button" value="23" data-date="23"
-                                                    class="btn calendar-date-item calendar-date-item-disabled">
-                                                <input type="button" value="24" data-date="24"
-                                                    class="btn calendar-date-item calendar-date-item-disabled">
-                                                <input type="button" value="25" data-date="25"
-                                                    class="btn calendar-date-item calendar-date-item-disabled">
-                                                <input type="button" value="26" data-date="26"
-                                                    class="btn calendar-date-item calendar-date-item-disabled">
-                                                <input type="button" value="27" data-date="27"
-                                                    class="btn calendar-date-item calendar-date-item-disabled">
-                                                <input type="button" value="28" data-date="28"
-                                                    class="btn calendar-date-item calendar-date-item-disabled">
+                                                <input type="radio" class="btn-check" name="dateradio" id="dateradio22"
+                                                    autocomplete="off">
+                                                <label class="btn btn-outline-primary calendar-date-item disabled"
+                                                    for="dateradio22">22</label>
+
+                                                <input type="radio" class="btn-check" name="dateradio" id="dateradio23"
+                                                    autocomplete="off">
+                                                <label class="btn btn-outline-primary calendar-date-item disabled"
+                                                    for="dateradio23">23</label>
+
+                                                <input type="radio" class="btn-check" name="dateradio" id="dateradio24"
+                                                    autocomplete="off">
+                                                <label class="btn btn-outline-primary calendar-date-item disabled"
+                                                    for="dateradio24">24</label>
+
+                                                <input type="radio" class="btn-check" name="dateradio" id="dateradio25"
+                                                    autocomplete="off">
+                                                <label class="btn btn-outline-primary calendar-date-item disabled"
+                                                    for="dateradio25">25</label>
+
+                                                <input type="radio" class="btn-check" name="dateradio" id="dateradio26"
+                                                    autocomplete="off">
+                                                <label class="btn btn-outline-primary calendar-date-item disabled"
+                                                    for="dateradio26">26</label>
+
+                                                <input type="radio" class="btn-check" name="dateradio" id="dateradio27"
+                                                    autocomplete="off">
+                                                <label class="btn btn-outline-primary calendar-date-item disabled"
+                                                    for="dateradio27">27</label>
+
+                                                <input type="radio" class="btn-check" name="dateradio" id="dateradio28"
+                                                    autocomplete="off">
+                                                <label class="btn btn-outline-primary calendar-date-item disabled"
+                                                    for="dateradio28">28</label>
                                             </div>
                                             <!-- 第五週 -->
                                             <div class="calendar-date mb-8">
-                                                <input type="button" value="29" data-date="29"
-                                                    class="btn calendar-date-item">
-                                                <input type="button" value="30" data-date="30"
-                                                    class="btn calendar-date-item">
-                                                <input type="button" value="31" data-date="31"
-                                                    class="btn calendar-date-item">
-                                                <input type="button" value="" data-date=""
-                                                    class="btn calendar-date-item calendar-date-item-disabled">
-                                                <input type="button" value="" data-date=""
-                                                    class="btn calendar-date-item calendar-date-item-disabled">
-                                                <input type="button" value="" data-date=""
-                                                    class="btn calendar-date-item calendar-date-item-disabled">
-                                                <input type="button" value="" data-date=""
-                                                    class="btn calendar-date-item calendar-date-item-disabled">
+                                                <input type="radio" class="btn-check" name="dateradio" id="dateradio29"
+                                                    autocomplete="off">
+                                                <label
+                                                    class="btn btn-outline-primary calendar-date-item"
+                                                    for="dateradio29">29</label>
+
+                                                <input type="radio" class="btn-check" name="dateradio" id="dateradio30"
+                                                    autocomplete="off">
+                                                <label
+                                                    class="btn btn-outline-primary calendar-date-item"
+                                                    for="dateradio30">30</label>
+
+                                                <input type="radio" class="btn-check" name="dateradio" id="dateradio31"
+                                                    autocomplete="off">
+                                                <label
+                                                    class="btn btn-outline-primary calendar-date-item"
+                                                    for="dateradio31">31</label>
+
+                                                <input type="radio" class="btn-check" name="dateradio" id="dateradio31"
+                                                    autocomplete="off">
+                                                <label
+                                                    class="btn btn-outline-primary calendar-date-item"
+                                                    for="dateradio31"></label>
+                                                <input type="radio" class="btn-check" name="dateradio" id="dateradio31"
+                                                    autocomplete="off">
+                                                <label
+                                                    class="btn btn-outline-primary calendar-date-item"
+                                                    for="dateradio31"></label>
+                                                <input type="radio" class="btn-check" name="dateradio" id="dateradio31"
+                                                    autocomplete="off">
+                                                <label
+                                                    class="btn btn-outline-primary calendar-date-item"
+                                                    for="dateradio31"></label>
+                                                <input type="radio" class="btn-check" name="dateradio" id="dateradio31"
+                                                    autocomplete="off">
+                                                <label
+                                                    class="btn btn-outline-primary calendar-date-item"
+                                                    for="dateradio31"></label>
                                             </div>
                                         </div>
                                     </div>
@@ -439,57 +541,51 @@
                             <!-- step2 選擇時段 -->
                             <div class="mb-40">
                                 <div class="d-flex align-items-center mb-16">
-                                    <h4 class="step-decoration fs-14 me-8">Step 2</h4>
-                                    <h4 class="fs-16 fw-normal">選擇時段</h4>
+                                    <h3 class="fs-20"><i class="fa-regular fa-clock me-8"></i>選擇時段</h3>
                                 </div>
                                 <!-- 時段下拉選單 -->
-                                <div class="dropdown area-dropdown stadium-dropdown">
-                                    <a class="btn btn-light border border-grey-light rounded-8 text-grey-light dropdown-toggle ps-16 py-12"
-                                        href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
-                                        aria-expanded="false"><i class="fa-regular fa-clock me-12"></i>請選擇時段</a>
-                                    <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuLink">
-                                        <li><a class="dropdown-item disabled" href="#">08:00 - 09:00</a></li>
-                                        <li><a class="dropdown-item disabled" href="#">09:00 - 10:00</a></li>
-                                        <li><a class="dropdown-item disabled" href="#">10:00 - 11:00</a></li>
-                                        <li><a class="dropdown-item disabled" href="#">11:00 - 12:00</a></li>
-                                        <li><a class="dropdown-item disabled" href="#">12:00 - 13:00</a></li>
-                                        <li><a class="dropdown-item disabled" href="#">13:00 - 14:00</a></li>
-                                        <li><a class="dropdown-item disabled" href="#">14:00 - 15:00</a></li>
-                                        <li><a class="dropdown-item disabled" href="#">15:00 - 16:00</a></li>
-                                        <li><a class="dropdown-item" href="#">16:00 - 17:00</a></li>
-                                        <li><a class="dropdown-item" href="#">17:00 - 18:00</a></li>
-                                        <li><a class="dropdown-item disabled" href="#">18:00 - 19:00</a></li>
-                                        <li><a class="dropdown-item disabled" href="#">20:00 - 21:00</a></li>
-                                    </ul>
-                                </div>
+                                <select class="form-select stadium-select" aria-label=".form-select">
+                                    <option value="8" class="stadium-select-disabled" disabled>08:00 - 09:00</option>
+                                    <option value="8" class="stadium-select-disabled" disabled>09:00 - 10:00</option>
+                                    <option value="8" class="stadium-select-disabled" disabled>10:00 - 11:00</option>
+                                    <option value="8" class="stadium-select-disabled" disabled>11:00 - 12:00</option>
+                                    <option value="8" class="stadium-select-disabled" disabled>12:00 - 13:00</option>
+                                    <option value="8" class="stadium-select-disabled" disabled>13:00 - 14:00</option>
+                                    <option value="8" class="stadium-select-disabled" disabled>14:00 - 15:00</option>
+                                    <option value="8" class="stadium-select-disabled" disabled>15:00 - 16:00</option>
+                                    <option value="8" selected>16:00 - 17:00</option>
+                                    <option value="8">17:00 - 18:00</option>
+                                    <option value="8" class="stadium-select-disabled" disabled>18:00 - 19:00</option>
+                                    <option value="8" class="stadium-select-disabled" disabled>20:00 - 21:00</option>
+                                  </select>
                             </div>
                             <!-- step2 選擇時段END -->
                             <!-- step3 選擇場地 -->
                             <div>
                                 <div class="d-flex align-items-center mb-16">
-                                    <h4 class="step-decoration fs-14 me-8">Step 3</h4>
-                                    <h4 class="fs-16 fw-normal">選擇場地</h4>
+                                    <h3 class="fs-20"><i class="fa-solid fa-hashtag me-8"></i>選擇場地</h3>
                                 </div>
                                 <p class="fs-14 text-grey mb-16">所選時段還有 6 個場地</p>
                                 <!-- 場地選單 -->
 
                                 <div class="stadium-court d-flex flex-wrap">
-                                    <input type="button" value="A" data-court="A"
-                                        class="stadium-court-item text-dark stadium-court-item-disabled">
-                                    <input type="button" value="B" data-court="B"
-                                        class="stadium-court-item text-dark stadium-court-item-disabled">
-                                    <input type="button" value="C" data-court="C"
-                                        class="btn stadium-court-item text-dark">
-                                    <input type="button" value="D" data-court="D"
-                                        class="btn stadium-court-item text-dark">
-                                    <input type="button" value="E" data-court="E"
-                                        class="btn stadium-court-item text-dark">
-                                    <input type="button" value="F" data-court="F"
-                                        class="btn stadium-court-item text-dark">
-                                    <input type="button" value="G" data-court="G"
-                                        class="btn stadium-court-item text-dark">
-                                    <input type="button" value="H" data-court="H"
-                                        class="btn stadium-court-item text-dark">
+                                    <input type="checkbox" class="btn-check" id="stadium-A" autocomplete="off">
+                                    <label class="btn btn-outline-primary stadium-court-item disabled"
+                                        for="stadium-A">A</label>
+                                    <input type="checkbox" class="btn-check" id="stadium-B" autocomplete="off">
+                                    <label class="btn btn-outline-primary stadium-court-item disabled">B</label>
+                                    <input type="checkbox" class="btn-check" id="stadium-C" autocomplete="off">
+                                    <label class="btn stadium-court-item btn-outline-primary" for="stadium-C">C</label>
+                                    <input type="checkbox" class="btn-check" id="stadium-D" autocomplete="off">
+                                    <label class="btn stadium-court-item btn-outline-primary" for="stadium-D">D</label>
+                                    <input type="checkbox" class="btn-check" id="stadium-E" autocomplete="off">
+                                    <label class="btn stadium-court-item btn-outline-primary" for="stadium-E">E</label>
+                                    <input type="checkbox" class="btn-check" id="stadium-F" autocomplete="off">
+                                    <label class="btn stadium-court-item btn-outline-primary" for="stadium-F">F</label>
+                                    <input type="checkbox" class="btn-check" id="stadium-G" autocomplete="off">
+                                    <label class="btn stadium-court-item btn-outline-primary" for="stadium-G">G</label>
+                                    <input type="checkbox" class="btn-check" id="stadium-H" autocomplete="off">
+                                    <label class="btn stadium-court-item btn-outline-primary" for="stadium-H">H</label>
                                 </div>
                             </div>
                             <!-- step3 選擇場地END -->

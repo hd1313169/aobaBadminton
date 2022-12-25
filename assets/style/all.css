@@ -21443,11 +21443,13 @@ span.buttonText {
   background-repeat: no-repeat;
 }
 
-.stadium-img-modal {
-  display: block;
-  width: 100%;
-  -webkit-filter: contrast(1.5);
-          filter: contrast(1.5);
+.carousel-indicators-btn {
+  margin-bottom: 4px !important;
+  margin: 0 4px !important;
+  width: 12px !important;
+  height: 12px !important;
+  border: none !important;
+  border-radius: 48px !important;
 }
 
 .stadium-info-location {
@@ -21476,10 +21478,10 @@ span.buttonText {
 }
 
 .step-decoration {
-  background-color: #56BBB5;
+  border: 1px solid #56BBB5;
   border-radius: 48px;
-  padding: 6px 12px;
-  color: #fff !important;
+  padding: 8px 8px;
+  color: #56BBB5 !important;
   text-align: center;
 }
 
@@ -21552,9 +21554,9 @@ span.buttonText {
 }
 
 .calendar-date-item:hover {
-  background-color: #56cfb5 !important;
-  border-color: #56cfb5 !important;
-  color: #fff !important;
+  background-color: #E6F5F4 !important;
+  border-color: #E6F5F4 !important;
+  color: #56BBB5 !important;
 }
 
 .calendar-date-item:focus {
@@ -21574,7 +21576,25 @@ span.buttonText {
   color: #d9d9d9 !important;
 }
 
-.stadium-dropdown {
+.btn-check:checked + .btn-outline-primary,
+.btn-check:active + .btn-outline-primary, .btn-outline-primary:active, .btn-outline-primary.active, .btn-outline-primary.dropdown-toggle.show {
+  color: #fff;
+  background-color: #56BBB5;
+  border-color: #56BBB5;
+}
+
+.btn-outline-primary:disabled, .btn-outline-primary.disabled {
+  color: #d9d9d9;
+  background-color: #fff;
+  border-color: #fff;
+  opacity: 1;
+}
+
+.btn-outline-primary {
+  color: #1e1e1e;
+}
+
+.stadium-select {
   width: 342px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -21583,6 +21603,12 @@ span.buttonText {
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: relative;
+  border-radius: 4px;
+  padding: 12px 12px;
+}
+
+.stadium-select-disabled {
+  color: #d9d9d9 !important;
 }
 
 .stadium-court-item {
@@ -21598,9 +21624,10 @@ span.buttonText {
   padding: 16px 0;
 }
 
-.stadium-court-item:hover {
-  background: #56cfb5;
-  color: #fff !important;
+.stadium-court-item:hover:hover {
+  background-color: #E6F5F4 !important;
+  border-color: #E6F5F4 !important;
+  color: #56BBB5 !important;
 }
 
 .stadium-court-item:focus {
