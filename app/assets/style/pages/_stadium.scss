@@ -10,14 +10,16 @@
     }
 }
 
-.stadium-img-modal{
-        display: block;
-        width: 100%;
-        filter: contrast(1.5);
-
-
+.carousel-indicators{
+    &-btn{
+        margin-bottom: 4px !important;
+        margin: 0 4px !important;
+        width: 12px !important;
+        height: 12px !important;
+        border: none !important;
+        border-radius: 48px !important;
+    }
 }
-
 .stadium-info {
     &-location {
         display: block;
@@ -43,10 +45,11 @@
 }
 
 .step-decoration {
-    background-color: $primary;
+    // background-color: $primary-30;
+    border: 1px solid $primary;
     border-radius: 48px;
-    padding: 6px 12px;
-    color: $light !important;
+    padding: 8px 8px;
+    color: $primary !important;
     text-align: center;
 }
 
@@ -102,13 +105,13 @@
             height: 44px;
             margin: 0 4px;
             padding: 10px;
-            border: 1px solid $light ;
+            border: 1px solid $light;
             border-radius: 48px;
 
             &:hover {
-                background-color: $primary-light !important;
-                border-color: $primary-light !important;
-                color: $light !important;
+                background-color: $primary-30 !important;
+                border-color: $primary-30 !important;
+                color: $primary !important;
             }
 
             &:focus {
@@ -133,11 +136,37 @@
 
 }
 
-.stadium-dropdown {
+.btn-check:checked+.btn-outline-primary,
+.btn-check:active+.btn-outline-primary,
+.btn-outline-primary:active,
+.btn-outline-primary.active,
+.btn-outline-primary.dropdown-toggle.show {
+    color: #fff;
+    background-color: #56BBB5;
+    border-color: #56BBB5;
+}
+.btn-outline-primary:disabled, .btn-outline-primary.disabled {
+    color: $grey-light;
+    background-color: $light;
+    border-color: $light;
+    opacity: 1;
+  }
+  
+.btn-outline-primary {
+    color: $dark;
+    // border-color: rgb(86, 187, 181);
+}
+
+.stadium-select {
     width: 342px;
     display: flex;
     justify-content: space-between;
     position: relative;
+    border-radius: 4px;
+    padding: 12px 12px;
+    &-disabled{
+        color: $grey-light !important;
+    }
 }
 
 .stadium-court-item {
@@ -153,8 +182,11 @@
     padding: 16px 0;
 
     &:hover {
-        background: $primary-light;
-        color: $light !important;
+        &:hover {
+            background-color: $primary-30 !important;
+            border-color: $primary-30 !important;
+            color: $primary !important;
+        }
 
     }
 
@@ -173,11 +205,13 @@
 }
 
 
-.rate{
+.rate {
     width: 75%;
+
     @media (min-width: 768px) {
         width: 75%;
     }
+
     &-content {
         height: 63px;
         overflow: hidden;

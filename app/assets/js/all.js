@@ -25,6 +25,34 @@ var swiper = new Swiper(".coachCard-swiper", {
   },
 });
 
+var tagSwiper = new Swiper(".tag-swiper", {
+  // Default parameters
+  slidesPerView: 2,
+  spaceBetween: 16,
+  // Responsive breakpoints
+  breakpoints: {
+    // when window width is >= 320px
+    576: {
+      slidesPerView: 2,
+      spaceBetween: 16
+    },
+    // when window width is >= 480px
+    768: {
+      slidesPerView: 4,
+      spaceBetween: 16
+    },
+    // when window width is >= 640px
+    992: {
+      slidesPerView: 6,
+      spaceBetween: 16
+    }
+  },
+
+
+autoplay: {
+  delay: 2000,
+},
+});
 
 // 千分位工具
 function toThousands(x){
